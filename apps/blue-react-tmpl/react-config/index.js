@@ -1,3 +1,5 @@
+require('./copy-dir');
+
 const path = require('path');
 
 function resolve(_path) {
@@ -17,7 +19,7 @@ const webpackConfig = {
       '@router': resolve('router'),
 
       '$assets': resolve('public-assets'),
-      '$components': resolve('public-component'),
+      '$components': resolve('public-components'),
     }
   }
 };

@@ -53,7 +53,7 @@ function copyDir(opts = {
 
     let { destDirName } = options;
 
-    const splitDirPath = dirPath.split('\\');
+    const splitDirPath = dirPath.split(process.platform === 'win32' ? '\\' : '/');
 
     if (!destDirName) {
       //获取文件路径最后名字

@@ -135,7 +135,7 @@ module.exports = function (webpackEnv) {
     return loaders;
   };
 
-  const _config = utils.extend({
+  const webpackConfig = utils.extend({
     mode: isEnvProduction ? 'production' : isEnvDevelopment && 'development',
     // Stop compilation early in production
     bail: isEnvProduction,
@@ -653,7 +653,5 @@ module.exports = function (webpackEnv) {
     performance: false,
   }, reactConfig);
 
-  console.log(_config);
-
-  return _config;
+  return webpackConfig;
 };
