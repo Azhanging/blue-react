@@ -1,5 +1,9 @@
 {
   "dependencies": {
     "blue-utils": "^1.1.0"
+  },
+  "devDependencies": {
+    "chokidar": "^3.0.2",
+    "node-sass": "^4.12.0"
   }
 }

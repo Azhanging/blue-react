@@ -25,15 +25,28 @@ function mkDir(path) {
   });
 }
 
+//是否在黑名单里面
+function inBlockList(blackList, path) {
+  for (let i = 0; i < blackList.length; i++) {
+    const item = blackList[i];
+    if (item.test(path)) {
+      return true;
+    }
+  }
+  return false;
+}
+
 
 function copyDir(opts = {
   dirList: [/*{
     dirPath: '',
     destPath: '',
     destDirName:''
-  }*/]
+  }*/],
+  //黑名单
+  blackList: []
 }) {
-  const { dirList } = opts;
+  const { dirList, blackList = [] } = opts;
   (dirList || []).forEach((options) => {
 
     const { dirPath, destPath } = options;
@@ -49,14 +62,16 @@ function copyDir(opts = {
 
     const destDirPath = path.join(destPath, destDirName);
 
-    //检查是否有当前的文件夹，没有则创建一个
-    if (!hasDir(destDirPath)) {
-      mkDir(destDirPath);
-    }
+    if (inBlockList(blackList, dirPath)) return;
 
     try {
 
       const files = fs.readdirSync(dirPath);
+
+      //检查是否有当前的文件夹，没有则创建一个
+      if (!hasDir(destDirPath)) {
+        mkDir(destDirPath);
+      }
 
       const dirList = [];
 
@@ -82,7 +97,8 @@ function copyDir(opts = {
       //下一层的文件夹
       if (dirList.length > 0) {
         copyDir({
-          dirList
+          dirList,
+          blackList
         });
       }
     } catch (e) {
