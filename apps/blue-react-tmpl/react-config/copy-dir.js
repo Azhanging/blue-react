@@ -19,10 +19,6 @@ const copyDirOpts = {
 		dirPath: path.join(middlewarePath, 'components'),
 		destPath: resolve(''),
 		destDirName: 'public-components'
-	}, {
-		dirPath: path.join(middlewarePath, 'assets'),
-		destPath: resolve(''),
-		destDirName: 'public-assets'
 	}]
 };
 
