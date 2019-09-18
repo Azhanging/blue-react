@@ -131,6 +131,18 @@
   "babel": {
     "presets": [
       "react-app"
+    ],
+    "plugins": [
+      [
+        "import",
+        {
+          "libraryName": "antd-mobile",
+          "style": "css"
+        }
+      ]
     ]
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.12.1"
   }
 }
