@@ -17,6 +17,8 @@ const webpackConfig = {
       '@pages': resolve('pages'),
       //路由别名
       '@router': resolve('router'),
+      //状态管理
+      '@store': resolve('store'),
 
       '$assets': resolve('public-assets'),
       '$components': resolve('public-components'),
