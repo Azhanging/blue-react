@@ -1,29 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { ActivityIndicator } from 'antd-mobile';
+import React, { Suspense } from 'react';
+import SuspenseLoading from '$components/SuspenseLoading';
+import { ConnectActivityIndicatorComponent } from '$components/ConnectActivityIndicator';
 
 //主App节点
 function App(props) {
-
-	const [animating, setAnimation] = useState(true);
-
-	useEffect(() => {
-		setTimeout(() => {
-			setAnimation((animating)=>{
-				return !animating;
-			});
-		}, 2000);
-	}, []);
-
-	return (
-		<>
-			{props.children}
-			{/*loading*/}
-			<button className="bc-btn" onClick={() => setAnimation(!animating)}>
-				toggle animating
-			</button>
-			<ActivityIndicator toast text="loading" animating={animating}/>
-		</>
-	)
+  return (
+    <Suspense fallback={<SuspenseLoading/>}>
+      {props.children}
+      {/*loading*/}
+      <ConnectActivityIndicatorComponent />
+    </Suspense>
+  );
 }
 
 export default App;

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { connect } from 'react-redux';
 
 function Index(props) {
-  console.log(props);
   return (
     <div>
       <div className="bc-pd-14 bc-t-c">
@@ -14,8 +14,28 @@ function Index(props) {
           link to Components
         </Link>
       </div>
+
+      <div className="bc-t-c bc-pd-10">
+        <button type="button" className="bc-btn bc-btn-primary" onClick={(e) => {
+          props.changeActivityIndicator({
+            animating: true
+          });
+        }}>
+          打开loading
+        </button>
+      </div>
+
     </div>
   );
 }
 
-export default Index;
+export default connect(null, (dispatch) => {
+  return {
+    changeActivityIndicator(state) {
+      dispatch({
+        type: 'CHANGE_INDICATOR',
+        payload: state
+      });
+    }
+  }
+})(Index);
