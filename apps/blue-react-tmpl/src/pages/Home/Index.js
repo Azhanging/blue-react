@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import { Link } from 'react-router-dom';
-import { connect } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import * as action from '@store/action';
 
 function Index(props) {
+
+  const dispatch = useDispatch();
+
   return (
     <div>
       <div className="bc-pd-14 bc-t-c">
@@ -17,25 +21,15 @@ function Index(props) {
 
       <div className="bc-t-c bc-pd-10">
         <button type="button" className="bc-btn bc-btn-primary" onClick={(e) => {
-          props.changeActivityIndicator({
+          dispatch(action.TOGGLE_ACTIVITY_INDICATOR({
             animating: true
-          });
+          }));
         }}>
-          打开loading
+          loading...
         </button>
       </div>
-
     </div>
   );
 }
 
-export default connect(null, (dispatch) => {
-  return {
-    changeActivityIndicator(state) {
-      dispatch({
-        type: 'CHANGE_INDICATOR',
-        payload: state
-      });
-    }
-  }
-})(Index);
+export default Index;
