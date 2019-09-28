@@ -1,6 +1,10 @@
 import { createStore, combineReducers } from 'redux';
-import * as reducer from './reducers';
+//公共reducers
+import * as reducers from './reducers';
 
-const store = createStore(combineReducers({...reducer}));
+//项目store
+const store = createStore(combineReducers({
+	...reducers
+}));
 
 export default store;

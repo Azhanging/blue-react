@@ -1,6 +1,7 @@
-const types = {
-  //修改activity-indicator状态
-  TOGGLE_ACTIVITY_INDICATOR: 'TOGGLE_ACTIVITY_INDICATOR'
-};
+import utils from 'blue-utils';
+import publicTypes from '$store/types';
+
+//项目types
+const types = utils.extend(publicTypes, {});
 
 export default types;

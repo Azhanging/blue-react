@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "antd-mobile": "^2.3.1",
+    "axios": "^0.19.0",
     "blue-utils": "^1.1.0"
   },
   "devDependencies": {

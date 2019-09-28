@@ -1,5 +1,6 @@
-import { BrowserRouter } from 'react-router-dom';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Router } from 'react-router';
+import { createBrowserHistory } from 'history';
 import { Provider } from 'react-redux';
 import App from '@/App';
 import store from '@store';
@@ -8,18 +9,25 @@ import store from '@store';
 import Home from './Home';
 import Components from './Components';
 
-function Router() {
-  return (
-    <Provider store={store}>
-      <BrowserRouter>
-        <App>
-          {/*路由集合*/}
-          <Home/>
-          <Components/>
-        </App>
-      </BrowserRouter>
-    </Provider>
-  );
+//绑定路由的实例，方便外部使用
+const history = createBrowserHistory();
+
+history.listen((location, action) => {
+
+});
+
+export function AppRouter() {
+	return (
+		<Provider store={store}>
+			<Router history={history}>
+				<App>
+					{/*路由集合*/}
+					<Home/>
+					<Components/>
+				</App>
+			</Router>
+		</Provider>
+	);
 }
 
-export default Router;
+export default history;
