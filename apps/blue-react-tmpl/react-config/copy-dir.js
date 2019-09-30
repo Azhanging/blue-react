@@ -25,20 +25,16 @@ const copyDirOpts = {
 
 function watchDir(copyDirOpts) {
   const { dirList } = copyDirOpts;
-  let timer;
   (dirList || []).forEach((opts) => {
     const { dirPath } = opts;
     chokidar.watch(dirPath, {
       ignoreInitial: true
     }).on('all', (event, path) => {
-      clearTimeout(timer);
       //插件文件的变化或者新增的文件
       if (event === 'change' || event === 'add') {
-        timer = setTimeout(() => {
-          //复制文件夹
-          copyDir(copyDirOpts);
-          console.log(`file change:`, path);
-        }, 500);
+        //复制文件夹
+        copyDir(copyDirOpts);
+        console.log(`file change:`, path);
       }
     });
   });

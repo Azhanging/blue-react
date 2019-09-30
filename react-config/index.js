@@ -10,6 +10,7 @@ const reactConfig = {
 			'$config': resolve('config'),
 			'$use-in-react': resolve('use-in-react'),
 			'$store': resolve('config/store'),
+			'$assets': resolve('assets'),
 			'$axios': resolve('use-in-react/axios')
 		}
 	}

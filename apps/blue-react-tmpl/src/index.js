@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { AppRouter } from '@router';
+import AppRouter from '@router/AppRouter';
 import * as serviceWorker from './serviceWorker';
 import { useInReact } from '$use-in-react';
 
+//antd mobile全局樣式
+import 'antd-mobile/dist/antd-mobile.css';
 //使用全局scss
 import '@assets/css/blue-component.scss';
 
