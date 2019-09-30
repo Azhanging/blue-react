@@ -1,10 +1,13 @@
 import React from 'react';
+import BrView from '$components/BrView/BrView';
 
 function Children(){
   return (
-    <div className="bc-t-c">
-      index children
-    </div>
+	  <BrView>
+		  <div className="bc-t-c">
+			  index children
+		  </div>
+    </BrView>
   )
 }
 

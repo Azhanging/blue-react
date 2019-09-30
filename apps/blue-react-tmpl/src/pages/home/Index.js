@@ -10,13 +10,13 @@ function Index(props) {
           Home Index
         </div>
 
-        <div className="bc-t-c">
+        <div className="bc-t-c bc-pd-tb-50">
           <Link to="/index-children" className="bc-pd-10">
             link to Index Children
           </Link>
         </div>
 
-        <div className="bc-t-c">
+        <div className="bc-t-c bc-pd-tb-50">
           <Link to="/components" className="bc-pd-10">
             link to Components
           </Link>
