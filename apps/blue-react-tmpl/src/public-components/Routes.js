@@ -29,7 +29,7 @@ export function genRoutes(routes, path) {
 		if (childrenRoute && childrenRoute.length > 0) {
 			routes = genRoutes(childrenRoute, CurrentRoute.path);
 		}
-		//写进数组，最后给Switch渲染
+		//写进集合，最后给Switch渲染
 		_routes.push((
 			<Route exact={CurrentRoute.exact}
 			       strict={CurrentRoute.strict}

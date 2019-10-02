@@ -1,6 +1,8 @@
 const types = {
-	//修改activity-indicator状态
-	TOGGLE_ACTIVITY_INDICATOR: 'TOGGLE_ACTIVITY_INDICATOR'
+	//修改weChat配置
+	CHANGE_WE_CHAT: 'CHANGE_WE_CHAT',
+	//view相关
+	CHANGE_VIEW: 'CHANGE_VIEW'
 };
 
 export default types;

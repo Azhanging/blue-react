@@ -1,18 +1,20 @@
-import React, { useEffect } from 'react';
-import $axios from '$axios';
+import React from 'react';
+import BrView from '$components/BrView';
+import BrHeader from '$components/BrHeader';
 
-function Index() {
-
-	useEffect(() => {
-		$axios.get(`/`)
-	}, []);
+function Index(props) {
 
 	return (
-		<div>
-			<div className="bc-pd-14 bc-t-c">
-				Components
+		<BrView routes={props.routes}>
+			<BrHeader centerControl={{
+				title: `首页子页面`
+			}}/>
+			<div>
+				<div className="bc-pd-14 bc-t-c">
+					Components
+				</div>
 			</div>
-		</div>
+		</BrView>
 	);
 }
 

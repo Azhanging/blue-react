@@ -3,13 +3,17 @@ import ReactDOM from 'react-dom';
 import AppRouter from '@router/AppRouter';
 import * as serviceWorker from './serviceWorker';
 import { useInReact } from '$use-in-react';
+import { device } from '$assets/js/device';
 
 //antd mobile全局樣式
 import 'antd-mobile/dist/antd-mobile.css';
 //使用全局scss
 import '@assets/css/blue-component.scss';
 
+//扩展react
 useInReact(React);
+//设备兼容性处理
+device();
 
 ReactDOM.render(<AppRouter/>, document.getElementById('root'));
 
