@@ -165,12 +165,12 @@ function focusHook(opts) {
 		)
 	) {
 		if (type === 'focusout') {
-			dispatch.CHANGE_VIEW({
+			dispatch.SET_VIEW({
 				tabBar: lastNav,
 				pageFixed: true
 			});
 		} else if (type === 'focusin') {
-			dispatch.CHANGE_VIEW({
+			dispatch.SET_VIEW({
 				tabBar: false,
 				pageFixed: false
 			});

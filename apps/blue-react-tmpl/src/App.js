@@ -4,9 +4,11 @@ import SuspenseLoading from '$components/SuspenseLoading';
 //主App节点
 function App(props) {
 	return (
-		<Suspense fallback={<SuspenseLoading/>}>
-			{props.children}
-		</Suspense>
+		<div className="bc-f-14rp bc-t-333">
+      <Suspense fallback={<SuspenseLoading/>}>
+        {props.children}
+      </Suspense>
+		</div>
 	);
 }
 

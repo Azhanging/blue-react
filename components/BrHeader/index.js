@@ -17,15 +17,18 @@ function BrHeader(props) {
 	const {
 		style,
 		advertisement,    //广告位插槽
+    //左边控制区域
 		leftControl = {
 			render: ``,
 			style: {},
 			backPath: ``
-		},      //左控制插槽
+		},
+    //右边控制区域
 		rightControl = {
 			render: ``,
 			style: {}
-		},     //右控制插槽
+		},
+		//中间控制区域
 		centerControl = {
 			title: ``,
 			render: ``,
@@ -44,18 +47,16 @@ function BrHeader(props) {
 					{(leftControl && leftControl.render) || (
 						<div className="bc-flex bc-flex-ai-c">
 							<a className="br-header-btn br-header-btn-icon" onClick={(e) => {
-								back({
-									path: leftControl.backPath
-								});
+								back(leftControl.backPath);
 								e.preventDefault();
 							}}>
-								<i className="br-icon br-icon-left bc-f-16"></i>
+								<i className="bp-icon bp-icon-left bc-f-16"></i>
 							</a>
 							<a className="br-header-btn br-header-btn-icon" onClick={(e) => {
 								history.push(config.path.home);
 								e.preventDefault();
 							}}>
-								<i className="br-icon br-icon-home bc-f-16"></i>
+								<i className="bp-icon bp-icon-home bc-f-16"></i>
 							</a>
 						</div>
 					)}

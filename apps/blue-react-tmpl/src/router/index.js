@@ -7,8 +7,4 @@ const history = createBrowserHistory();
 //扩展router
 useInReactRouter(history);
 
-history.listen((location, action) => {
-
-});
-
 export default history;

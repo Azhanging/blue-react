@@ -6,18 +6,30 @@ const Components = React.lazy(() => import(`@pages/components/Index`));
 
 //总的路由线
 const routes = [{
-	path: '/',
-	component: Index,
-	children: [{
-		path: 'index-children',
-		component: IndexChildren,
-	}, {
-		path: 'index-children/index-children-children',
-		component: IndexChildren
-	}]
+  path: '/',
+  exact: true,
+  stack: true,
+  component: Index,
+  meta: {
+    id: 1
+  }
 }, {
-	path: '/components',
-	component: Components,
+  path: '/index-children',
+  component: IndexChildren,
+  children: [{
+    path: '/index-children-children',
+    component: IndexChildren
+  }]
+}, {
+  path: '/components',
+  component: Components,
+  children: [{
+    path: 'child',
+    component: Components
+  }]
+}, {
+  path: '/components/:id/:uid',
+  component: Components
 }];
 
 export default routes;

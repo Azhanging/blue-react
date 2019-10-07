@@ -7,7 +7,7 @@ function Index(props) {
 	return (
 		<BrView routes={props.routes}>
 			<BrHeader centerControl={{
-				title: `首页子页面`
+				title: `Components`
 			}}/>
 			<div>
 				<div className="bc-pd-14 bc-t-c">

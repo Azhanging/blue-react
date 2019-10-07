@@ -1,8 +1,8 @@
 const types = {
 	//修改weChat配置
-	CHANGE_WE_CHAT: 'CHANGE_WE_CHAT',
+	SET_WE_CHAT: 'SET_WE_CHAT',
 	//view相关
-	CHANGE_VIEW: 'CHANGE_VIEW'
+	SET_VIEW: 'SET_VIEW'
 };
 
 export default types;

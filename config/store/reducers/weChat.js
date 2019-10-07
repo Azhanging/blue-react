@@ -1,19 +1,11 @@
 import types from '@store/types';
 import utils from 'blue-utils';
+import _state from '@store/state';
 
-function getInitState() {
-	return {
-		appId: "",
-		timestamp: '',
-		nonceStr: '',
-		signature: ''
-	};
-}
-
-export function weChat(state = getInitState(), action) {
+export function weChat(state = _state.weChat, action) {
 	const {type, payload} = action;
 	switch (type) {
-		case types.CHANGE_WE_CHAT:
+		case types.SET_WE_CHAT:
 			return utils.extend(state, payload);
 		default:
 			return state;
