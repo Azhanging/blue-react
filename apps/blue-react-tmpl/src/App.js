@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import SuspenseLoading from '$components/SuspenseLoading';
+import WTabBar from '@components/wap/WTabBar';
 
 //主App节点
 function App(props) {
@@ -8,6 +9,8 @@ function App(props) {
       <Suspense fallback={<SuspenseLoading/>}>
         {props.children}
       </Suspense>
+			{/*导航*/}
+			<WTabBar/>
 		</div>
 	);
 }

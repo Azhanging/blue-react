@@ -3,7 +3,7 @@ import utils from 'blue-utils';
 
 const state = utils.extend(publicState, {
   view: {
-    tabBar: 'home'
+    tabBar: 'components'
   }
 });
 
