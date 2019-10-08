@@ -1,12 +1,13 @@
+//组件样式
+import './index.scss';
 import React, { useState, useRef, useEffect } from 'react';
+import NProgress from 'nprogress';
 import utils from 'blue-utils';
+import { useSelector } from 'react-redux';
 import config from '@config';
 import { mockViewScroll } from '$assets/js/device';
 import { renderProps, renderClassName } from '$assets/js/render';
-import { setTabBarSubmenuIndex } from '$components/BrTabBar';
-import store from '@store';
-//组件样式
-import './index.scss';
+import { hideTabBarSubmenu } from '$components/BrTabBar';
 
 const viewScrollClassName = '.bv-view-scroll';
 
@@ -28,19 +29,13 @@ export function setCurrentViewScroll(position = {
   lastView && (lastView.scrollTop = position.x);
 }
 
-//隐藏子菜单
-function hideTabBarSubmenu() {
-  setTabBarSubmenuIndex({
-    tabBarSubmenuIndex: -1
-  });
-}
-
 //set view scroll event
 export function setViewEvent(opts = {}) {
   const {
     scrollElm,
     setScroll
   } = opts;
+
   //scroll 节流实现
   const scrollDebounce = utils.debounce(function (event) {
     const elm = event.target;
@@ -72,17 +67,14 @@ export function inputEvent() {
 
 //view中间层
 export default function BrView(props) {
-
-  const storeState = store.getState();
-
+  const tabBar = useSelector((state) => state.view.tabBar);
   const {
     router = {
       level: 1
     }
   } = props;
-
+  //设置scrollElm的ref
   const scrollElm = useRef();
-
   const [scroll, setScroll] = useState({
     top: 0
   });
@@ -95,11 +87,14 @@ export default function BrView(props) {
     });
   }, []);
 
+  //关闭进度
+  NProgress.done();
+
   return (
     <div
       className={renderClassName([
         "br-view",
-        !storeState.view.tabBar && 'no-tab-bar'
+        !tabBar && 'no-tab-bar'
       ])}
       onClick={hideTabBarSubmenu}
       onInput={inputEvent}

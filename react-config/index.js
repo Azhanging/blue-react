@@ -13,7 +13,9 @@ const reactConfig = {
       '$store': resolve('config/store'),
       '$assets': resolve('assets'),
       '$code': resolve('code'),
-      '$axios': resolve('use-in-react/axios')
+      '$wechat': resolve(`use-in-react/wechat`),
+      '$axios': resolve('use-in-react/axios'),
+      '$api': resolve('api'),
     }
   }
 };

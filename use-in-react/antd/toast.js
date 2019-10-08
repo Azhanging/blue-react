@@ -14,7 +14,12 @@ export function showLoading(opts = {}) {
 }
 
 //关闭loading
-export function hideLoading() {
-  loadingQueue.dequeue();
-  loadingQueue.isEmpty() && Toast.hide();
+export function hideLoading(hideAllLoading = false) {
+  if (hideAllLoading === true) {
+    loadingQueue.clear();
+    Toast.hide();
+  } else {
+    loadingQueue.dequeue();
+    loadingQueue.isEmpty() && Toast.hide();
+  }
 }

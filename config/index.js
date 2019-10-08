@@ -2,9 +2,6 @@ import { getCurrentDevice } from '$assets/js/device';
 
 const config = {
 
-  //是否为混合开发（使用区分绑定手机和跳转登录的是跳到base还是indexPath）
-  mixedDevelopment: false,
-
   //获取用户用户信息
   user: {
     url: ''
@@ -16,6 +13,18 @@ const config = {
     tabBar: false,                    //默认的导航名，定义到的bv-tab-bar中使用
     keepAlive: {                    //vue 中keepAlive设置不需要缓存的components
       exclude: []
+    }
+  },
+
+  //路由相关
+  router: {
+    //路由模式
+    mode: 'hash',
+    hooks: {
+      //没有after hook执行
+      unAfterHook() {
+
+      }
     }
   },
 
@@ -42,8 +51,6 @@ const config = {
 
   //登录状态
   login: {
-    //cookie通过登录后设cookie来识别登录态，token通过localStorage中对应的token key来识别登录态
-    mode: `cookie`,
     in: {
       url: ``,          //token的login api请求
     },

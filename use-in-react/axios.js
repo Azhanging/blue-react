@@ -1,10 +1,11 @@
 import axios from 'axios';
 import config from '@config';
 import utils from 'blue-utils';
+import { Toast } from 'antd-mobile';
 import code from '$code/code';    //错误码
 import { codeHandler } from '$code';   //错误码处理
 import { showLoading, hideLoading } from "./antd/toast";
-import history from '@router';
+import history, { routerMeta } from '@router';
 
 //设置header中的token
 function setHeaderToken(axiosConfig) {
@@ -32,6 +33,8 @@ const $axios = axios.create({
 //拦截器request
 $axios.interceptors.request.use((axiosConfig) => {
   const { isShowLoading } = axiosConfig;
+  //把路由当前路由的id设置给axios config中
+  axiosConfig.routeID = routerMeta.getCurrentRouteID();
   //设置头Token
   setHeaderToken(axiosConfig);
   //set form data type
@@ -48,37 +51,35 @@ $axios.interceptors.request.use((axiosConfig) => {
 
 //拦截器response
 $axios.interceptors.response.use((res) => {
-	const status = res.status;
-	const axiosConfig = res.config;
-	const isShowLoading = axiosConfig.isShowLoading;
-	if (isShowLoading === undefined || isShowLoading === true) {
-		hideLoading();
-	}
-	//success httprequest state
-	if (status === 200) {
-		const { code: requestCode, message } = res.data;
-		//success code
-		if (requestCode === code.SUCCESS) {
-			return res.data;
-		} else if (requestCode === code.REDIRECT) {    //作为重定向跳转
-			let redirectTime = 0;
-			//存在重定向信息
-			if (message) {
-				$toast({
-					message
-				});
-				redirectTime = 1000;
-			}
-			setTimeout(() => {
-				redirect(res.data);
-			}, redirectTime);
-		} else {
-			//code处理
-			codeHandler(res.data);
-			//避免原来then上的业务，走reject
-			return Promise.reject(res.data);
-		}
-	}
+  const status = res.status;
+  const axiosConfig = res.config;
+  const isShowLoading = axiosConfig.isShowLoading;
+  if (isShowLoading === undefined || isShowLoading === true) {
+    hideLoading();
+  }
+  //success httprequest state
+  if (status === 200) {
+    const { code: requestCode, message } = res.data;
+    //success code
+    if (requestCode === code.SUCCESS) {
+      return res.data;
+    } else if (requestCode === code.REDIRECT) {    //作为重定向跳转
+      let redirectTime = 0;
+      //存在重定向信息
+      if (message) {
+        Toast.info(message);
+        redirectTime = 1000;
+      }
+      setTimeout(() => {
+        redirect(res.data);
+      }, redirectTime);
+    } else {
+      //code处理
+      codeHandler(res.data);
+      //避免原来then上的业务，走reject
+      return Promise.reject(res.data);
+    }
+  }
 }, (error) => {
   const axiosConfig = error.config;
   const isTimeout = /timeout/ig.test(error.message);
@@ -88,16 +89,13 @@ $axios.interceptors.response.use((res) => {
 
   //检查当前的路由标识和当前路由中的id标识是否一样
   //不一样不去执行后面异步的操作
-  /*if (!routerMeta.isCurrentRouteID(axiosConfig.routeID)) {
+  if (!routerMeta.isCurrentRouteID(axiosConfig.routeID)) {
     return Promise.reject(error);
-  }*/
+  }
 
   //处理超时信息，重写信息,只有超时有提示
   if (isTimeout) {
-    error.message = '请求超时，请刷新页面';
-    $toast({
-      message: error.message
-    });
+    Toast.info(error.message = '请求超时，请刷新页面');
   }
 
   //跳转指定的错误状态页

@@ -6,13 +6,16 @@ import history from "./index";
 import store from '@store';
 import routes from './routes';
 import Routes from '$components/Routes';
+import { routerMeta } from './index';
+
+const $routes = routerMeta.setMeta(routes);
 
 export function AppRouter() {
   return (
     <Provider store={store}>
       <Router history={history}>
         <App>
-          <Routes routes={routes}/>
+          <Routes routes={$routes}/>
         </App>
       </Router>
     </Provider>
