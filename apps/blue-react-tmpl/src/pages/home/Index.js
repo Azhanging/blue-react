@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import BrLayoutView from '@components/public/BrLayoutView';
 import BrHeader from '$components/BrHeader';
-import history from '@router';
+import $axios from '$axios';
 
 function List() {
   const list = [];
@@ -22,7 +22,17 @@ function List() {
 }
 
 function Index(props) {
-  console.log(history.location.query);
+
+  useEffect(() => {
+    $axios.get('/api/index/index', {
+      page: 1,
+      id: 1
+    });
+
+    $axios.post('/mock/data')
+
+  }, []);
+
   return (
     <BrLayoutView routes={props.routes}>
 
@@ -38,6 +48,12 @@ function Index(props) {
         <div className="bc-t-c bc-pd-tb-50">
           <Link to="/index-children" className="bc-pd-10">
             link to Index Children
+          </Link>
+        </div>
+
+        <div className="bc-t-c bc-pd-tb-50">
+          <Link to="/formik" className="bc-pd-10">
+            Formik
           </Link>
         </div>
 

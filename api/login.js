@@ -23,11 +23,11 @@ export function apiLoginOut(opts = {}) {
   return $axios(utils.extend({
     url: login.out.url
   }, opts)).then((data) => {
-    const redirectUrl = login.out.redirectUrl || '/';
+    const backUrl = login.out.backUrl || '/';
     //登录态存储
     clearLoginStorage();
     //跳到登录页
-    router.routerTo(redirectUrl);
+    router.routerTo(backUrl);
     return data;
   });
 }

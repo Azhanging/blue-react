@@ -30,7 +30,7 @@ function setHistory(history) {
   //设置参数
   location.query = utils.parseParams(utils.getLinkParams(location.search));
   //设置路由to,from
-  history.navigation = {
+  history.navigator = {
     to: historyQueue.first(),
     from: historyQueue.last()
   };
@@ -51,14 +51,14 @@ function setRouteNavigator(history) {
 //路由routerBefore执行
 function routerBefore(opts = {}) {
   const { history } = opts;
+  //显示进度条
+  NProgress.start();
   //关闭所有的loading
   antd.hideLoading(true);
   //初始化page位置
   pageOffsetDebounce();
   //设置focus状态
   setFocusStatus(false);
-  //显示进度条
-  NProgress.start();
   //隐藏子菜单
   hideTabBarSubmenu();
   //设置to和from

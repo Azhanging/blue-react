@@ -18,22 +18,11 @@ function shareLinkParams() {
   const share = config.share;
   const shareParams = share.params;
   //用户手机号
-  const phone = store.state.userInfo.phone;
-
-  const path = (() => {
-    const { mode } = config.router;
-    const { pathname } = router.location;
-    if (mode === 'history') {
-      return pathname;
-    } else if (mode === 'hash') {
-      return `/#${pathname}`;
-    }
-  })();
+  const phone = store.getState().userInfo.phone;
 
   const params = {
     [shareParams.phone]: phone ? Base64.encode(phone) : '',
-    [shareParams.redirectUrl]: path,
-    [shareParams.wantUrl]: `${config.path.indexPath}`     //业务需要，添加跳转链接
+    [shareParams.backUrl]: history.$getModePath()
   };
 
   return utils.stringifyParams(params);

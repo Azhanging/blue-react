@@ -19,12 +19,9 @@ const config = utils.extend(publicConfig, {
     static: window.location.origin
   },
   share: {
-    title: "blue-vue-tmpl",
-    deps: "blue-vue-tmpl is vue public template",
+    title: "blue-react-tmpl",
+    deps: "blue-react-tmpl is vue public template",
     imgUrl: ""
-  },
-  login: {
-    mode: `token`
   }
 });
 

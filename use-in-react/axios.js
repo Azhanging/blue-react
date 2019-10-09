@@ -6,6 +6,7 @@ import code from '$code/code';    //错误码
 import { codeHandler } from '$code';   //错误码处理
 import { showLoading, hideLoading } from "./antd/toast";
 import history, { routerMeta } from '@router';
+import { redirect } from '$assets/js/redirect';
 
 //设置header中的token
 function setHeaderToken(axiosConfig) {
@@ -57,7 +58,7 @@ $axios.interceptors.response.use((res) => {
   if (isShowLoading === undefined || isShowLoading === true) {
     hideLoading();
   }
-  //success httprequest state
+  //success http request state
   if (status === 200) {
     const { code: requestCode, message } = res.data;
     //success code
@@ -73,6 +74,7 @@ $axios.interceptors.response.use((res) => {
       setTimeout(() => {
         redirect(res.data);
       }, redirectTime);
+      return Promise.reject(res.data);
     } else {
       //code处理
       codeHandler(res.data);
@@ -101,7 +103,7 @@ $axios.interceptors.response.use((res) => {
   //跳转指定的错误状态页
   if (status >= 400 && status < 600 && !config.debug) {
     const errorPath = errorConfig[status] ? errorConfig[status].path : errorConfig[404].path;
-    history.push(errorPath);
+    history.replace(errorPath);
   }
 
   return Promise.reject(error);

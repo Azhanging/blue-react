@@ -1,41 +1,40 @@
 import React from 'react';
 
-const Index = React.lazy(() => import(`@pages/home/Index`));
-const IndexChildren = React.lazy(() => import(`@pages/home/IndexChildren`));
-const Components = React.lazy(() => import(`@pages/components/Index`));
-
 //总的路由线
 const routes = [{
   path: '/',
   exact: true,
   stack: true,
-  component: Index,
+  component: React.lazy(() => import(`@pages/home/Index`)),
   meta: {
     tabBar: 'components'
   }
 }, {
   path: '/index-children',
-  component: IndexChildren,
+  component: React.lazy(() => import(`@pages/home/IndexChildren`)),
   meta: {
     title: 'index-children'
   },
   children: [{
     path: '/index-children-children',
-    component: IndexChildren
+    component: React.lazy(() => import(`@pages/home/IndexChildren`))
   }]
 }, {
   path: '/components',
-  component: Components,
+  component: React.lazy(() => import(`@pages/components/Index`)),
   meta: {
     title: 'components'
   },
   children: [{
     path: 'child',
-    component: Components
+    component: React.lazy(() => import(`@pages/components/Index`))
   }]
 }, {
   path: '/components/:id/:uid',
-  component: Components
+  component: React.lazy(() => import(`@pages/components/Index`))
+}, {
+  path: '/formik',
+  component: React.lazy(() => import(`@pages/home/Formik`))
 }];
 
 export default routes;

@@ -9,7 +9,7 @@ const config = {
 
   //视图相关
   view: {
-    title: "blue-vue-tmpl-title",       //默认的文档标题
+    title: "blue-react-tmpl-title",       //默认的文档标题
     tabBar: false,                    //默认的导航名，定义到的bv-tab-bar中使用
     keepAlive: {                    //vue 中keepAlive设置不需要缓存的components
       exclude: []
@@ -19,7 +19,7 @@ const config = {
   //路由相关
   router: {
     //路由模式
-    mode: 'hash',
+    mode: 'history',
     hooks: {
       //没有after hook执行
       unAfterHook() {
@@ -57,7 +57,7 @@ const config = {
     //登录退出相关
     out: {
       url: ``,    //请求url
-      redirectUrl: ``   //退出后到的路由地址，不存在跳回到首页
+      backUrl: ``   //退出后到的路由地址，不存在跳回到首页
     },
     storage: {
       ['token']: `token`
@@ -76,14 +76,13 @@ const config = {
   //公共的分享相关
   share: {
     origin: '',                         //分享的域名
-    title: "blue-vue-tmpl",             //分享的标题
-    deps: "blue-vue-tmpl is vue public template",     //分享的简介
+    title: "blue-react-tmpl",             //分享的标题
+    deps: "blue-react-tmpl is react public template",     //分享的简介
     imgUrl: "",                         //分享图片
     //分享相关的参数的
     params: {
       phone: 'n',                     //绑定参数
-      redirectUrl: 'redirect_url',    //绑定后重定向回来的参数
-      wantUrl: 'want_url'             //想要跳转的地址
+      backUrl: 'backUrl',    //绑定后重定向回来的参数
     }
   },
 
