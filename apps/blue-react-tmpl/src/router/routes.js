@@ -7,7 +7,7 @@ const routes = [{
   stack: true,
   component: React.lazy(() => import(`@pages/home/Index`)),
   meta: {
-    tabBar: 'components'
+    tabBar: ''
   }
 }, {
   path: '/index-children',

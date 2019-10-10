@@ -6,7 +6,8 @@
     "blue-utils": "^1.1.0",
     "js-base64": "^2.5.1",
     "nprogress": "^0.2.0",
-    "velocity-animate": "^1.5.2"
+    "velocity-animate": "^1.5.2",
+    "yup": "^0.27.0"
   },
   "devDependencies": {
     "blue-mock-server": "^1.0.1",

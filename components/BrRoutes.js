@@ -16,6 +16,9 @@ export function sortRoutes(routes) {
   });
 }
 
+//缓存
+const cache = {};
+
 //生成路由
 export function genRoutes(routes, path) {
   const _routes = [];
@@ -44,6 +47,7 @@ export function genRoutes(routes, path) {
 
           /*这里设置route的props给到Page的组件内部*/
           const { history } = routeProps;
+          const { location } = history;
 
           //设置路由内部route数据
           history.route = {
@@ -58,9 +62,16 @@ export function genRoutes(routes, path) {
             history
           });
 
-          return (
-            <CurrentRoute.component route={routeProps.history.route} routes={routes}/>
-          );
+          const component = (<CurrentRoute.component route={routeProps.history.route} routes={routes}/>);
+
+          //设置组件缓存
+          cache[location.key] = {
+            component
+          };
+
+          console.log(cache);
+
+          return component;
         }}
       />
     ));

@@ -11,15 +11,26 @@ function setHistoryListen(history) {
   });
 }
 
+//参照history中的state key 生成
+function createKey() {
+  return Math.random().toString(36).substr(2, 6);
+}
+
 //初始化的时候不会走listen,手动触发popState
 function dispatchPopStateEvent() {
   const popStateEvent = new Event('popstate');
-  popStateEvent.state = null;
+  //设置popstate事件state
+  popStateEvent.state = {
+    key: createKey()
+  };
   window.dispatchEvent(popStateEvent);
 }
 
 //扩展history
 function extendHistory(history) {
+
+  //扩展history原生方法
+  extendHistoryNativeMethods(history);
 
   //获取当前地址href，直接获取location.href会出现路由未更新前的地址（分享全路径需要使用）
   history.$getHref = function () {
@@ -76,6 +87,32 @@ function extendHistory(history) {
       return `${path}`;
     }
   };
+}
+
+//扩展history原生方法
+function extendHistoryNativeMethods(history) {
+
+  const { push, replace } = history;
+
+  const methods = [{
+    name: 'push',
+    method: push
+  }, {
+    name: 'replace',
+    method: replace
+  }];
+
+  methods.forEach((item) => {
+    const { name, method } = item;
+    history[name] = function (path, state) {
+      const currentPathname = this.location.pathname;
+      if (path === currentPathname) {
+        console.warn(`path same current path:${path}`);
+        return;
+      }
+      method.call(this, path, state);
+    };
+  });
 }
 
 //使用到history

@@ -1,14 +1,21 @@
 import React, { useState } from 'react';
 import BrLayoutView from '@components/public/BrLayoutView';
+import BrFormikError from '$components/BrFormikError';
 import { Formik, Field, Form } from 'formik';
 import $axios from '$axios';
+import * as Yup from 'yup';
 
 function initFormData() {
   return {
     name: '',
     age: ''
-  }
+  };
 }
+
+const validateFormData = Yup.object().shape({
+  name: Yup.string().required(`name has error`).matches(/.+/, `name has error`),
+  age: Yup.number().required(`age has error`)
+});
 
 function FormikPage(props) {
 
@@ -17,12 +24,13 @@ function FormikPage(props) {
   return (
     <BrLayoutView routes={props.routes}>
 
-      <div>
-        name:{formData.name}
-      </div>
-
-      <div>
-        age:{formData.age}
+      <div className={"bc-t-c"}>
+        <div>
+          name:{formData.name}
+        </div>
+        <div>
+          age:{formData.age}
+        </div>
       </div>
 
       <Formik
@@ -45,14 +53,10 @@ function FormikPage(props) {
 
         validate={(values) => {
           setFormData(values);
-          const errors = {};
-          if (!/.+/.test(values.name)) {
-            errors.name = `name is empty`;
-          }
-          if (!/^\d+$/.test(values.age)) {
-            errors.age = `error type number`;
-          }
-          return errors;
+        }}
+
+        validationSchema={() => {
+          return validateFormData;
         }}
 
         render={(props) => {
@@ -60,7 +64,6 @@ function FormikPage(props) {
             errors,
             touched
           } = props;
-          //console.log(props);
           return (
             <Form className="bc-t-c">
               <Field name="name" type="text" render={({ field }) => (
@@ -68,13 +71,14 @@ function FormikPage(props) {
                   <div>
                     <input className="bc-input" {...field} placeholder="name input"/>
                   </div>
-                  <div className="bc-t-red">
-                    {errors.name && touched.name && (
-                      <div>
-                        {errors.name}
-                      </div>
-                    )}
-                  </div>
+
+                  {/*错误组件处理*/}
+                  <BrFormikError errors={errors} touched={touched} name="name">
+                    <div className="bc-t-red">
+                      {errors.name}
+                    </div>
+                  </BrFormikError>
+
                 </div>
               )}/>
               <Field type="radio" name="age" render={(props) => {
@@ -84,13 +88,14 @@ function FormikPage(props) {
                     <div>
                       <input className="bc-input" {...field} placeholder="age input"/>
                     </div>
-                    <div className="bc-t-red">
-                      {errors.age && touched.age && (
-                        <div>
-                          {errors.age}
-                        </div>
-                      )}
-                    </div>
+
+                    {/*错误组件处理*/}
+                    <BrFormikError errors={errors} touched={touched} name="age">
+                      <div className="bc-t-red">
+                        {errors.age}
+                      </div>
+                    </BrFormikError>
+
                   </div>
                 );
               }}/>
