@@ -17,7 +17,10 @@ export function sortRoutes(routes) {
 }
 
 //缓存
-const cache = {};
+const cache = {
+  key: '',
+  list: {}
+};
 
 //生成路由
 export function genRoutes(routes, path) {
@@ -64,8 +67,10 @@ export function genRoutes(routes, path) {
 
           const component = (<CurrentRoute.component route={routeProps.history.route} routes={routes}/>);
 
+          cache.key = location.key;
+
           //设置组件缓存
-          cache[location.key] = {
+          cache.list[location.key] = {
             component
           };
 
