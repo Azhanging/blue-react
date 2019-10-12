@@ -1,11 +1,12 @@
 import React from 'react';
+import HomeIndex from '@pages/home/Index';
 
 //总的路由线
 const routes = [{
   path: '/',
   exact: true,
   stack: true,
-  component: React.lazy(() => import(`@pages/home/Index`)),
+  component: HomeIndex /*React.lazy(() => import(`@pages/home/Index`))*/,
   meta: {
     tabBar: ''
   }

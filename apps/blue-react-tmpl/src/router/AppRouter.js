@@ -15,7 +15,7 @@ export function AppRouter() {
     <ReduxProvider store={store}>
       <Router history={history}>
         <App>
-          <BrRoutes routes={$routes}/>
+          <BrRoutes history={history} routes={$routes}/>
         </App>
       </Router>
     </ReduxProvider>
