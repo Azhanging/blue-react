@@ -1,111 +1,118 @@
 import React, { useEffect, useState } from 'react';
+import history from '@router';
+import { useCache } from '$components/BrRoutes';
 import { Link } from 'react-router-dom';
 import BrLayoutView from '@components/public/BrLayoutView';
 import BrHeader from '$components/BrHeader';
 
 function List() {
-  const list = [];
-  for (let i = 0; i < 30; i++) {
-    list.push((
-      <div className="bc-t-c bc-pd-50" key={i}>
-        {i}
-      </div>
-    ));
-  }
+	const list = [];
+	for (let i = 0; i < 30; i++) {
+		list.push((
+			<div className="bc-t-c bc-pd-50" key={i}>
+				{i}
+			</div>
+		));
+	}
 
-  return (
-    <ul className="bc-reset-ul">
-      {list}
-    </ul>
-  );
+	return (
+		<ul className="bc-reset-ul">
+			{list}
+		</ul>
+	);
 }
 
 function Index(props) {
-  const { cache } = props;
-  const { getState: getCache, removeState } = cache;
-  const [count, setCount] = useState(getCache('count', 0));
-  const [showState, setShowState] = useState(getCache('cacheState', true));
 
-  useEffect(() => {
-    console.log(props);
-    return () => {
-      removeState();
-    }
-  });
+	const {
+		setState,
+		getState,
+		removeState
+	} = useCache({
+		history
+	});
 
-  //设置缓存
-  cache.setState({
-    count,
-    showState
-  });
+	const [count, setCount] = useState(getState('count', 0));
+	const [showState, setShowState] = useState(getState('cacheState', true));
 
-  return (
-    <BrLayoutView routes={props.routes}>
+	useEffect(()=>{
+		return ()=>{
+			removeState();
+		};
+	},[]);
 
-      <BrHeader centerControl={{
-        title: 'HOME'
-      }}/>
+	setState({
+		count,
+		showState
+	});
 
-      <div>
-        <div className="bc-pd-14 bc-t-c">
-          Home Index
-        </div>
+	return (
+		<BrLayoutView routes={props.routes}>
 
-        {showState && (
-          <div className={"bc-t-c"}>
-            <div>
-              <button onClick={() => {
-                setCount(count + 1)
-              }}>
-                count {count}
-              </button>
-            </div>
-          </div>
-        )}
+			<BrHeader centerControl={{
+				title: 'HOME'
+			}}/>
 
-        <div>
-          <button onClick={() => {
-            setShowState(!showState)
-          }}>
-            toggle show
-          </button>
-        </div>
+			<div>
+				<div className="bc-pd-14 bc-t-c">
+					Home Index
+				</div>
 
-        <div className="bc-t-c bc-pd-tb-50">
-          <Link to="/index-children" className="bc-pd-10">
-            link to Index Children
-          </Link>
-        </div>
+				{showState && (
+					<div className={"bc-t-c"}>
+						<div>
+							<button onClick={() => {
+								setCount(count + 1)
+							}}>
+								count {count}
+							</button>
+						</div>
+					</div>
+				)}
 
-        <div className="bc-t-c bc-pd-tb-50">
-          <Link to="/formik" className="bc-pd-10">
-            Formik
-          </Link>
-        </div>
+				<div>
+					<button onClick={() => {
+						setShowState(!showState)
+					}}>
+						toggle show
+					</button>
+				</div>
 
-        <div className="bc-t-c bc-pd-tb-50">
-          <Link to="/components" className="bc-pd-10">
-            link to Components
-          </Link>
-        </div>
+				<div className="bc-t-c bc-pd-tb-50">
+					<Link to="/index-children" className="bc-pd-10">
+						link to Index Children
+					</Link>
+				</div>
 
-        <div className="bc-t-c bc-pd-tb-50">
-          <Link to="/components/2/3" className="bc-pd-10">
-            link to Components
-          </Link>
-        </div>
+				<div className="bc-t-c bc-pd-tb-50">
+					<Link to="/formik" className="bc-pd-10">
+						Formik
+					</Link>
+				</div>
 
-        <div className="bc-t-c bc-pd-10">
-          <button type="button" className="bc-btn bc-btn-primary" onClick={(e) => {
-            React.$antd.showLoading();
-          }}>
-            loading...
-          </button>
-        </div>
-        <List/>
-      </div>
-    </BrLayoutView>
-  );
+				<div className="bc-t-c bc-pd-tb-50">
+					<Link to="/components" className="bc-pd-10">
+						link to Components
+					</Link>
+				</div>
+
+				<div className="bc-t-c bc-pd-tb-50">
+					<Link to="/components/2/3" className="bc-pd-10">
+						link to Components
+					</Link>
+				</div>
+
+				<div className="bc-t-c bc-pd-10">
+					<button type="button" className="bc-btn bc-btn-primary" onClick={(e) => {
+						React.$antd.showLoading();
+					}}>
+						loading...
+					</button>
+				</div>
+				<List/>
+			</div>
+		</BrLayoutView>
+	);
 }
 
 export default Index;
