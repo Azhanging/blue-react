@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import BrView from '$components/BrView';
 import BrHeader from '$components/BrHeader';
 import { Link } from 'react-router-dom';
@@ -8,17 +8,10 @@ function Children(props) {
 
 	const {
 		setState,
-		getState,
-		removeState
+		getState
 	} = useCache();
 
 	const [count, setCount] = useState(getState('count', 0));
-
-	useEffect(() => {
-		return () => {
-			removeState();
-		};
-	}, [removeState]);
 
 	//设置缓存
 	setState({

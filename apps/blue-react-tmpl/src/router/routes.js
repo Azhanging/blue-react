@@ -13,7 +13,10 @@ const routes = [{
 	path: '/index-children',
 	component: React.lazy(() => import(`@pages/home/IndexChildren`)),
 	meta: {
-		title: 'index-children'
+		title: 'index-children',
+		refresh:{
+			unforcedList: [/index-children/]
+		}
 	},
 	children: [{
 		path: 'index-children-children',

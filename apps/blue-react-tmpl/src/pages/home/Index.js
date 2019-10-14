@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useCache } from '$components/BrRoutes';
 import { Link } from 'react-router-dom';
 import BrLayoutView from '@components/public/BrLayoutView';
@@ -25,18 +25,11 @@ function Index(props) {
 
   const {
     setState,
-    getState,
-    removeState
+    getState
   } = useCache();
 
   const [count, setCount] = useState(getState('count', 0));
   const [showState, setShowState] = useState(getState('cacheState', true));
-
-  useEffect(() => {
-    return () => {
-      removeState();
-    };
-  }, [removeState]);
 
   setState({
     count,
