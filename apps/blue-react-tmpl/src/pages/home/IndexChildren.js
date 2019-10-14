@@ -3,7 +3,6 @@ import BrView from '$components/BrView';
 import BrHeader from '$components/BrHeader';
 import { Link } from 'react-router-dom';
 import { useCache } from '$components/BrRoutes';
-import history from '@router';
 
 function Children(props) {
 
@@ -11,9 +10,7 @@ function Children(props) {
 		setState,
 		getState,
 		removeState
-	} = useCache({
-		history
-	});
+	} = useCache();
 
 	const [count, setCount] = useState(getState('count', 0));
 
@@ -21,7 +18,7 @@ function Children(props) {
 		return () => {
 			removeState();
 		};
-	}, []);
+	}, [removeState]);
 
 	//设置缓存
 	setState({
