@@ -25,7 +25,8 @@ function Index(props) {
 
   const {
     setState,
-    getState
+    getState,
+    setPosition
   } = useCache();
 
   const [count, setCount] = useState(getState('count', 0));
@@ -37,7 +38,7 @@ function Index(props) {
   });
 
   return (
-    <BrLayoutView routes={props.routes}>
+    <BrLayoutView routes={props.routes} setPosition={setPosition}>
 
       <BrHeader centerControl={{
         title: 'HOME'

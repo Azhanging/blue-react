@@ -11,16 +11,8 @@ const pageOffsetDebounce = utils.debounce(function () {
   window.pageYOffset = 0;
 }, 10);
 
-//设置history
-function setHistory(history) {
-  const { location } = history;
-  //设置参数
-  location.query = utils.parseParams(utils.getLinkParams(location.search));
-}
-
 //路由routerBefore执行
-function routerBefore(opts = {}) {
-  const { history } = opts;
+function routerBefore() {
   //显示进度条
   NProgress.start();
   //关闭所有的loading
@@ -31,8 +23,6 @@ function routerBefore(opts = {}) {
   setFocusStatus(false);
   //隐藏子菜单
   hideTabBarSubmenu();
-  //设置history
-  setHistory(history);
   //获取微信配置信息
   getWeChatConfig();
 }

@@ -1,15 +1,4 @@
 import config from '@config';
-import routerBefore from './router-before';
-
-//设置history的监听
-function setHistoryListen(history) {
-//添加路由监听
-  history.listen(function () {
-    routerBefore({
-      history
-    });
-  });
-}
 
 //扩展history
 function extendHistory(history) {
@@ -94,9 +83,9 @@ function extendHistoryModuleMethods(history) {
 
   methods.forEach((item) => {
     const { name, method } = item;
-    history[name] = function (path, state) {
+    history[name] = function (path, state, restrict = false) {
       const currentPathname = history.location.pathname;
-      if (path === currentPathname) {
+      if (path === currentPathname && restrict === false) {
         console.warn(`path same current path:${path}`);
         return;
       }
@@ -115,12 +104,6 @@ export function useInReactRouter(history) {
   };
   //设置路由模式
   history.mode = config.router.mode;
-  //设置history的监听
-  setHistoryListen(history);
-  //手动触发事件
-  const { pathname, search } = history.location;
-  //手动触发一次
-  history.replace(`${pathname}${search}`);
   //扩展history
   extendHistory(history);
 }
