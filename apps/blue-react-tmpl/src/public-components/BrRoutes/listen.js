@@ -7,6 +7,7 @@ export function setHistoryListen(opts = {}) {
     utils.hook(null, routerBefore, [{
       history
     }]);
+    console.log(`routerBefore`);
   });
   //手动触发事件
   const { pathname, search } = history.location;

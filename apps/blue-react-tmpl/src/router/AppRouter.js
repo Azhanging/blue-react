@@ -20,7 +20,7 @@ export function AppRouter() {
         <BrRoutesProvider history={history}>
           <App>
             <BrRoutes
-              routerBefor={routerBefore}
+	            routerBefore={routerBefore}
               routes={$routes}
               routerAfter={routerAfter}
             />

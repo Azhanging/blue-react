@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49363240-7bdd-46b3-9142-894d8dbb4a98" name="Default" comment="" />
+    <list default="true" id="49363240-7bdd-46b3-9142-894d8dbb4a98" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/pages/home/IndexChildren.js" afterPath="$PROJECT_DIR$/apps/blue-react-tmpl/src/pages/home/IndexChildren.js" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/listen.js" afterPath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/listen.js" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrView/index.js" afterPath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrView/index.js" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/router/AppRouter.js" afterPath="$PROJECT_DIR$/apps/blue-react-tmpl/src/router/AppRouter.js" />
+      <change beforePath="$PROJECT_DIR$/components/BrView/index.js" afterPath="$PROJECT_DIR$/components/BrView/index.js" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,28 +23,14 @@
     <favorites_list name="blue-react-program" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46489727">
+    <splitter split-orientation="horizontal" split-proportion="0.48929963">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/components/BrRoutes/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="58">
-                  <caret line="100" column="37" lean-forward="true" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
-                  <folding>
-                    <element signature="e#0#61#0" expanded="true" />
-                    <element signature="e#903#999#0" expanded="false" />
-                    <element signature="e#1041#1108#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="listen.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/components/BrRoutes/listen.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="348">
-                  <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+                <state relative-caret-position="2576">
+                  <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -46,12 +39,21 @@
           <file leaf-file-name="cache.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/components/BrRoutes/cache.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="203">
-                  <caret line="67" column="13" lean-forward="false" selection-start-line="67" selection-start-column="2" selection-end-line="67" selection-end-column="13" />
+                <state relative-caret-position="311">
+                  <caret line="182" column="35" lean-forward="false" selection-start-line="182" selection-start-column="35" selection-end-line="182" selection-end-column="35" />
                   <folding>
                     <element signature="e#0#76#0" expanded="true" />
-                    <element signature="e#273#346#0" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="98">
+                  <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -59,8 +61,8 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/router/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="58">
-                  <caret line="2" column="51" lean-forward="true" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+                <state relative-caret-position="46">
+                  <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
                   <folding />
                 </state>
               </provider>
@@ -69,7 +71,7 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/use-in-react-router/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="174">
+                <state relative-caret-position="138">
                   <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="28" />
                   <folding>
                     <element signature="e#2255#2305#0" expanded="false" />
@@ -81,8 +83,8 @@
           <file leaf-file-name="BrLayoutView.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/components/public/BrLayoutView.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-435">
-                  <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+                <state relative-caret-position="-124">
+                  <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -90,11 +92,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/components/BrView/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="406">
-                  <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+                <state relative-caret-position="317">
+                  <caret line="102" column="25" lean-forward="false" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
                   <folding>
                     <element signature="e#7#29#0" expanded="true" />
                   </folding>
@@ -105,7 +107,7 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/config/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="151">
+                <state relative-caret-position="506">
                   <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
                   <folding />
                 </state>
@@ -119,8 +121,8 @@
           <file leaf-file-name="router-before.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/use-in-react-router/router-before.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
-                  <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+                <state relative-caret-position="217">
+                  <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="21" />
                   <folding>
                     <element signature="e#0#34#0" expanded="true" />
                   </folding>
@@ -128,10 +130,20 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="listen.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/listen.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="69">
+                  <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="32" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrView/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="499">
+                <state relative-caret-position="493">
                   <caret line="90" column="18" lean-forward="true" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
                   <folding />
                 </state>
@@ -141,8 +153,8 @@
           <file leaf-file-name="AppRouter.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/router/AppRouter.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="261">
-                  <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
+                <state relative-caret-position="410">
+                  <caret line="28" column="15" lean-forward="true" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                     <element signature="e#363#423#0" expanded="true" />
@@ -154,7 +166,7 @@
           <file leaf-file-name="router-after.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/use-in-react-router/router-after.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="406">
+                <state relative-caret-position="391">
                   <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
                   <folding>
                     <element signature="e#0#53#0" expanded="true" />
@@ -166,8 +178,8 @@
           <file leaf-file-name="IndexChildren.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/pages/home/IndexChildren.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="232">
-                  <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+                <state relative-caret-position="354">
+                  <caret line="52" column="41" lean-forward="false" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
@@ -178,7 +190,7 @@
           <file leaf-file-name="cache.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/cache.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="586">
+                <state relative-caret-position="3818">
                   <caret line="168" column="16" lean-forward="false" selection-start-line="168" selection-start-column="16" selection-end-line="168" selection-end-column="16" />
                   <folding />
                 </state>
@@ -188,7 +200,7 @@
           <file leaf-file-name="Index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/pages/home/Index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="214">
+                <state relative-caret-position="828">
                   <caret line="40" column="64" lean-forward="false" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="64" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
@@ -212,9 +224,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>genRoutes</find>
-      <find>cache</find>
-      <find>useState</find>
       <find>useSele</find>
       <find>route</find>
       <find>history</find>
@@ -229,10 +238,8 @@
       <find>useC</find>
       <find>utils</find>
       <find>useContext</find>
-      <find>routerBefore</find>
       <find>extendNativeHistory</find>
       <find>useEffect</find>
-      <find>setHistoryListen</find>
       <find>NProgress</find>
       <find>eslink-disabled</find>
       <find>// eslink-dis</find>
@@ -242,6 +249,11 @@
       <find>setPosition</find>
       <find>setViewEvent</find>
       <find>useCache</find>
+      <find>eslint-dis</find>
+      <find>eslint-disable</find>
+      <find>eslint-disable-next-</find>
+      <find>routerBefore</find>
+      <find>setHistoryListen</find>
     </findStrings>
     <replaceStrings>
       <replace>SET_VIEW</replace>
@@ -261,7 +273,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/use-in-react-router/router-meta.js" />
         <option value="$PROJECT_DIR$/use-in-react/antd/ntd.js" />
         <option value="$PROJECT_DIR$/use-in-react/antd/antd.js" />
         <option value="$PROJECT_DIR$/use-in-react/antd/extend.js" />
@@ -307,11 +318,12 @@
         <option value="$PROJECT_DIR$/use-in-react-router/index.js" />
         <option value="$PROJECT_DIR$/components/BrRoutes/listen.js" />
         <option value="$PROJECT_DIR$/components/BrRoutes/index.js" />
-        <option value="$PROJECT_DIR$/apps/blue-react-tmpl/src/router/AppRouter.js" />
         <option value="$PROJECT_DIR$/apps/blue-react-tmpl/src/pages/home/Index.js" />
-        <option value="$PROJECT_DIR$/apps/blue-react-tmpl/src/pages/home/IndexChildren.js" />
         <option value="$PROJECT_DIR$/components/BrRoutes/cache.js" />
         <option value="$PROJECT_DIR$/components/BrView/index.js" />
+        <option value="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/listen.js" />
+        <option value="$PROJECT_DIR$/apps/blue-react-tmpl/src/router/AppRouter.js" />
+        <option value="$PROJECT_DIR$/apps/blue-react-tmpl/src/pages/home/IndexChildren.js" />
       </list>
     </option>
   </component>
@@ -352,6 +364,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -362,31 +375,13 @@
             <path>
               <item name="blue-react-program" type="b2602c69:ProjectViewProjectNode" />
               <item name="blue-react-program" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-react-program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-react-program" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="blue-react-tmpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-react-program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-react-program" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blue-react-program" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blue-react-program" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="BrView" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -515,45 +510,36 @@
       <workItem from="1570930424481" duration="22374000" />
       <workItem from="1571017511926" duration="5168000" />
       <workItem from="1571054783793" duration="6228000" />
+      <workItem from="1571140514893" duration="2192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="437974000" />
+    <option name="totallyTimeSpent" value="440166000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="0" y="23" width="1366" height="704" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17630465" sideWeight="0.48958334" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22517483" sideWeight="0.42657343" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16431594" sideWeight="0.5104167" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29522184" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1629055" sideWeight="0.42657343" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3916084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.48293516" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.51706487" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27286246" sideWeight="0.51706487" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29522184" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3916084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1629055" sideWeight="0.42657343" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="123" width="1166" height="497" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27286246" sideWeight="0.5085324" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16431227" sideWeight="0.51269037" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29522184" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27286246" sideWeight="0.49146757" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3916084" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1629055" sideWeight="0.42657343" order="4" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -593,7 +579,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/react-config/dev-server.js" />
     <entry file="file://$PROJECT_DIR$/assets/js/share.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -784,13 +769,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/index.js" />
     <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -821,7 +802,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
+        <state relative-caret-position="506">
           <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
           <folding />
         </state>
@@ -847,7 +828,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/cache.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
+        <state relative-caret-position="3818">
           <caret line="168" column="16" lean-forward="false" selection-start-line="168" selection-start-column="16" selection-end-line="168" selection-end-column="16" />
           <folding />
         </state>
@@ -855,7 +836,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/use-in-react-router/router-after.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
+        <state relative-caret-position="391">
           <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
@@ -863,38 +844,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/use-in-react-router/router-before.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrView/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="90" column="18" lean-forward="true" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/router/AppRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#363#423#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/pages/home/Index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state relative-caret-position="828">
           <caret line="40" column="64" lean-forward="false" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="64" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
@@ -904,8 +856,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="2" column="51" lean-forward="true" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
+        <state relative-caret-position="46">
+          <caret line="2" column="51" lean-forward="false" selection-start-line="2" selection-start-column="51" selection-end-line="2" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -920,19 +872,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/components/BrRoutes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="100" column="37" lean-forward="true" selection-start-line="100" selection-start-column="37" selection-end-line="100" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#61#0" expanded="true" />
-            <element signature="e#903#999#0" expanded="false" />
-            <element signature="e#1041#1108#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="2576">
+          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/use-in-react-router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
+        <state relative-caret-position="138">
           <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="28" />
           <folding>
             <element signature="e#2255#2305#0" expanded="false" />
@@ -940,43 +888,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/BrRoutes/cache.js">
+    <entry file="file://$PROJECT_DIR$/components/BrView/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="67" column="13" lean-forward="false" selection-start-line="67" selection-start-column="2" selection-end-line="67" selection-end-column="13" />
+        <state relative-caret-position="317">
+          <caret line="102" column="25" lean-forward="false" selection-start-line="102" selection-start-column="25" selection-end-line="102" selection-end-column="25" />
           <folding>
-            <element signature="e#0#76#0" expanded="true" />
-            <element signature="e#273#346#0" expanded="false" />
+            <element signature="e#7#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/components/public/BrLayoutView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-435">
-          <caret line="0" column="7" lean-forward="true" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
+        <state relative-caret-position="-124">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/pages/home/IndexChildren.js">
+    <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/listen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="69">
+          <caret line="3" column="32" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/BrRoutes/cache.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="182" column="35" lean-forward="false" selection-start-line="182" selection-start-column="35" selection-end-line="182" selection-end-column="35" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#76#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/BrView/index.js">
+    <entry file="file://$PROJECT_DIR$/use-in-react-router/router-before.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="77" column="0" lean-forward="true" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+        <state relative-caret-position="217">
+          <caret line="14" column="21" lean-forward="false" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="21" />
           <folding>
-            <element signature="e#7#29#0" expanded="true" />
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/router/AppRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="28" column="15" lean-forward="true" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#363#423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrView/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="90" column="18" lean-forward="true" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="23" column="9" lean-forward="false" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/pages/home/IndexChildren.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="52" column="41" lean-forward="false" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>

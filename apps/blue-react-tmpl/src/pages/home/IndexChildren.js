@@ -49,6 +49,10 @@ function Children(props) {
         </Link>
       </div>
 
+      {[1,2,3,4,5,6,7,8].map((item)=>(
+        <div className={"bc-pd-50 bc-t-c"} key={item}>{item}</div>
+      ))}
+
     </BrLayoutView>
   )
 }
