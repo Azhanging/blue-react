@@ -10,10 +10,7 @@ const config = {
   //视图相关
   view: {
     title: "blue-react-tmpl-title",       //默认的文档标题
-    tabBar: false,                    //默认的导航名，定义到的bv-tab-bar中使用
-    keepAlive: {                    //vue 中keepAlive设置不需要缓存的components
-      exclude: []
-    }
+    tabBar: false
   },
 
   //路由相关

@@ -2,14 +2,14 @@ import React, { useState } from 'react';
 import BrLayoutView from '@components/public/BrLayoutView';
 import BrHeader from '$components/BrHeader';
 import { Link } from 'react-router-dom';
-import { useCache } from '$components/BrRoutes';
+import { useCacheState } from '$components/BrRoutes';
 
 function Children(props) {
 
   const {
     setState,
     getState
-  } = useCache();
+  } = useCacheState();
 
   const [count, setCount] = useState(getState('count', 0));
 
@@ -49,7 +49,7 @@ function Children(props) {
         </Link>
       </div>
 
-      {[1,2,3,4,5,6,7,8].map((item)=>(
+      {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
         <div className={"bc-pd-50 bc-t-c"} key={item}>{item}</div>
       ))}
 

@@ -1,11 +1,16 @@
 import React, { useState, useContext, useMemo } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import utils from 'blue-utils';
-import { historyQueue, CacheContext } from './cache';
-import { setRouteNavigator } from './navigator';
+import { BrCacheContext } from './cache';
 import { setHistoryListen } from './listen';
+import { setHistory } from './history';
+import { extendNativeHistory } from './navigator';
+
 //扩张usCache
 export * from './cache';
+
+//扩展原生History
+extendNativeHistory();
 
 //排序路由
 function sortRoutes(routes) {
@@ -18,32 +23,6 @@ function sortRoutes(routes) {
     const nextRouteLevel = nextPath.split('/').length;
     return nextRouteLevel - currentRouteLevel;
   });
-}
-
-//扩展原生history
-function extendNativeHistory() {
-
-  const goHistory = History.prototype.go;
-  const backHistory = History.prototype.back;
-
-  History.prototype.go = function (n) {
-    if (n === -1) {
-      historyQueue.enqueue('back');
-    }
-    goHistory.call(this, n);
-  };
-
-  History.prototype.back = function () {
-    historyQueue.enqueue('back');
-    backHistory.call(this);
-  };
-
-}
-
-//设置query
-function setQuery(location) {
-//设置参数
-  location.query = utils.parseParams(utils.getLinkParams(location.search));
 }
 
 //生成路由
@@ -82,23 +61,13 @@ function genRoutes(opts = {}) {
         key={`route-key-${index}`}
         render={(routeProps) => {
 
-          /*这里设置route的props给到Page的组件内部*/
-          const { history, location } = routeProps;
+          const { history } = routeProps;
 
-          //设置query
-          setQuery(location);
-
-          //设置路由内部route数据
-          history.route = {
-            key: location.key,
-            ...routeProps.match,
-            query: utils.extend({}, location.query),
-            meta: currentRoute.meta || {},
-            raw: currentRoute
-          };
-
-          //设置导航to和from
-          setRouteNavigator(history);
+          //设置
+          setHistory({
+            currentRoute,
+            routeProps
+          });
 
           //after后执行的钩子
           utils.hook(null, routerAfter, [{
@@ -135,7 +104,7 @@ export function BrRoutes(props) {
     routerAfter: props.routerAfter
   }));
 
-  const { history } = useContext(CacheContext);
+  const { history } = useContext(BrCacheContext);
 
   //只调用一次render前调用
   useMemo(() => {
@@ -153,6 +122,3 @@ export function BrRoutes(props) {
     </>
   );
 }
-
-//扩展原生History
-extendNativeHistory();

@@ -4,6 +4,7 @@ import utils from 'blue-utils';
 export function setHistoryListen(opts = {}) {
   const { history, routerBefore } = opts;
   history.listen(() => {
+    //处理router before
     utils.hook(null, routerBefore, [{
       history
     }]);

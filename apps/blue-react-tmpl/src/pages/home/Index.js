@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useCache } from '$components/BrRoutes';
+import { useCacheState } from '$components/BrRoutes';
 import { Link } from 'react-router-dom';
 import BrLayoutView from '@components/public/BrLayoutView';
 import BrHeader from '$components/BrHeader';
@@ -25,9 +25,8 @@ function Index(props) {
 
   const {
     setState,
-    getState,
-    setPosition
-  } = useCache();
+    getState
+  } = useCacheState();
 
   const [count, setCount] = useState(getState('count', 0));
   const [showState, setShowState] = useState(getState('cacheState', true));
@@ -38,7 +37,7 @@ function Index(props) {
   });
 
   return (
-    <BrLayoutView routes={props.routes} setPosition={setPosition}>
+    <BrLayoutView routes={props.routes}>
 
       <BrHeader centerControl={{
         title: 'HOME'
