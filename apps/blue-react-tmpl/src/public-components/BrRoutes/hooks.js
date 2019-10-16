@@ -25,6 +25,4 @@ export function routeLeave(opts = {}) {
       toRoute: to
     });
   }
-
-  console.log(from.path, refresh.status);
 }
