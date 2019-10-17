@@ -36,13 +36,13 @@ function matchParamsRefresh({ route }) {
 export function matchUnforcedListRefresh({ fromRoute, toRoute }) {
   const { refresh } = fromRoute.meta;
   const { unforcedList } = refresh;
-  const { fullPath: toRouteFullPath } = toRoute;
+  const { fullPath: toRoutePath } = toRoute;
   for (let i = 0; i < unforcedList.length; i++) {
     const path = unforcedList[i];
     //如果匹配的是字符串，那需要全等匹配
-    if (utils.isStr(path) && (path === toRouteFullPath)) {
+    if (utils.isStr(path) && (path === toRoutePath)) {
       return false;
-    } else if ((path instanceof RegExp) && (path.test(toRouteFullPath))) {
+    } else if ((path instanceof RegExp) && (path.test(toRoutePath))) {
       return false;
     }
   }

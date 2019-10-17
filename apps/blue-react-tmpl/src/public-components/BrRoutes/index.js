@@ -1,7 +1,7 @@
-import React, { useState, useContext, useMemo } from 'react';
+import React, { useState, useContext, useEffect, useMemo } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import utils from 'blue-utils';
-import { BrCacheContext } from './cache';
+import { BrRouterCacheContext } from './cache';
 import { setHistoryListen } from './listen';
 import { setHistory } from './history';
 import { extendNativeHistory } from './navigator';
@@ -96,29 +96,60 @@ function genRoutes(opts = {}) {
   );
 }
 
+//必须通过render props来渲染 把genRoutes带入到指定的slot中渲染
+function renderProps(opts = {}) {
+  const { render, routes } = opts;
+  if (typeof render !== 'function') {
+    return (
+      <div>
+        use render props in this components
+      </div>
+    );
+  } else {
+    return render(routes);
+  }
+}
+
 //生成路由组件
-export function BrRoutes(props) {
+export function BrRouter(props) {
 
   const [routes] = useState(genRoutes({
     routes: props.routes,
     routerAfter: props.routerAfter
   }));
 
-  const { history } = useContext(BrCacheContext);
+  const { history } = useContext(BrRouterCacheContext);
 
   //只调用一次render前调用
-  useMemo(() => {
+  const unListen = useMemo(() => {
     //设置监听
-    setHistoryListen({
+    return setHistoryListen({
       history,
       routerBefore: props.routerBefore
     });
     // eslint-disable-next-line
   }, []);
 
+  //卸载history listen
+  useEffect(() => {
+    return () => {
+      unListen();
+    };
+  }, [unListen]);
+
+  //必须通过render props来渲染 把genRoutes带入到指定的slot中渲染
+  if (typeof props.render !== 'function') {
+    return (
+      <div>use render props in this components</div>
+    );
+  }
+
   return (
     <>
-      {routes}
+      {renderProps({
+        render: props.render,
+        routes
+      })}
     </>
   );
 }

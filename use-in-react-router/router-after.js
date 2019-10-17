@@ -2,6 +2,7 @@ import { setTabBarName } from "$components/BrTabBar";
 import { routerMeta } from '@router';
 import config from '@config';
 import utils from 'blue-utils';
+import NProgress from 'nprogress';
 
 //路由挂载后执行（和vue项目不一致，所有的meta在Routes render中才能获取到rawRoute的信息）
 function routerAfter(opts = {}) {
@@ -13,6 +14,8 @@ function routerAfter(opts = {}) {
   routerMeta.setCurrentRouteID(meta.routeID);
   //设置标题
   document.title = meta.title || config.view.title;
+  //关闭进度
+  NProgress.done();
   //执行after hook
   afterHook(meta);
 }

@@ -3,9 +3,10 @@ import { setRefresh } from './refresh';
 import { routeLeave } from './hooks';
 
 //创建Context
-export const BrCacheContext = React.createContext({});
+export const BrRouterCacheContext = React.createContext({});
 
-BrCacheContext.displayName = `BrCache`;
+//set Context Component name
+BrRouterCacheContext.displayName = `BrRouterCache`;
 
 //默认定位
 function getDefaultPosition() {
@@ -16,13 +17,17 @@ function getDefaultPosition() {
 }
 
 //缓存
-const cache = {
+export const cache = {
+
   //获取缓存
   getState(opts = {}) {
     const { routeKey, stateKey, initValue } = opts;
     const state = cache.state[routeKey] || {};
     if (stateKey) {
-      return state[stateKey] || initValue;
+      if (stateKey in state) {
+        return state[stateKey];
+      }
+      return initValue;
     }
     return state;
   },
@@ -41,9 +46,17 @@ const cache = {
     cachePosition[routeKey] = position;
   },
 
+  //获取偏移量
   getPosition(opts = {}) {
     const { routeKey } = opts;
     return cache.position[routeKey] || getDefaultPosition();
+  },
+
+  //删除缓存state和position
+  remove(opts = {}) {
+    const { routeKey } = opts;
+    delete cache.state[routeKey];
+    delete cache.position[routeKey];
   },
 
   //状态存储
@@ -56,14 +69,15 @@ const cache = {
 //缓存Context
 export function Provider(props) {
   return (
-    <BrCacheContext.Provider value={props}>
+    <BrRouterCacheContext.Provider value={props}>
       {props.children}
-    </BrCacheContext.Provider>
+    </BrRouterCacheContext.Provider>
   );
 }
 
+//路由状态
 function useRouteState() {
-  const { history } = useContext(BrCacheContext);
+  const { history } = useContext(BrRouterCacheContext);
   const { route } = history;
   const [routeKey] = useState(route.key);
   return {
@@ -93,6 +107,7 @@ export function useCacheState() {
       state
     });
   }, [routeKey]);
+
   return {
     getState,
     setState
@@ -145,63 +160,3 @@ export function useCacheRefresh() {
     // eslint-disable-next-line
   }, []);
 }
-
-//cache hook
-/*
-export function useCache() {
-  const { history } = useContext(BrCacheContext);
-  const { route } = history;
-  const [routeKey] = useState(route.key);
-
-  const getState = useCallback(function getState(stateKey, initValue) {
-    return cache.getState({
-      routeKey,
-      stateKey,
-      initValue
-    });
-  }, [routeKey]);
-
-  const setState = useCallback(function setState(state) {
-    return cache.setState({
-      routeKey,
-      state
-    });
-  }, [routeKey]);
-
-  const setPosition = useCallback(function setPosition(position = getDefaultPosition()) {
-    return cache.setPosition({
-      position,
-      routeKey
-    });
-  }, [routeKey]);
-
-  const getPosition = useCallback(() => {
-    return cache.getPosition({
-      routeKey
-    });
-  }, [routeKey]);
-
-  //设置刷新状态
-  useEffect(() => {
-    setRefresh(route);
-    return () => {
-      //移除后删除缓存
-      routeLeave({
-        history,
-        routeKey
-      });
-    };
-    // eslint-disable-next-line
-  }, []);
-
-  return {
-    //设置缓存状态
-    setState,
-    //获取缓存状态
-    getState,
-    //设置定位
-    setPosition,
-    //获取定位
-    getPosition
-  };
-}*/

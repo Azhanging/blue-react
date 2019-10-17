@@ -1,7 +1,6 @@
 //组件样式
 import './index.scss';
 import React, { useState, useRef, useEffect } from 'react';
-import NProgress from 'nprogress';
 import utils from 'blue-utils';
 import { useSelector } from 'react-redux';
 import config from '@config';
@@ -103,9 +102,6 @@ export default function BrView(props) {
 
   //页面刷新
   useCacheRefresh();
-
-  //关闭进度
-  NProgress.done();
 
   return (
     <div

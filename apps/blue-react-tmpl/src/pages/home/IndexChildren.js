@@ -44,8 +44,8 @@ function Children(props) {
       </div>
 
       <div className="bc-t-c bc-pd-tb-50">
-        <Link to="/index-children-1" className="bc-pd-10">
-          link to Index Children-1
+        <Link to="/" className="bc-pd-10">
+          home
         </Link>
       </div>
 

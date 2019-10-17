@@ -29,7 +29,7 @@ function Index(props) {
   } = useCacheState();
 
   const [count, setCount] = useState(getState('count', 0));
-  const [showState, setShowState] = useState(getState('cacheState', true));
+  const [showState, setShowState] = useState(getState('showState', true));
 
   setState({
     count,
