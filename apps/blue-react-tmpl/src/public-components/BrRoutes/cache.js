@@ -3,10 +3,10 @@ import { setRefresh } from './refresh';
 import { routeLeave } from './hooks';
 
 //创建Context
-export const BrRouterCacheContext = React.createContext({});
+export const BrRoutesCacheContext = React.createContext({});
 
 //set Context Component name
-BrRouterCacheContext.displayName = `BrRouterCache`;
+BrRoutesCacheContext.displayName = `BrRoutesCache`;
 
 //默认定位
 function getDefaultPosition() {
@@ -69,15 +69,15 @@ export const cache = {
 //缓存Context
 export function Provider(props) {
   return (
-    <BrRouterCacheContext.Provider value={props}>
+    <BrRoutesCacheContext.Provider value={props}>
       {props.children}
-    </BrRouterCacheContext.Provider>
+    </BrRoutesCacheContext.Provider>
   );
 }
 
 //路由状态
 function useRouteState() {
-  const { history } = useContext(BrRouterCacheContext);
+  const { history } = useContext(BrRoutesCacheContext);
   const { route } = history;
   const [routeKey] = useState(route.key);
   return {

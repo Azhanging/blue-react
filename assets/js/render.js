@@ -1,11 +1,12 @@
 import utils from 'blue-utils';
 
 //处理renderProps
-export function renderProps(component, props = {}) {
-  if (utils.isFunction(component)) {
-    return component(props);
+export function renderProps(opts = {}) {
+  const { render, props = {} } = opts;
+  if (utils.isFunction(render)) {
+    return render(props);
   }
-  return component;
+  return render;
 }
 
 //渲染css class
@@ -17,8 +18,8 @@ export function renderClassName(css) {
   } else if (utils.isPlainObject(css)) {
     return utils.each(css, (cssCondition, cssName) => {
       if (cssCondition) return cssName;
-    }, true).filter((cssName)=>{
-      if(cssName && utils.isStr(cssName)) return cssName;
+    }, true).filter((cssName) => {
+      if (cssName && utils.isStr(cssName)) return cssName;
     }).join(' ');
   }
 }

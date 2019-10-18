@@ -14,7 +14,7 @@ const pageOffsetDebounce = utils.debounce(function () {
 //路由routerBefore执行
 function routerBefore() {
   //显示进度条
-  NProgress.start();
+  //NProgress.start();
   //关闭所有的loading
   antd.hideLoading(true);
   //初始化page位置

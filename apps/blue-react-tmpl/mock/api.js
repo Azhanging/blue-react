@@ -16,6 +16,18 @@ const mockApi = [{
       data: {}
     });
   }
+}, {
+  url: `/mock/form`,
+  method: 'get',
+  response(req, res) {
+    res.send({
+      code: 200,
+      data: {
+        name: 'blue',
+        age: 24
+      }
+    });
+  }
 }];
 
 module.exports = mockApi;

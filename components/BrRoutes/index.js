@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect, useMemo } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import utils from 'blue-utils';
-import { BrRouterCacheContext } from './cache';
+import { BrRoutesCacheContext } from './cache';
 import { setHistoryListen } from './listen';
 import { setHistory } from './history';
 import { extendNativeHistory } from './navigator';
@@ -98,27 +98,32 @@ function genRoutes(opts = {}) {
 
 //必须通过render props来渲染 把genRoutes带入到指定的slot中渲染
 function renderProps(opts = {}) {
-  const { render, routes } = opts;
+  const { render, props } = opts;
   if (typeof render !== 'function') {
     return (
-      <div>
+      <div style={{
+        textAlign: 'center',
+        padding: '14px',
+        color: 'red',
+        fontWeight: 'bold'
+      }}>
         use render props in this components
       </div>
     );
   } else {
-    return render(routes);
+    return render(props.routes);
   }
 }
 
 //生成路由组件
-export function BrRouter(props) {
+export function BrRoutes(props) {
 
   const [routes] = useState(genRoutes({
     routes: props.routes,
     routerAfter: props.routerAfter
   }));
 
-  const { history } = useContext(BrRouterCacheContext);
+  const { history } = useContext(BrRoutesCacheContext);
 
   //只调用一次render前调用
   const unListen = useMemo(() => {
@@ -137,18 +142,13 @@ export function BrRouter(props) {
     };
   }, [unListen]);
 
-  //必须通过render props来渲染 把genRoutes带入到指定的slot中渲染
-  if (typeof props.render !== 'function') {
-    return (
-      <div>use render props in this components</div>
-    );
-  }
-
   return (
     <>
       {renderProps({
         render: props.render,
-        routes
+        props: {
+          routes
+        }
       })}
     </>
   );

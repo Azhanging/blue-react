@@ -3,6 +3,7 @@ import { useCacheState } from '$components/BrRoutes';
 import { Link } from 'react-router-dom';
 import BrLayoutView from '@components/public/BrLayoutView';
 import BrHeader from '$components/BrHeader';
+import BrLayer from '$components/BrLayer';
 
 function List() {
   const list = [];
@@ -30,10 +31,12 @@ function Index(props) {
 
   const [count, setCount] = useState(getState('count', 0));
   const [showState, setShowState] = useState(getState('showState', true));
+  const [showLayer, setShowLayer] = useState(getState('showLayer', false));
 
   setState({
     count,
-    showState
+    showState,
+    showLayer
   });
 
   return (
@@ -42,6 +45,23 @@ function Index(props) {
       <BrHeader centerControl={{
         title: 'HOME'
       }}/>
+
+      {/*弹层组件*/}
+      <BrLayer showStatus={showLayer} click={() => {
+        setShowLayer(!showLayer);
+      }}>
+        <div className={"bc-pd-15 bc-bg-white"}>
+          123
+        </div>
+      </BrLayer>
+
+      <div className={"bc-pd-14 bc-t-c"}>
+        <button className={"bc-btn bc-btn-primary"} onClick={() => {
+          setShowLayer(!showLayer);
+        }}>
+          toggleLayer
+        </button>
+      </div>
 
       <div>
         <div className="bc-pd-14 bc-t-c">

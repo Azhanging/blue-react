@@ -16,6 +16,9 @@ const routes = [{
     title: 'index-children',
     refresh: {
       unforcedList: ["/"]
+    },
+    afterHook(){
+      console.log(`test afterHook`);
     }
   },
   children: [{

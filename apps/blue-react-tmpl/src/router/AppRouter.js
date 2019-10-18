@@ -5,7 +5,7 @@ import { Provider as ReduxProvider } from 'react-redux';
 import history from "./index";
 import store from '@store';
 import routes from './routes';
-import { BrRouter, Provider as BrRouterProvider } from '$components/BrRoutes';
+import { BrRoutes, Provider as BrRoutesProvider } from '$components/BrRoutes';
 import { routerMeta } from './index';
 //路由后处理
 import routerAfter from '$use-in-react-router/router-after';
@@ -16,11 +16,11 @@ const $routes = routerMeta.setMeta(routes);
 export function AppRouter() {
   return (
     <ReduxProvider store={store}>
-      <BrRouterProvider history={history}>
-        <BrRouter
+      <BrRoutesProvider history={history}>
+        <BrRoutes
           routerBefore={routerBefore}
-          routes={$routes}
           routerAfter={routerAfter}
+          routes={$routes}
           render={(routes) => (
             <Router history={history}>
               <App>
@@ -28,7 +28,7 @@ export function AppRouter() {
               </App>
             </Router>
           )}/>
-      </BrRouterProvider>
+      </BrRoutesProvider>
     </ReduxProvider>
   );
 }

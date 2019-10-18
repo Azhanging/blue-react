@@ -1,7 +1,6 @@
 import './index.scss';
 import React from 'react';
 import store from '@store';
-import config from '@config';
 import * as dispatch from '@store/dispatch';
 import { renderClassName } from "$assets/js/render";
 import { useSelector } from 'react-redux';
@@ -47,13 +46,6 @@ export function setTabBarSubmenuIndex(index) {
 
 export function hideTabBarSubmenu() {
   setTabBarSubmenuIndex(-1);
-}
-
-//设置菜单名
-export function setTabBarName(name) {
-  dispatch.SET_VIEW({
-    tabBar: name || config.view.tabBar
-  });
 }
 
 //菜单的路由跳转

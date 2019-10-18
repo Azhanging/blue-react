@@ -17,7 +17,9 @@ const config = utils.extend(publicConfig, {
     title: "blue-react-tmpl",
     deps: "blue-react-tmpl is vue public template",
     imgUrl: ""
-  }
+  },
+
+  debug: true
 });
 
 export default config;

@@ -21,12 +21,15 @@ function BrSuspend(props) {
     <div className="br-suspend">
       {/*回到顶部*/}
       <div className="back-to-top" style={{
-        'display': props.scroll.top > (props.distance || 100) ? '' : 'none'
+        'display': props.scroll.y > (props.distance || 100) ? '' : 'none'
       }}>
         <a onClick={(e) => {
           backToTop(e, props.scrollElm);
         }}>
-          {renderProps(props.backToTop, props)}
+          {renderProps({
+            render: props.backToTop,
+            props
+          })}
         </a>
       </div>
     </div>

@@ -1,3 +1,6 @@
+/*
+* Suspense加载dom
+* */
 import React from 'react';
 
 function SuspenseLoading(){

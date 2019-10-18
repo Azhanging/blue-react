@@ -1,6 +1,6 @@
 import utils from 'blue-utils';
-import { setRouteNavigator } from "./navigator";
 import BlueQueuePipe from 'blue-queue-pipe';
+import { setRouteNavigator } from "./navigator";
 
 //历史队列
 export const historyQueue = new BlueQueuePipe({

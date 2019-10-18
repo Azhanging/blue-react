@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import BrLayoutView from '@components/public/BrLayoutView';
 import BrFormikError from '$components/BrFormikError';
 import { Formik, Field, Form } from 'formik';
@@ -20,6 +20,12 @@ const validateFormData = Yup.object().shape({
 function FormikPage(props) {
 
   const [formData, setFormData] = useState(initFormData());
+
+  useEffect(() => {
+    React.$axios.get('/mock/form').then((res) => {
+      setFormData(res.data);
+    });
+  }, []);
 
   return (
     <BrLayoutView routes={props.routes}>

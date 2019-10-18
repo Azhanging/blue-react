@@ -1,0 +1,21 @@
+.br-layer-container {
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 47px;
+	bottom: calc(constant(safe-area-inset-bottom) + 47px);
+	bottom: calc(env(safe-area-inset-bottom) + 47px);
+	background-color: rgba(0, 0, 0, .6);
+	//没有tab-bar
+	&.no-tab-bar {
+		bottom: 0;
+	}
+	.br-layer {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

@@ -20,7 +20,7 @@ const config = {
     hooks: {
       //没有after hook执行
       unAfterHook() {
-
+        console.log(`unAfterHook`);
       }
     }
   },

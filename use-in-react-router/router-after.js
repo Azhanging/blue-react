@@ -1,4 +1,4 @@
-import { setTabBarName } from "$components/BrTabBar";
+import { setTabBarName } from "$assets/js/tab-bar";
 import { routerMeta } from '@router';
 import config from '@config';
 import utils from 'blue-utils';
@@ -15,7 +15,7 @@ function routerAfter(opts = {}) {
   //设置标题
   document.title = meta.title || config.view.title;
   //关闭进度
-  NProgress.done();
+  //NProgress.done();
   //执行after hook
   afterHook(meta);
 }

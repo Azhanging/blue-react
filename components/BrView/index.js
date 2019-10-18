@@ -125,15 +125,21 @@ export default function BrView(props) {
       {props.routes}
 
       {/*浮动相关*/}
-      {renderProps(props.suspend, {
-        scroll,
-        scrollElm
+      {renderProps({
+        render: props.suspend,
+        props: {
+          scroll,
+          scrollElm
+        }
       })}
 
       {/*其他的组件*/}
-      {renderProps(props.other, {
-        scroll,
-        scrollElm
+      {renderProps({
+        render: props.other,
+        props: {
+          scroll,
+          scrollElm
+        }
       })}
 
     </div>
