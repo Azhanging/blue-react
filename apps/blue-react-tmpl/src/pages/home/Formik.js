@@ -8,7 +8,8 @@ import * as Yup from 'yup';
 function initFormData() {
   return {
     name: '',
-    age: ''
+    age: '',
+    radio: ''
   };
 }
 
@@ -37,9 +38,14 @@ function FormikPage(props) {
         <div>
           age:{formData.age}
         </div>
+        <div>
+          radio:{formData.radio}
+        </div>
       </div>
 
       <Formik
+
+        enableReinitialize={true}
 
         initialValues={formData}
 
@@ -52,9 +58,6 @@ function FormikPage(props) {
         onReset={() => {
           const formData = initFormData();
           setFormData(formData);
-          // Formik源码中读取initialValues的值，在setState在nextTick执行，
-          // 所以需要返回Promise处理formData数据
-          return Promise.resolve(() => formData);
         }}
 
         validate={(values) => {
@@ -72,7 +75,7 @@ function FormikPage(props) {
           } = props;
           return (
             <Form className="bc-t-c">
-              <Field name="name" type="text" render={({ field }) => (
+              <Field name="name" render={({ field }) => (
                 <div className="bc-pd-15rp">
                   <div>
                     <input className="bc-input" {...field} placeholder="name input"/>
@@ -87,7 +90,7 @@ function FormikPage(props) {
 
                 </div>
               )}/>
-              <Field type="radio" name="age" render={(props) => {
+              <Field name="age" render={(props) => {
                 const { field } = props;
                 return (
                   <div className="bc-pd-15rp">
@@ -105,6 +108,24 @@ function FormikPage(props) {
                   </div>
                 );
               }}/>
+              <Field name="radio" render={({ field }) => (
+                <div className="bc-pd-15rp">
+                  <div>
+                    <label>
+                      <input type={"radio"} {...field} checked={field.value === 1}/>
+                      <span>radio</span>
+                    </label>
+                  </div>
+
+                  {/*错误组件处理*/}
+                  <BrFormikError errors={errors} touched={touched} name="name">
+                    <div className="bc-t-red">
+                      {errors.name}
+                    </div>
+                  </BrFormikError>
+
+                </div>
+              )}/>
               <div className="bc-pd-14rp bc-t-c">
                 <button type="submit" className="bc-btn bc-btn-primary">submit</button>
                 <button type="reset" className="bc-btn bc-btn-primary">reset</button>

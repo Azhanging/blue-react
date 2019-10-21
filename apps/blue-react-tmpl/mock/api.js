@@ -24,7 +24,8 @@ const mockApi = [{
       code: 200,
       data: {
         name: 'blue',
-        age: 24
+        age: 24,
+        radio: 1
       }
     });
   }

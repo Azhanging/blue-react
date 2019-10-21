@@ -107,7 +107,7 @@ function renderProps(opts = {}) {
         color: 'red',
         fontWeight: 'bold'
       }}>
-        use render props in BrRoutes Component
+        use render props in this components
       </div>
     );
   } else {
