@@ -27,6 +27,12 @@ function proxyHandler(app) {
     }
   }));
 
+  //接口代理
+  app.use(proxy("/game", {
+    target: "http://localhost:3000",
+    changeOrigin: true
+  }));
+
   //模拟数据
   app.use(proxy("/mock", {
     target: `http:localhost:${port}/mock`,

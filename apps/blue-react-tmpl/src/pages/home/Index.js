@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useCacheState } from '$components/BrRoutes';
 import { Link } from 'react-router-dom';
 import BrLayoutView from '@components/public/BrLayoutView';
@@ -38,6 +38,10 @@ function Index(props) {
     showState,
     showLayer
   });
+
+  useEffect(() => {
+    React.$axios.get(`/game`);
+  }, []);
 
   return (
     <BrLayoutView routes={props.routes}>
