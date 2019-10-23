@@ -11,11 +11,11 @@ function resolve(dir) {
 function proxyHandler(app) {
 
   //mock-server
-  mockServer({
+  /*mockServer({
     app,
     mockDir: resolve('../mock'),          //mock路径，用于更新path使用,
     apiFilePath: resolve('../mock/api')     //api路径，用于更新path使用
-  });
+  });*/
 
   //接口代理
   app.use(proxy("/api", {
@@ -30,7 +30,7 @@ function proxyHandler(app) {
   //接口代理
   app.use(proxy("/game", {
     target: "http://localhost:3000",
-    changeOrigin: true
+    changeOrigin: true,
   }));
 
   //模拟数据

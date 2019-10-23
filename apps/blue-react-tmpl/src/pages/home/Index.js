@@ -40,7 +40,9 @@ function Index(props) {
   });
 
   useEffect(() => {
-    React.$axios.get(`/game`);
+    React.$axios.post(`/game`, {
+      name: 'blue'
+    });
   }, []);
 
   return (
