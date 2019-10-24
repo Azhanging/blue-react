@@ -4,7 +4,7 @@ import { Router } from 'react-router';
 import { Provider as ReduxProvider } from 'react-redux';
 import history from "./index";
 import store from '@store';
-import routes from './routes';
+import routes from './routes/index';
 import { BrRoutes, Provider as BrRoutesProvider } from '$components/BrRoutes';
 import { routerMeta } from './index';
 //路由后处理

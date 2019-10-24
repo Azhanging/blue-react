@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useCacheState } from '$components/BrRoutes';
 import { Link } from 'react-router-dom';
 import BrLayoutView from '@components/public/BrLayoutView';
@@ -38,12 +38,6 @@ function Index(props) {
     showState,
     showLayer
   });
-
-  useEffect(() => {
-    React.$axios.post(`/game`, {
-      name: 'blue'
-    });
-  }, []);
 
   return (
     <BrLayoutView routes={props.routes}>

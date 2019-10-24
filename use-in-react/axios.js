@@ -25,6 +25,7 @@ function setFormData(axiosConfig) {
 }
 
 const $axios = axios.create({
+  baseURL: '/api',
   timeout: config.axios.timeout,
   headers: {
     'X-Requested-With': 'XMLHttpRequest'

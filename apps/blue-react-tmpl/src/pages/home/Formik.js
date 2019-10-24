@@ -112,7 +112,7 @@ function FormikPage(props) {
                 <div className="bc-pd-15rp">
                   <div>
                     <label>
-                      <input type={"radio"} {...field} checked={field.value === 1}/>
+                      <input type={"radio"} {...field} checked={(field.value === 1 || field.value === "1")} value={1}/>
                       <span>radio</span>
                     </label>
                   </div>

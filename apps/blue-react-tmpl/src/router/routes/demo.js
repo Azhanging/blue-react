@@ -1,15 +1,6 @@
 import React from 'react';
 
-//总的路由线
-const routes = [{
-  path: '/',
-  exact: true,
-  stack: true,
-  component: React.lazy(() => import(`@pages/home/Index`)),
-  meta: {
-    tabBar: ''
-  }
-}, {
+const demo = [{
   path: '/index-children',
   component: React.lazy(() => import(`@pages/home/IndexChildren`)),
   meta: {
@@ -17,7 +8,7 @@ const routes = [{
     refresh: {
       unforcedList: ["/"]
     },
-    afterHook(){
+    afterHook() {
       console.log(`test afterHook`);
     }
   },
@@ -49,4 +40,5 @@ const routes = [{
   component: React.lazy(() => import(`@pages/home/Formik`))
 }];
 
-export default routes;
+
+export default demo;
