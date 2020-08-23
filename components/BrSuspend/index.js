@@ -4,13 +4,13 @@ import Velocity from 'velocity-animate';
 import './index.scss';
 
 //回到顶部
-function backToTop(e, scrollElm) {
-  const $scrollElm = scrollElm.current;
-  Velocity($scrollElm, "scroll", {
-    container: $scrollElm,
+function backToTop(e) {
+  const elm = document.documentElement;
+  Velocity(document.documentElement, "scroll", {
+    container: elm,
     duration: 180,
     MobileHA: true,
-    offset: -$scrollElm.scrollTop
+    offset: -elm.scrollTop
   });
   e.preventDefault();
 }
@@ -21,7 +21,7 @@ function BrSuspend(props) {
     <div className="br-suspend">
       {/*回到顶部*/}
       <div className="back-to-top" style={{
-        'display': props.scroll.y > (props.distance || 100) ? '' : 'none'
+        'display': props.scrollDistance && props.show
       }}>
         <a onClick={(e) => {
           backToTop(e, props.scrollElm);

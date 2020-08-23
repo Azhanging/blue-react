@@ -17,7 +17,7 @@ const homeTabBar = {
         direction: 'Top'
       },
       to: '/',
-      className: 'bc-pd-5 bc-bd-r-e5e'
+      className: 'bz-pd-5 bz-bd-r-e5e'
     }, {
       content: {
         value: '首页',
@@ -33,7 +33,7 @@ const homeTabBar = {
         direction: 'Bottom'
       },
       to: '/',
-      className: 'bc-pd-5 bc-bd-r-e5e',
+      className: 'bz-pd-5 bz-bd-r-e5e',
       fontSize: 10
     }, {
       content: {
@@ -50,15 +50,15 @@ const homeTabBar = {
         }
       },
       to: '/components',
-      className: 'bc-pd-5'
+      className: 'bz-pd-5'
     }]
   },
   active(opts = {}) {
     const { setActiveIndex } = opts;
     if (history.$matchRoutes([
-        /^\/component.*/,    //组件路由
-      ])) {
-      setActiveIndex(1);
+      /^\/component.*/,    //组件路由
+    ])) {
+      setActiveIndex(2);
     } else {
       setActiveIndex(0)
     }

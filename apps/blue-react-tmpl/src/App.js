@@ -1,18 +1,24 @@
 import React, { Suspense } from 'react';
+import { useSelector } from 'react-redux';
 import SuspenseLoading from '$components/SuspenseLoading';
 import WTabBar from '@components/wap/WTabBar';
+import BrSuspend from "$components/BrSuspend";
 
 //主App节点
 function App(props) {
-	return (
-		<div className="bc-f-14rp bc-t-333">
+  const view = useSelector((state) => state.view);
+  return (
+    <div className="bz-f-14rp bz-t-333">
+      {/*入口层*/}
       <Suspense fallback={<SuspenseLoading/>}>
         {props.children}
       </Suspense>
-			{/*导航*/}
-			<WTabBar/>
-		</div>
-	);
+      {/*浮动层*/}
+      <BrSuspend scrollDistance={view.suspend.distance} show={view.suspend.status}/>
+      {/*导航*/}
+      <WTabBar/>
+    </div>
+  );
 }
 
 export default App;

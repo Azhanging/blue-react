@@ -79,7 +79,7 @@ function BrTabBar(props) {
 
   const {
     list = [],
-    unActiveClassName = "bc-t-666",
+    unActiveClassName = "bz-t-666",
     activeClassName = "",
     activeIndex = 0
   } = props;
@@ -120,7 +120,7 @@ function BrTabBar(props) {
 
               {/*内容以及左右方向的icon*/}
               {item.content && (
-                <div className="br-tab-bar-content bc-flex bc-flex-ai-c bc-flex-jc-c">
+                <div className="br-tab-bar-content bz-flex bz-flex-ai-c bz-flex-jc-c">
 
                   {/*方向为left的时候出现*/}
                   {(item.icon && item.icon.direction && (item.icon.direction === 'Left')) && (
@@ -164,7 +164,7 @@ function BrTabBar(props) {
                         {item.children.list.items.map((submenu, index) => (
                           (item.children.list.items.length > 0) && (
                             <div className={renderClassName([
-                              "tab-bar-submenu-list-item bc-t-hide",
+                              "tab-bar-submenu-list-item bz-t-hide",
                               submenu.className
                             ])}
                                  key={`tab-bar-submenu-list-item-${index}`}

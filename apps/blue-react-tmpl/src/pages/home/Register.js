@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import BrLayoutView from '@components/public/BrLayoutView';
+import BrView from '$components/BrView';
 import BrHeader from '$components/BrHeader';
 import { Formik, Field, Form } from 'formik';
 import $axios from '$axios';
@@ -9,9 +9,9 @@ function RegisterField(props) {
   return (
     <Field name={formItem.name} render={({ field }) => {
       return (
-        <div className={"bc-pd-10"}>
+        <div className={"bz-pd-10"}>
           <label>
-            {formItem.name}：<input type={formItem.type} {...field} className={"bc-input"}/>
+            {formItem.name}：<input type={formItem.type} {...field} className={"bz-input"}/>
           </label>
         </div>
       );
@@ -45,13 +45,13 @@ function Register() {
   });
 
   return (
-    <BrLayoutView>
+    <BrView>
 
       <BrHeader centerControl={{
         title: 'register'
       }}/>
 
-      <div className={"bc-t-c"}>
+      <div className={"bz-t-c"}>
         <Formik
           initialValues={formData}
           validate={(values) => {
@@ -62,11 +62,11 @@ function Register() {
             {formField.map((formItem, index) => (
               <RegisterField formItem={formItem} key={`field-${index}`}/>
             ))}
-            <div className={"bc-t-c"}>
-              <button className={"bc-btn bc-btn-primary"}>
+            <div className={"bz-t-c"}>
+              <button className={"bz-btn bz-btn-primary"}>
                 login
               </button>
-              <button className={"bc-btn bc-btn-primary bc-mg-l-10"} onClick={() => {
+              <button className={"bz-btn bz-btn-primary bz-mg-l-10"} onClick={() => {
                 register(formData);
               }}>
                 register
@@ -75,7 +75,7 @@ function Register() {
           </Form>
         </Formik>
       </div>
-    </BrLayoutView>
+    </BrView>
   );
 }
 

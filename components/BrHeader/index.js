@@ -45,18 +45,18 @@ function BrHeader(props) {
 				{/*左边控制*/}
 				<div className="br-header-control">
 					{(leftControl && leftControl.render) || (
-						<div className="bc-flex bc-flex-ai-c">
+						<div className="bz-flex bz-flex-ai-c">
 							<a className="br-header-btn br-header-btn-icon" onClick={(e) => {
 								back(leftControl.backPath);
 								e.preventDefault();
 							}}>
-								<i className="bp-icon bp-icon-left bc-f-16"></i>
+								<i className="bp-icon bp-icon-left bz-f-16"></i>
 							</a>
 							<a className="br-header-btn br-header-btn-icon" onClick={(e) => {
 								history.push(config.path.home);
 								e.preventDefault();
 							}}>
-								<i className="bp-icon bp-icon-home bc-f-16"></i>
+								<i className="bp-icon bp-icon-home bz-f-16"></i>
 							</a>
 						</div>
 					)}
@@ -68,7 +68,7 @@ function BrHeader(props) {
 				</div>
 
 				{/*右边操作*/}
-				<div className="br-header-control bc-t-r" style={rightControl.style}>
+				<div className="br-header-control bz-t-r" style={rightControl.style}>
 					{rightControl.render}
 				</div>
 			</div>

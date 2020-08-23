@@ -10,7 +10,7 @@ function Index(props) {
 				title: `Components`
 			}}/>
 			<div>
-				<div className="bc-pd-14 bc-t-c">
+				<div className="bz-pd-14 bz-t-c">
 					Components
 				</div>
 			</div>

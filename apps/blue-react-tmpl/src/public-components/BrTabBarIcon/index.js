@@ -23,7 +23,7 @@ function Icon(props) {
 
 function BrTabBarIcon(props) {
   return (
-    <span className="bc-inline-block tab-bar-icon">
+    <span className="bz-inline-block tab-bar-icon">
       <Icon {...props}/>
     </span>
   );

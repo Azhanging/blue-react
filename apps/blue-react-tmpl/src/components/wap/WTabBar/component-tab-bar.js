@@ -19,7 +19,7 @@ const componentTabBar = {
         }
       },
       to: '/',
-      className: 'bc-pd-6'
+      className: 'bz-pd-6'
     }, {
       content: {
         value: 'scroll',
@@ -34,18 +34,18 @@ const componentTabBar = {
           height: '20px'
         }
       },
-      className: 'bc-pd-6',
+      className: 'bz-pd-6',
       children: {
         style: {
           backgroundColor: `#ca9f75`
         },
-        unActiveClassName: 'bc-t-white',
+        unActiveClassName: 'bz-t-white',
         list: {
           items: [{
             content: {
               value: '子菜单子菜单1'
             },
-            className: 'bc-bd-b-white',
+            className: 'bz-bd-b-white',
             to: '/'
           }, {
             content: {
@@ -74,26 +74,26 @@ const componentTabBar = {
           height: '20px'
         }
       },
-      className: 'bc-pd-6',
+      className: 'bz-pd-6',
       children: {
         style: {
           backgroundColor: 'white',
           border: `1px solid #e5e5e5`
         },
-        unActiveClassName: 'bc-t-danger',
+        unActiveClassName: 'bz-t-danger',
         list: {
           items: [{
             content: {
               value: '子菜单子菜单4'
             },
-            className: 'bc-bd-b-white',
+            className: 'bz-bd-b-white',
             to: '/'
           }, {
             content: {
               value: '子菜单子菜单5',
             },
             to: '/',
-            className: 'bc-bd-b-white'
+            className: 'bz-bd-b-white'
           }, {
             content: {
               value: '子菜单6'

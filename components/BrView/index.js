@@ -69,22 +69,22 @@ export function inputEvent() {
 //view中间层
 export default function BrView(props) {
   const tabBar = useSelector((state) => state.view.tabBar);
-  const {
+  /*const {
     router = {
       level: 1
     }
-  } = props;
+  } = props;*/
 
   //设置scrollElm的ref
-  const scrollElm = useRef();
+  /*const scrollElm = useRef();
   const {
     setPosition,
     getPosition
-  } = useCachePosition();
+  } = useCachePosition();*/
 
-  const [scroll, setScroll] = useState(getPosition());
+  /*const [scroll, setScroll] = useState(getPosition());*/
 
-  useEffect(() => {
+  /*useEffect(() => {
     //设置scroll事件流
     setViewEvent({
       scrollElm: scrollElm.current,
@@ -93,12 +93,12 @@ export default function BrView(props) {
     //初始化设置定位
     setCurrentViewScroll(scroll);
     // eslint-disable-next-line
-  }, []);
+  }, []);*/
 
   //设置定位
-  useEffect(() => {
+  /*useEffect(() => {
     utils.hook(null, setPosition, [scroll]);
-  }, [scroll, setPosition]);
+  }, [scroll, setPosition]);*/
 
   //页面刷新
   useCacheRefresh();
@@ -107,40 +107,31 @@ export default function BrView(props) {
     <div
       className={renderClassName([
         "br-view",
-        !tabBar && 'no-tab-bar'
+        !tabBar.name && 'no-tab-bar'
       ])}
       onClick={hideTabBarSubmenu}
-      onInput={inputEvent}
-      style={{
-        zIndex: `${(100 * (router.level || 1))}`
-      }}
     >
 
-      {/*scroll容器*/}
-      <div className="br-view-scroll" ref={scrollElm}>
-        {props.children}
-      </div>
-
-      {/*子路由*/}
-      {props.routes}
+      {/*子节点*/}
+      {props.children}
 
       {/*浮动相关*/}
-      {renderProps({
+      {/*{renderProps({
         render: props.suspend,
         props: {
           scroll,
           scrollElm
         }
-      })}
+      })}*/}
 
       {/*其他的组件*/}
-      {renderProps({
+      {/*{renderProps({
         render: props.other,
         props: {
           scroll,
           scrollElm
         }
-      })}
+      })}*/}
 
     </div>
   )
