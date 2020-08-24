@@ -8,7 +8,7 @@ import BrSuspend from "$components/BrSuspend";
 function App(props) {
   const view = useSelector((state) => state.view);
   return (
-    <div className="bz-f-14rp bz-t-333">
+    <div className="bz-f-28rpx bz-t-333">
       {/*入口层*/}
       <Suspense fallback={<SuspenseLoading/>}>
         {props.children}

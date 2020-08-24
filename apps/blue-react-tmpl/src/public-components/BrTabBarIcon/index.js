@@ -1,30 +1,27 @@
 import React from 'react';
 import { renderClassName } from "$assets/js/render";
 
-function Icon(props) {
+function BrTabBarIcon(props) {
   const {
     icon,
     activeIndex,
     currentIndex
   } = props;
-  if (icon.src && icon.activeSrc) {
-    return (
-      <img src={activeIndex === currentIndex ? icon.activeSrc : icon.src} className={renderClassName([
-        "bv-tab-bar-icon",
-        icon.className
-      ])} style={icon.style} alt=""/>
-    );
-  } else if (icon.activeFont) {
-    return (
-      <i className={activeIndex === currentIndex ? icon.activeFont : icon.font} style={icon.style}/>
-    );
-  }
-}
-
-function BrTabBarIcon(props) {
   return (
-    <span className="bz-inline-block tab-bar-icon">
-      <Icon {...props}/>
+    <span className="bz-inline-block br-tab-bar-icon">
+      {(() => {
+        if (icon.src) {
+          return (
+            <img src={activeIndex === currentIndex ? icon.activeSrc : icon.src} className={renderClassName([
+              "bv-tab-bar-icon"
+            ])}/>
+          );
+        } else if (icon.font) {
+          return (
+            <i className={activeIndex === currentIndex ? icon.activeFont : icon.font}/>
+          );
+        }
+      })()}
     </span>
   );
 }

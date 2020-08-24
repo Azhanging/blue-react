@@ -6,10 +6,8 @@ const state = {
       distance: 0
     },
     tabBar: {
-      name: '', //导航 String | Boolean
-      submenuIndex: -1
+      name: '' //导航 String | Boolean
     },
-    tabBarSubmenuIndex: -1,    //导航子菜单状态
     pageFixed: true      //独立页面中底部容器显示控制状态，在页面中的按钮可能因为表单的选中隐藏 Boolean
   },
   weChat: {
