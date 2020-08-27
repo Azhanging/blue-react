@@ -15,7 +15,7 @@ function routerAfter(opts = {}) {
   //设置标题
   document.title = meta.title || config.view.title;
   //关闭进度
-  //NProgress.done();
+  NProgress.done();
   //执行after hook
   afterHook(meta);
 }

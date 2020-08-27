@@ -6,7 +6,6 @@ import { useSelector } from 'react-redux';
 import config from '@config';
 import { mockViewScroll } from '$assets/js/device';
 import { renderProps, renderClassName } from '$assets/js/render';
-import { hideTabBarSubmenu } from '$components/BrTabBar';
 import { useCachePosition, useCacheRefresh } from '$components/BrRoutes';
 
 const viewScrollClassName = '.br-view-scroll';
@@ -51,8 +50,6 @@ export function setViewEvent(opts = {}) {
   scrollElm.addEventListener('scroll', (event) => {
     //节流处理scrollTop
     scrollDebounce(null, [event]);
-    //滑动的时候也隐藏子菜单的状态
-    hideTabBarSubmenu();
     //阻止scroll冒泡
     event.stopPropagation();
   }, false);
@@ -109,7 +106,6 @@ export default function BrView(props) {
         "br-view",
         !tabBar.name && 'no-tab-bar'
       ])}
-      onClick={hideTabBarSubmenu}
     >
 
       {/*子节点*/}

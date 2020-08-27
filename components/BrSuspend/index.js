@@ -1,18 +1,10 @@
 import React from 'react';
 import { renderProps } from '$assets/js/render';
-import Velocity from 'velocity-animate';
 import './index.scss';
 
 //回到顶部
-function backToTop(e) {
-  const elm = document.documentElement;
-  Velocity(document.documentElement, "scroll", {
-    container: elm,
-    duration: 180,
-    MobileHA: true,
-    offset: -elm.scrollTop
-  });
-  e.preventDefault();
+function backToTop() {
+  document.documentElement.scrollTop = 0;
 }
 
 //浮层
@@ -24,7 +16,7 @@ function BrSuspend(props) {
         'display': props.scrollDistance && props.show
       }}>
         <a onClick={(e) => {
-          backToTop(e, props.scrollElm);
+          backToTop();
         }}>
           {renderProps({
             render: props.backToTop,

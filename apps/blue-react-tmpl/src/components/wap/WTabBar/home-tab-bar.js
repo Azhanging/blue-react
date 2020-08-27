@@ -22,9 +22,9 @@ const homeTabBar = {
     if (router.$matchRoutes([
       /^\/components.*/,    //组件路由
     ])) {
-      this.activeIndex = 1;
+      return 1;
     } else {
-      this.activeIndex = 0;
+      return 0;
     }
   }
 };

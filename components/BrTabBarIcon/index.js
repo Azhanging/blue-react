@@ -18,7 +18,7 @@ function BrTabBarIcon(props) {
           );
         } else if (icon.font) {
           return (
-            <i className={activeIndex === currentIndex ? icon.activeFont : icon.font}/>
+            <i className={`${icon.font} ${activeIndex === currentIndex && icon.activeFont}`}/>
           );
         }
       })()}

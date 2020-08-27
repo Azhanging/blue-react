@@ -28,9 +28,9 @@ const componentTabBar = {
     if (router.$matchRoutes([
       /^\/components\/scroll/,    //组件滑动路由
     ])) {
-      this.activeIndex = 1;
+      return 1;
     } else {
-      this.activeIndex = 2;
+      return 2;
     }
   }
 };

@@ -68,26 +68,6 @@ function Index(props) {
           Home Index
         </div>
 
-        {showState && (
-          <div className={"bz-t-c"}>
-            <div>
-              <button onClick={() => {
-                setCount(count + 1)
-              }}>
-                count {count}
-              </button>
-            </div>
-          </div>
-        )}
-
-        <div>
-          <button onClick={() => {
-            setShowState(!showState)
-          }}>
-            toggle show
-          </button>
-        </div>
-
         <div className="bz-t-c bz-pd-tb-50">
           <Link to="/index-children" className="bz-pd-10">
             link to Index Children

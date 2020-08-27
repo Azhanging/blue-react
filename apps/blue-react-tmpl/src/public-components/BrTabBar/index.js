@@ -43,33 +43,15 @@ export function setTabBarSubmenuIndex(index) {
   });
 }
 
-export function hideTabBarSubmenu() {
-  setTabBarSubmenuIndex(-1);
-}
-
 //菜单的路由跳转
-function routerTo(event, tabBarItem, index) {
+function routerTo(event, tabBarItem) {
   event.preventDefault();
-  const { to, children } = tabBarItem;
-  const tabBarSubMenuIndex = store.getState().view.tabBarSubmenuIndex;
-  //存在子菜单
-  if (children && children.list && utils.isArray(children.list.items)) {
-    //当前的index
-    const currentIndex = ((index === tabBarSubMenuIndex) ? -1 : index);
-    //设置子菜单的状态
-    setTabBarSubmenuIndex(currentIndex);
-    (currentIndex !== -1) && computeSubMenuPosition.call(this, {
-      menuElm: event.currentTarget
-    });
-  } else {
-    //设置子菜单的状态
-    hideTabBarSubmenu();
-    //非子菜单
-    if (utils.isStr(to)) {
-      history.push(to);
-    } else if (utils.isFunction(to)) {
-      to.call(this);
-    }
+  const { to } = tabBarItem;
+  //非子菜单
+  if (utils.isStr(to)) {
+    history.push(to);
+  } else if (utils.isFunction(to)) {
+    to.call(this);
   }
 }
 
@@ -99,7 +81,7 @@ function BrTabBar(props) {
             ])}
                key={`br-tab-bar-item-${index}`}
                onClick={(event) => {
-                 routerTo(event, item, index);
+                 routerTo(event, item);
                }}
             >
 

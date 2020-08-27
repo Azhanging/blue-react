@@ -21,17 +21,10 @@ const scrollHandler = utils.debounce(function () {
   setTabBarSubmenuIndex(-1);
 }, 200);
 
-//scroll事件的处理
-const clickHandler = utils.debounce(function () {
-  //设置子菜单的状态
-  setTabBarSubmenuIndex(-1);
-}, 200);
-
 //设置scroll事件
 function setEvent() {
   const addWinEvent = window.addEventListener;
   addWinEvent('scroll', scrollHandler, false);
-  addWinEvent('click', clickHandler, false);
 }
 
 //浮层相关
@@ -49,11 +42,13 @@ export function suspend(state) {
 export function tabBar(state) {
   const { name } = state;
   dispatch.SET_VIEW({
-    tabBar: {
-      name: (() => {
-        if (name === undefined) return config.app.tabBar;
-        return name;
-      })()
+    view: {
+      tabBar: {
+        name: (() => {
+          if (name === undefined) return config.app.tabBar;
+          return name;
+        })()
+      }
     }
   });
 }

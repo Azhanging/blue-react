@@ -9,9 +9,7 @@ function activeTabBar(allTabBar, setActiveIndex, tabBarName) {
   //匹配到对应导航配置
   const nav = allTabBar[tabBarName];
   if (nav) {
-    nav.active({
-      setActiveIndex
-    });
+    setActiveIndex(nav.active());
   } else if (tabBarName !== false) {
     //没有配置到导航配置，直接设置为没有导航
     dispatch.SET_VIEW({
@@ -51,7 +49,7 @@ function WTabBar() {
   return (
     <>
       {tabBarList && (
-        <BrTabBar list={tabBarList} activeIndex={activeIndex} activeClassName="bz-t-danger"/>
+        <BrTabBar list={tabBarList} activeIndex={activeIndex} activeClassName="bz-t-base"/>
       )}
     </>
   );
