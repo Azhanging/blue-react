@@ -12,7 +12,7 @@ function activeTabBar(allTabBar, setActiveIndex, tabBarName) {
     setActiveIndex(nav.active());
   } else if (tabBarName !== false) {
     //没有配置到导航配置，直接设置为没有导航
-    dispatch.SET_VIEW({
+    dispatch.VIEW({
       tabBar: {
         name: false
       }

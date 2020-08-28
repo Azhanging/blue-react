@@ -61,7 +61,7 @@ export function getWeChatConfig() {
     isShowLoading: false
   }).then((res) => {
     const { data } = res;
-    dispatch.SET_WE_CHAT(data);
+    dispatch.WECHAT(data);
   }).then(() => {
     setWeChatSdkConfig({
       id: ++weChatQueue.data.id

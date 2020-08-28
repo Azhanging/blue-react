@@ -1,53 +1,13 @@
 import './index.scss';
 import React from 'react';
-import store from '@store';
-import * as dispatch from '@store/dispatch';
 import { renderClassName } from "$assets/js/render";
 import history from '@router';
 import utils from 'blue-utils';
 import BrTabBarIcon from '../BrTabBarIcon';
 
-//计算子菜单的位置
-function computeSubMenuPosition(opts = {}) {
-  const { menuElm } = opts;
-  setTimeout(() => {
-    //导航
-    const tabBar = document.querySelector('#tabBar');
-    //导航宽度
-    const tabBarWidth = tabBar.offsetWidth;
-    //item的宽度
-    const menuElmWidth = menuElm.offsetWidth;
-    //item的left
-    const menuElmLeft = menuElm.offsetLeft;
-    //子菜单
-    const submenuElm = menuElm.lastElementChild;
-    //子菜单的宽度
-    const submenuElmWidth = submenuElm.offsetWidth;
-
-    let left = menuElmLeft + (menuElmWidth - submenuElmWidth) / 2;
-
-    if (left + submenuElmWidth > tabBarWidth) {
-      submenuElm.style.left = 'initial';
-      submenuElm.style.right = 0;
-    } else {
-      submenuElm.style.right = 'initial';
-      submenuElm.style.left = `${left}px`;
-    }
-  });
-}
-
-//设置导航子菜单状态
-export function setTabBarSubmenuIndex(index) {
-  dispatch.SET_VIEW({
-    tabBarSubmenuIndex: index
-  });
-}
-
 //菜单的路由跳转
-function routerTo(event, tabBarItem) {
-  event.preventDefault();
+function routerTo(tabBarItem) {
   const { to } = tabBarItem;
-  //非子菜单
   if (utils.isStr(to)) {
     history.push(to);
   } else if (utils.isFunction(to)) {
@@ -69,7 +29,6 @@ function BrTabBar(props) {
     <div className="br-tab-bar" id="tabBar" style={{
       backgroundColor: 'white'
     }}>
-
       {/*底部导航列表*/}
       <div className="br-tab-bar-list-container">
         <div className="br-tab-bar-list">
@@ -80,8 +39,8 @@ function BrTabBar(props) {
               activeIndex !== index ? unActiveClassName : activeClassName
             ])}
                key={`br-tab-bar-item-${index}`}
-               onClick={(event) => {
-                 routerTo(event, item);
+               onClick={() => {
+                 routerTo(item);
                }}
             >
 

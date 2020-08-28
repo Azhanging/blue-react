@@ -1,12 +1,12 @@
 import types from '@store/types';
 import utils from 'blue-utils';
-import _state from '@store/state';
+import initState from '@store/state';
 
 //视图相关的state
-export function view(state = _state.view, action) {
+export function view(state = initState.view, action) {
   const { type, payload } = action;
   switch (type) {
-    case types.SET_VIEW:
+    case types.VIEW:
       return utils.extend(state, payload);
     default:
       return state;

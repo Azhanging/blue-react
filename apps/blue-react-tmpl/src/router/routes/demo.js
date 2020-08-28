@@ -26,7 +26,10 @@ const demo = [{
   path: '/components',
   component: React.lazy(() => import(`@pages/components/Index`)),
   meta: {
-    title: 'components'
+    title: 'components',
+    tabBar: {
+      name: `components`
+    }
   },
   children: [{
     path: 'child',

@@ -29,13 +29,9 @@ function Index(props) {
     getState
   } = useCacheState();
 
-  const [count, setCount] = useState(getState('count', 0));
-  const [showState, setShowState] = useState(getState('showState', true));
   const [showLayer, setShowLayer] = useState(getState('showLayer', false));
 
   setState({
-    count,
-    showState,
     showLayer
   });
 
