@@ -70,9 +70,11 @@ function genRoutes(opts = {}) {
           });
 
           //after后执行的钩子
-          utils.hook(null, routerAfter, [{
-            history
-          }]);
+          setTimeout(() => {
+            utils.hook(null, routerAfter, [{
+              history
+            }]);
+          });
 
           return (
             <currentRoute.component
