@@ -20,8 +20,8 @@ const scrollHandler = utils.debounce(function () {
 
 //设置scroll事件
 function setEvent() {
-  const addWinEvent = window.addEventListener;
-  addWinEvent('scroll', scrollHandler, false);
+  const { addEventListener } = window;
+  addEventListener('scroll', scrollHandler, false);
 }
 
 //浮层相关
@@ -36,15 +36,9 @@ export function suspend(state) {
 }
 
 //导航的状态
-export function tabBar(state) {
-  const { name } = state;
+export function tabBar(tarBar = config.view.tabBar) {
   dispatch.VIEW({
-    tabBar: {
-      name: (() => {
-        if (name === undefined) return config.app.tabBar;
-        return name;
-      })()
-    }
+    tabBar
   });
 }
 

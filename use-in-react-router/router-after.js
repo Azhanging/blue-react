@@ -1,4 +1,4 @@
-import { setTabBarName } from "$assets/js/tab-bar";
+import { tabBar } from "$assets/js/view";
 import { routerMeta } from '@router';
 import config from '@config';
 import utils from 'blue-utils';
@@ -9,7 +9,7 @@ function routerAfter(opts = {}) {
   const { history } = opts;
   const { meta } = history.route;
   //设置 tabBar name
-  setTabBarName(meta.tabBar);
+  tabBar(meta.tabBar);
   //设置路由标识
   routerMeta.setCurrentRouteID(meta.routeID);
   //设置标题
