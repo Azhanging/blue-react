@@ -13,7 +13,7 @@ function BrSuspend(props) {
     <div className="br-suspend">
       {/*回到顶部*/}
       <div className="back-to-top" style={{
-        'display': props.scrollDistance && props.show
+        'display': props.scrollDistance && props.show ? `` : `none`
       }}>
         <a onClick={(e) => {
           backToTop();

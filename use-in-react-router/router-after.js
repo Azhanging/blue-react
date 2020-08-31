@@ -1,4 +1,4 @@
-import { tabBar } from "$assets/js/view";
+import { tabBar, suspend } from "$assets/js/view";
 import { routerMeta } from '@router';
 import config from '@config';
 import utils from 'blue-utils';
@@ -8,8 +8,14 @@ import NProgress from 'nprogress';
 function routerAfter(opts = {}) {
   const { history } = opts;
   const { meta } = history.route;
+  const { suspend: suspendState = {} } = meta;
   //设置 tabBar name
   tabBar(meta.tabBar);
+  //浮层状态
+  suspend({
+    status: suspendState.status,
+    distance: 0
+  });
   //设置路由标识
   routerMeta.setCurrentRouteID(meta.routeID);
   //设置标题

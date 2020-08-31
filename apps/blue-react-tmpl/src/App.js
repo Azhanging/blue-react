@@ -14,7 +14,9 @@ function App(props) {
         {props.children}
       </Suspense>
       {/*浮动层*/}
-      <BrSuspend scrollDistance={view.suspend.distance} show={view.suspend.status}/>
+      <BrSuspend scrollDistance={view.suspend.distance} show={view.suspend.status} backToTop={(
+        <i className="bp-icon bp-icon-go-top bz-f-20 bz-t-666"></i>
+      )}/>
       {/*导航*/}
       <WTabBar/>
     </div>

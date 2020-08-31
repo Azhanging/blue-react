@@ -25,13 +25,11 @@ function setEvent() {
 }
 
 //浮层相关
-export function suspend(state) {
-  if (state.status !== false) state.status = true;
+export function suspend(_suspend) {
+  if (_suspend.status !== false) _suspend.status = true;
   //设置scroll top
   dispatch.VIEW({
-    suspend: {
-      state
-    }
+    suspend: _suspend
   });
 }
 
