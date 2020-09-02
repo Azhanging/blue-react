@@ -4,18 +4,29 @@ import BrHeader from '$components/BrHeader';
 
 function Index(props) {
 
-	return (
-		<BrView routes={props.routes}>
-			<BrHeader centerControl={{
-				title: `Components`
-			}}/>
-			<div>
-				<div className="bz-pd-14 bz-t-c">
-					Components
-				</div>
-			</div>
-		</BrView>
-	);
+  return (
+    <BrView routes={props.routes}>
+      <BrHeader centerControl={{
+        title: `Components`
+      }}/>
+      <div>
+        {(() => {
+          const list = [];
+          for (let i = 0; i < 30; i++) {
+            list.push(
+              <div className="bz-pd-20">
+                {i}
+              </div>
+            );
+          }
+          return list
+        })()}
+        <div className="bz-pd-14 bz-t-c">
+          Components
+        </div>
+      </div>
+    </BrView>
+  );
 }
 
 export default Index;

@@ -14,7 +14,7 @@ function BrTabBarIcon(props) {
           return (
             <img src={activeIndex === currentIndex ? icon.activeSrc : icon.src} className={renderClassName([
               "bv-tab-bar-icon"
-            ])}/>
+            ])} alt=""/>
           );
         } else if (icon.font) {
           return (

@@ -9,11 +9,16 @@ function backToTop() {
 
 //浮层
 function BrSuspend(props) {
+  const {
+    distance = 200,
+    scrollDistance,
+    show
+  } = props;
   return (
     <div className="br-suspend">
       {/*回到顶部*/}
       <div className="back-to-top" style={{
-        'display': props.scrollDistance && props.show ? `` : `none`
+        'display': scrollDistance > distance && show ? `` : `none`
       }}>
         <a onClick={(e) => {
           backToTop();

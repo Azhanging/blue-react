@@ -47,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="index&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blue-vue" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -179,6 +179,8 @@
       <workItem from="1598663280663" duration="5985000" />
       <workItem from="1598779631871" duration="3462000" />
       <workItem from="1598876778772" duration="5529000" />
+      <workItem from="1598972485949" duration="726000" />
+      <workItem from="1599053394122" duration="4853000" />
     </task>
     <servers />
   </component>
@@ -227,14 +229,14 @@
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
     <state x="93" y="93" width="1542" height="854" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1728.1040@0.0.1728.1040" timestamp="1598457944670" />
-    <state x="564" y="252" width="600" height="568" key="find.popup" timestamp="1598883533012">
+    <state x="564" y="252" width="600" height="568" key="find.popup" timestamp="1599057224483">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state x="564" y="252" width="600" height="568" key="find.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1598883533012" />
+    <state x="564" y="252" width="600" height="568" key="find.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599057224483" />
     <state x="627" y="252" width="667" height="568" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598714830879" />
-    <state x="521" y="174" width="672" height="676" key="search.everywhere.popup" timestamp="1598458060947">
+    <state x="521" y="174" width="672" height="676" key="search.everywhere.popup" timestamp="1599054962800">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state x="521" y="174" width="672" height="676" key="search.everywhere.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1598458060947" />
+    <state x="521" y="174" width="672" height="676" key="search.everywhere.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599054962800" />
   </component>
 </project>
