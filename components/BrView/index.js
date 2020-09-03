@@ -7,6 +7,8 @@ import config from '@config';
 import { mockViewScroll } from '$assets/js/device';
 import { renderClassName } from '$assets/js/render';
 import { useCachePosition, useCacheRefresh } from '$components/BrRoutes';
+import { useRouteState } from '$components/BrRoutes/cache';
+import history from "@router";
 
 let scrollStatus = false;
 
@@ -15,11 +17,13 @@ let scrollDebounce = null;
 //set view scroll event
 export function setScrollEvent(opts = {}) {
   const {
-    setScroll
+    setScroll,
+    routeKey
   } = opts;
 
   //scroll 节流实现
   scrollDebounce = utils.debounce(function () {
+    if (history.route.key !== routeKey) return;
     const top = document.documentElement.scrollTop;
     //组件内的scroll记录
     setScroll({
@@ -59,10 +63,15 @@ export default function BrView(props) {
 
   const [scroll, setScroll] = useState(getPosition());
 
+  const {
+    routeKey
+  } = useRouteState();
+
   useEffect(() => {
     //设置scroll事件流
     setScrollEvent({
-      setScroll
+      setScroll,
+      routeKey
     });
     //初始化设置定位
     document.documentElement.scrollTop = scroll.y;

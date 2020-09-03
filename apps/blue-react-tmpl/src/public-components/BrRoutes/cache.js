@@ -76,7 +76,7 @@ export function Provider(props) {
 }
 
 //路由状态
-function useRouteState() {
+export function useRouteState() {
   const { history } = useContext(BrRoutesCacheContext);
   const { route } = history;
   const [routeKey] = useState(route.key);

@@ -14,7 +14,7 @@ function Index(props) {
           const list = [];
           for (let i = 0; i < 30; i++) {
             list.push(
-              <div className="bz-pd-20">
+              <div className="bz-pd-20" key={i}>
                 {i}
               </div>
             );
