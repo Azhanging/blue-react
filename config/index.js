@@ -107,8 +107,12 @@ const config = {
   },
 
   //request相关
-  axios: {
-    timeout: 200000
+  request: {
+    options: {
+      timeout: 3000,
+      showLoading: true,
+      showToast: false
+    }
   },
 
   /*

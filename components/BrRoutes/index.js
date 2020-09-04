@@ -5,6 +5,7 @@ import { BrRoutesCacheContext } from './cache';
 import { setHistoryListen } from './listen';
 import { setHistory } from './history';
 import { extendNativeHistory } from './navigator';
+import { setMeta } from './meta';
 
 //扩张usCache
 export * from './cache';
@@ -62,6 +63,9 @@ function genRoutes(opts = {}) {
         render={(routeProps) => {
 
           const { history } = routeProps;
+
+          /*设置meta信息*/
+          setMeta(currentRoute);
 
           //设置
           setHistory({

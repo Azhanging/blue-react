@@ -16,7 +16,7 @@ function pathID(router) {
       const isBasePath = (this._routerPath === '/');
       const routesID = this.routesID;
       if (!routesID[id]) {
-        routesID[id] = `${this._routerPath}${ isBasePath ? '' : '/'}${router.path}`;
+        routesID[id] = `${this._routerPath}${isBasePath ? '' : '/'}${router.path}`;
       } else {
         console.warn(`has same pathID in meta(meta中存在相同的pathID)`);
       }

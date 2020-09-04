@@ -47,26 +47,27 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="index&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/use-in-react-router" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="ts.external.directory.path" value="E:\Program Files\JetBrains\WebStorm 2019.3.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\achang\github\blue-react-program\use-in-react-router" />
+      <recent name="D:\Achang\Web\blue-react\apps\blue-react-tmpl\src\components\wap\WTabBar" />
+      <recent name="D:\Achang\Web\blue-react\assets\js" />
+      <recent name="E:\achang\github\blue-react-program\apps\blue-react-tmpl\mock" />
+      <recent name="E:\achang\github\blue-react-program\assets\js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\achang\github\blue-react-program\apps\blue-react-tmpl\src\router\routes" />
       <recent name="$PROJECT_DIR$/components/BrRoutes" />
       <recent name="E:\achang\github\blue-react-program\use-in-react" />
       <recent name="E:\achang\web\blue-react-program\apps\blue-react-tmpl\src\store\state" />
       <recent name="E:\achang\github\blue-react-program\components\BrView" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Achang\Web\blue-react\apps\blue-react-tmpl\src\components\wap\WTabBar" />
-      <recent name="D:\Achang\Web\blue-react\assets\js" />
-      <recent name="E:\achang\github\blue-react-program\apps\blue-react-tmpl\mock" />
-      <recent name="E:\achang\github\blue-react-program\assets\js" />
-      <recent name="E:\achang\github\blue-react-program" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.BrRoutes.js">
@@ -182,62 +183,66 @@
       <workItem from="1598972485949" duration="726000" />
       <workItem from="1599053394122" duration="4934000" />
       <workItem from="1599137795789" duration="3944000" />
+      <workItem from="1599190599081" duration="5909000" />
+      <workItem from="1599204567339" duration="6115000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="645" y="275" key="FileChooserDialogImpl" timestamp="1598881310457">
-      <screen x="0" y="0" width="1728" height="1040" />
+    <state x="717" y="275" key="FileChooserDialogImpl" timestamp="1599191508785">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="645" y="275" key="FileChooserDialogImpl/0.0.1728.1040@0.0.1728.1040" timestamp="1598881310457" />
-    <state x="717" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1598663377044" />
-    <state width="1707" height="294" key="GridCell.Tab.0.bottom" timestamp="1599139210971">
-      <screen x="0" y="0" width="1728" height="1040" />
+    <state x="717" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599191508785" />
+    <state width="1247" height="276" key="GridCell.Tab.0.bottom" timestamp="1599202966288">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1707" height="294" key="GridCell.Tab.0.bottom/0.0.1728.1040@0.0.1728.1040" timestamp="1599139210971" />
-    <state width="1899" height="253" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598720290636" />
-    <state width="1707" height="294" key="GridCell.Tab.0.center" timestamp="1599139210971">
-      <screen x="0" y="0" width="1728" height="1040" />
+    <state width="1247" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966288" />
+    <state width="1247" height="276" key="GridCell.Tab.0.center" timestamp="1599202966288">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1707" height="294" key="GridCell.Tab.0.center/0.0.1728.1040@0.0.1728.1040" timestamp="1599139210971" />
-    <state width="1899" height="253" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598720290636" />
-    <state width="1707" height="294" key="GridCell.Tab.0.left" timestamp="1599139210971">
-      <screen x="0" y="0" width="1728" height="1040" />
+    <state width="1247" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966288" />
+    <state width="1247" height="276" key="GridCell.Tab.0.left" timestamp="1599202966287">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1707" height="294" key="GridCell.Tab.0.left/0.0.1728.1040@0.0.1728.1040" timestamp="1599139210971" />
-    <state width="1899" height="253" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598720290636" />
-    <state width="1707" height="294" key="GridCell.Tab.0.right" timestamp="1599139210971">
-      <screen x="0" y="0" width="1728" height="1040" />
+    <state width="1247" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966287" />
+    <state width="1247" height="276" key="GridCell.Tab.0.right" timestamp="1599202966288">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1707" height="294" key="GridCell.Tab.0.right/0.0.1728.1040@0.0.1728.1040" timestamp="1599139210971" />
-    <state width="1899" height="253" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598720290636" />
+    <state width="1247" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966288" />
     <state x="93" y="93" width="1542" height="854" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598457944670">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
     <state x="93" y="93" width="1542" height="854" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1728.1040@0.0.1728.1040" timestamp="1598457944670" />
-    <state x="564" y="252" width="600" height="568" key="find.popup" timestamp="1599139085446">
-      <screen x="0" y="0" width="1728" height="1040" />
+    <state x="627" y="252" width="667" height="568" key="find.popup" timestamp="1599210364579">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="564" y="252" width="600" height="568" key="find.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599139085446" />
-    <state x="627" y="252" width="667" height="568" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1598714830879" />
-    <state x="521" y="174" width="672" height="676" key="search.everywhere.popup" timestamp="1599054962800">
-      <screen x="0" y="0" width="1728" height="1040" />
+    <state x="627" y="252" width="667" height="568" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599210364579" />
+    <state x="579" y="174" width="747" height="676" key="search.everywhere.popup" timestamp="1599203135445">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="521" y="174" width="672" height="676" key="search.everywhere.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599054962800" />
+    <state x="579" y="174" width="747" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599203135445" />
   </component>
 </project>
