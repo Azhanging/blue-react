@@ -13,7 +13,7 @@ export const historyQueue = new BlueQueuePipe({
 
 //设置query
 function setQuery(location) {
-//设置参数
+  //设置参数
   location.query = utils.parseParams(utils.getLinkParams(location.search));
 }
 
@@ -29,7 +29,7 @@ function setRoute(opts = {}) {
   history.route = {
     key: location.key,
     ...match,
-    query: utils.extend({}, location.query),
+    query: utils.deepCopy(location.query),
     meta: currentRoute.meta || {},
     raw: currentRoute
   };

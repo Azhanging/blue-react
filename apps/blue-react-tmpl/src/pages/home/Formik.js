@@ -15,7 +15,8 @@ function initFormData() {
 
 const validateFormData = Yup.object().shape({
   name: Yup.string().required(`name has error`).matches(/.+/, `name has error`),
-  age: Yup.number().required(`age has error`)
+  age: Yup.number().required(`age has error`),
+  radio: Yup.number().required(`radio has error`)
 });
 
 function FormikPage(props) {
@@ -118,9 +119,9 @@ function FormikPage(props) {
                   </div>
 
                   {/*错误组件处理*/}
-                  <BrFormikError errors={errors} touched={touched} name="name">
+                  <BrFormikError errors={errors} touched={touched} name="radio">
                     <div className="bz-t-red">
-                      {errors.name}
+                      {errors.radio}
                     </div>
                   </BrFormikError>
 

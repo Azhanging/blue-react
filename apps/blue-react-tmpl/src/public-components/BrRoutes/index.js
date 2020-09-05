@@ -1,8 +1,6 @@
-import React, { useState, useContext, useEffect, useMemo } from 'react';
+import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import utils from 'blue-utils';
-import { BrRoutesCacheContext } from './cache';
-import { setHistoryListen } from './listen';
 import { setHistory } from './history';
 import { extendNativeHistory } from './navigator';
 import { setMeta } from './meta';
@@ -31,6 +29,7 @@ function genRoutes(opts = {}) {
   const {
     routes,
     path,
+    routerBefore,
     routerAfter
   } = opts;
   const _routes = [];
@@ -73,22 +72,31 @@ function genRoutes(opts = {}) {
             routeProps
           });
 
-          //after后执行的钩子
-          setTimeout(() => {
-            utils.hook(null, routerAfter, [{
-              history
-            }]);
-          });
+          //处理router before
+          utils.hook(null, routerBefore, [{
+            history
+          }]);
 
           return (
             <currentRoute.component
               route={history.route}
               routes={routes}
-            />
+            >
+              {/*挂载页面后调用*/}
+              {(() => {
+                //after后执行的钩子
+                setTimeout(() => {
+                  utils.hook(null, routerAfter, [{
+                    history
+                  }]);
+                }, 10);
+              })()}
+            </currentRoute.component>
           );
         }}
       />
-    ));
+    ))
+    ;
   });
 
   return (
@@ -126,27 +134,9 @@ export function BrRoutes(props) {
 
   const [routes] = useState(genRoutes({
     routes: props.routes,
+    routerBefore: props.routerBefore,
     routerAfter: props.routerAfter
   }));
-
-  const { history } = useContext(BrRoutesCacheContext);
-
-  //只调用一次render前调用
-  const unListen = useMemo(() => {
-    //设置监听
-    return setHistoryListen({
-      history,
-      routerBefore: props.routerBefore
-    });
-    // eslint-disable-next-line
-  }, []);
-
-  //卸载history listen
-  useEffect(() => {
-    return () => {
-      unListen();
-    };
-  }, [unListen]);
 
   return (
     <>

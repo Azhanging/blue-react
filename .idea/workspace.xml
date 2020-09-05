@@ -47,7 +47,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="index&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/use-in-react-router" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blue-vue" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -185,64 +185,69 @@
       <workItem from="1599137795789" duration="3944000" />
       <workItem from="1599190599081" duration="5909000" />
       <workItem from="1599204567339" duration="6115000" />
+      <workItem from="1599227702208" duration="6145000" />
+      <workItem from="1599267784727" duration="6284000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="717" y="275" key="FileChooserDialogImpl" timestamp="1599191508785">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="645" y="275" key="FileChooserDialogImpl" timestamp="1599269919515">
+      <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state x="645" y="275" key="FileChooserDialogImpl/0.0.1728.1040@0.0.1728.1040" timestamp="1598881310457" />
+    <state x="645" y="275" key="FileChooserDialogImpl/0.0.1728.1040@0.0.1728.1040" timestamp="1599269919515" />
     <state x="717" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599191508785" />
-    <state width="1247" height="276" key="GridCell.Tab.0.bottom" timestamp="1599202966288">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1707" height="113" key="GridCell.Tab.0.bottom" timestamp="1599234371850">
+      <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="294" key="GridCell.Tab.0.bottom/0.0.1728.1040@0.0.1728.1040" timestamp="1599139210971" />
+    <state width="1707" height="113" key="GridCell.Tab.0.bottom/0.0.1728.1040@0.0.1728.1040" timestamp="1599234371850" />
     <state width="1247" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966288" />
-    <state width="1247" height="276" key="GridCell.Tab.0.center" timestamp="1599202966288">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1707" height="113" key="GridCell.Tab.0.center" timestamp="1599234371850">
+      <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="294" key="GridCell.Tab.0.center/0.0.1728.1040@0.0.1728.1040" timestamp="1599139210971" />
+    <state width="1707" height="113" key="GridCell.Tab.0.center/0.0.1728.1040@0.0.1728.1040" timestamp="1599234371850" />
     <state width="1247" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966288" />
-    <state width="1247" height="276" key="GridCell.Tab.0.left" timestamp="1599202966287">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1707" height="113" key="GridCell.Tab.0.left" timestamp="1599234371849">
+      <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="294" key="GridCell.Tab.0.left/0.0.1728.1040@0.0.1728.1040" timestamp="1599139210971" />
+    <state width="1707" height="113" key="GridCell.Tab.0.left/0.0.1728.1040@0.0.1728.1040" timestamp="1599234371849" />
     <state width="1247" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966287" />
-    <state width="1247" height="276" key="GridCell.Tab.0.right" timestamp="1599202966288">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1707" height="113" key="GridCell.Tab.0.right" timestamp="1599234371850">
+      <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="294" key="GridCell.Tab.0.right/0.0.1728.1040@0.0.1728.1040" timestamp="1599139210971" />
+    <state width="1707" height="113" key="GridCell.Tab.0.right/0.0.1728.1040@0.0.1728.1040" timestamp="1599234371850" />
     <state width="1247" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966288" />
     <state x="93" y="93" width="1542" height="854" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598457944670">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
     <state x="93" y="93" width="1542" height="854" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1728.1040@0.0.1728.1040" timestamp="1598457944670" />
-    <state x="627" y="252" width="667" height="568" key="find.popup" timestamp="1599210364579">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="564" y="252" width="600" height="568" key="find.popup" timestamp="1599273248477">
+      <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state x="564" y="252" width="600" height="568" key="find.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599139085446" />
+    <state x="564" y="252" width="600" height="568" key="find.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599273248477" />
     <state x="627" y="252" width="667" height="568" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599210364579" />
-    <state x="579" y="174" width="747" height="676" key="search.everywhere.popup" timestamp="1599203135445">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="521" y="241" key="run.anything.popup" timestamp="1599272929292">
+      <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state x="521" y="174" width="672" height="676" key="search.everywhere.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599054962800" />
+    <state x="521" y="241" key="run.anything.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599272929292" />
+    <state x="521" y="174" width="672" height="676" key="search.everywhere.popup" timestamp="1599234287672">
+      <screen x="0" y="0" width="1728" height="1040" />
+    </state>
+    <state x="521" y="174" width="672" height="676" key="search.everywhere.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599234287672" />
     <state x="579" y="174" width="747" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599203135445" />
   </component>
 </project>

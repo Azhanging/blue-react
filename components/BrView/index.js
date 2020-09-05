@@ -3,8 +3,6 @@ import './index.scss';
 import React, { useState, useEffect } from 'react';
 import utils from 'blue-utils';
 import { useSelector } from 'react-redux';
-import config from '@config';
-import { mockViewScroll } from '$assets/js/device';
 import { renderClassName } from '$assets/js/render';
 import { useCachePosition, useCacheRefresh } from '$components/BrRoutes';
 import { useRouteState } from '$components/BrRoutes/cache';
@@ -42,14 +40,6 @@ export function setScrollEvent(opts = {}) {
     //阻止scroll冒泡
     event.stopPropagation();
   }, false);
-}
-
-//ios input bug
-export function inputEvent() {
-  const device = config.device;
-  if (device.isWap && (device.isIPhone || device.isIPad)) {
-    mockViewScroll();
-  }
 }
 
 //view中间层

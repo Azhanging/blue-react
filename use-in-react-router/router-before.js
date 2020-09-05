@@ -11,10 +11,7 @@ function routerBefore() {
   NProgress.start();
   //项目内使用的before each
   const { navigator } = history;
-  utils.hook(null, history.beforeHook, [
-    navigator.to,
-    navigator.from
-  ]);
+  utils.hook(null, history.beforeHook);
 }
 
 export default routerBefore;
