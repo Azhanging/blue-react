@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import BrLayoutView from '@components/public/BrLayoutView';
+import BrView from '$components/BrView';
 import BrHeader from '$components/BrHeader';
 import { Link } from 'react-router-dom';
 import { useCacheState } from '$components/BrRoutes';
@@ -19,17 +19,17 @@ function Children(props) {
   });
 
   return (
-    <BrLayoutView routes={props.routes}>
+    <BrView routes={props.routes}>
 
       <BrHeader centerControl={{
         title: 'INDEX-CHILDREN'
       }}/>
 
-      <div className="bc-t-c bc-pd-14rp">
+      <div className="bz-t-c bz-pd-14rp">
         index children
       </div>
 
-      <div className="bc-t-c bc-pd-14rp">
+      <div className="bz-t-c bz-pd-14rp">
         <button onClick={() => {
           setCount(count + 1);
         }}>
@@ -37,23 +37,23 @@ function Children(props) {
         </button>
       </div>
 
-      <div className="bc-t-c bc-pd-14rp">
+      <div className="bz-t-c bz-pd-14rp">
         <Link to="/index-children/index-children-children">
           index-children
         </Link>
       </div>
 
-      <div className="bc-t-c bc-pd-tb-50">
-        <Link to="/" className="bc-pd-10">
+      <div className="bz-t-c bz-pd-tb-50">
+        <Link to="/" className="bz-pd-10">
           home
         </Link>
       </div>
 
       {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-        <div className={"bc-pd-50 bc-t-c"} key={item}>{item}</div>
+        <div className={"bz-pd-50 bz-t-c"} key={item}>{item}</div>
       ))}
 
-    </BrLayoutView>
+    </BrView>
   )
 }
 

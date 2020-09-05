@@ -1,12 +1,27 @@
+import code from './code';
 import { Toast } from 'antd-mobile';
 import { unLogin, loginExpire } from '$assets/js/login';
+import { redirect } from '$assets/js/redirect';
 import { bindPhone } from '$assets/js/bind';
-import code from './code';
+
 
 //错误码处理
-export function codeHandler(opts = {}) {
-  const { code: requestCode, message } = opts;
+export function codeHandler(res = {}) {
+  const { code: requestCode, message } = res;
+
   switch (requestCode) {
+    //重定向类型
+    case code.REDIRECT:
+      let redirectTime = 0;
+      //存在重定向信息
+      if (message) {
+        Toast.info(message);
+        redirectTime = 1000;
+      }
+      setTimeout(() => {
+        redirect(res.data);
+      }, redirectTime);
+      break;
 
     //未登录处理
     case code.UN_LOGIN:

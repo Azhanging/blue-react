@@ -1,7 +1,7 @@
 import config from '@config';
 import { createBrowserHistory, createHashHistory } from 'history';
-import { useInReactRouter } from "$use-in-react-router";
-import RouterMeta from '$use-in-react-router/router-meta';
+import { useInReactRouter } from "$components/BrRoutes/history";
+import RouterID from '$use-in-react-router/router-id';
 
 //绑定路由的实例，方便外部使用
 const history = (() => {
@@ -17,6 +17,16 @@ const history = (() => {
 useInReactRouter(history);
 
 //路由标记
-export const routerMeta = new RouterMeta();
+export const routerID = new RouterID();
+
+//路由触发前调用
+history.beforeHook = function () {
+  console.log(`beforeHook`);
+};
+
+//路由触发前调用
+history.afterHook = function () {
+  console.log(`afterHook`);
+};
 
 export default history;

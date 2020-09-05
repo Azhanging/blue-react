@@ -6,12 +6,9 @@ import history from "./index";
 import store from '@store';
 import routes from './routes/index';
 import { BrRoutes, Provider as BrRoutesProvider } from '$components/BrRoutes';
-import { routerMeta } from './index';
 //路由后处理
 import routerAfter from '$use-in-react-router/router-after';
 import routerBefore from '$use-in-react-router/router-before';
-
-const $routes = routerMeta.setMeta(routes);
 
 export function AppRouter() {
   return (
@@ -20,7 +17,7 @@ export function AppRouter() {
         <BrRoutes
           routerBefore={routerBefore}
           routerAfter={routerAfter}
-          routes={$routes}
+          routes={routes}
           render={(routes) => (
             <Router history={history}>
               <App>

@@ -14,8 +14,6 @@ export function device() {
     setViewport();
     //移动端相关的focus处理
     mobileFocus();
-    //修复ios上的一些bug
-    fixIOSBug();
   }
 }
 
@@ -94,8 +92,6 @@ function iosFocus() {
     });
     //设置focus状态
     setFocusStatus(true);
-    //ios focus fixed bug
-    mockViewScroll();
   });
 
   document.body.addEventListener('focusout', (event) => {
@@ -106,10 +102,6 @@ function iosFocus() {
     });
     //设置focus状态
     setFocusStatus(false);
-    //ios focus fixed bug
-    mockViewScroll();
-    //body scroll move
-    mockBodyScroll();
   });
 
 }
@@ -159,55 +151,28 @@ function focusHook(opts) {
   ];
 
   if ((tagName === 'INPUT' && types.indexOf(elmType) !== -1) || (
-      tagName === 'SELECT'
-    ) || (
-      tagName === 'TEXTAREA'
-    )
+    tagName === 'SELECT'
+  ) || (
+    tagName === 'TEXTAREA'
+  )
   ) {
     if (type === 'focusout') {
-      dispatch.SET_VIEW({
-        tabBar: lastNav,
+      dispatch.VIEW({
+        tabBar: {
+          name: lastNav
+        },
         pageFixed: true
       });
     } else if (type === 'focusin') {
-      dispatch.SET_VIEW({
-        tabBar: false,
+      dispatch.VIEW({
+        tabBar: {
+          name: false
+        },
         pageFixed: false
       });
     }
   }
 }
-
-//模拟移动，scroll中操作表单会出现偏移的情况，做一次抖动让表单正常
-export function mockViewScroll() {
-  setTimeout(() => {
-    const scrollElm = document.querySelectorAll('.bv-view-scroll');
-    [].forEach.call(scrollElm, (viewElm) => {
-      viewElm.scrollTop += 1;
-      viewElm.scrollTop -= 1;
-    });
-  });
-}
-
-//模拟body scroll
-function mockBodyScroll() {
-  document.body.scrollTop = 0;
-}
-
-//修复一些ios上的bug
-function fixIOSBug() {
-  if (!(config.device.isIPhone || config.device.isIPad)) return;
-  //ios在move的时候，body层会出现1秒的无法滑稽（动）（系统在偷偷复位回弹）
-  //在end处理body层scrollTop回到0
-  let endTimer;
-  document.body.addEventListener('touchend', () => {
-    clearTimeout(endTimer);
-    endTimer = setTimeout(() => {
-      !focusStatus && mockBodyScroll();
-    }, 200);
-  });
-}
-
 //设置focus状态
 export function setFocusStatus(status) {
   focusStatus = status;

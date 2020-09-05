@@ -1,82 +1,53 @@
 //组件样式
 import './index.scss';
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import utils from 'blue-utils';
 import { useSelector } from 'react-redux';
-import config from '@config';
-import { mockViewScroll } from '$assets/js/device';
-import { renderProps, renderClassName } from '$assets/js/render';
-import { hideTabBarSubmenu } from '$components/BrTabBar';
+import { renderClassName } from '$assets/js/render';
 import { useCachePosition, useCacheRefresh } from '$components/BrRoutes';
+import { useRouteState } from '$components/BrRoutes';
+import history from "@router";
 
-const viewScrollClassName = '.br-view-scroll';
+//只做一次事件添加
+let hasScrollEvent = false;
 
-//获取当前的view层elm
-export function getLastViewElm() {
-  const viewScrolls = document.querySelectorAll(viewScrollClassName);
-  if (viewScrolls && viewScrolls.length > 0) {
-    return viewScrolls[viewScrolls.length - 1];
-  }
-  return null;
-}
-
-//设置当前elm的scroll
-export function setCurrentViewScroll(position = {
-  x: 0,
-  y: 0
-}) {
-  const lastView = getLastViewElm();
-  lastView && (lastView.scrollTop = position.y);
-}
+//处理view对于的scroll事件
+let scrollDebounce = null;
 
 //set view scroll event
-export function setViewEvent(opts = {}) {
+export function setScrollEvent(opts = {}) {
   const {
-    scrollElm,
-    setScroll
+    setScroll,
+    routeKey
   } = opts;
 
   //scroll 节流实现
-  const scrollDebounce = utils.debounce(function (event) {
-    const elm = event.target;
-    const scrollTop = elm.scrollTop;
+  scrollDebounce = utils.debounce(function () {
+    if (history.route.key !== routeKey) return;
+    const top = document.documentElement.scrollTop;
     //组件内的scroll记录
     setScroll({
-      y: scrollTop,
+      y: top,
       x: 0
     });
   }, 150);
 
+  //只存在一个scroll事件
+  if (hasScrollEvent) return;
+  hasScrollEvent = true;
   //view scroll event
-  scrollElm.addEventListener('scroll', (event) => {
+  window.addEventListener('scroll', (event) => {
     //节流处理scrollTop
-    scrollDebounce(null, [event]);
-    //滑动的时候也隐藏子菜单的状态
-    hideTabBarSubmenu();
+    scrollDebounce();
     //阻止scroll冒泡
     event.stopPropagation();
   }, false);
 }
 
-//ios input bug
-export function inputEvent() {
-  const device = config.device;
-  if (device.isWap && (device.isIPhone || device.isIPad)) {
-    mockViewScroll();
-  }
-}
-
 //view中间层
 export default function BrView(props) {
   const tabBar = useSelector((state) => state.view.tabBar);
-  const {
-    router = {
-      level: 1
-    }
-  } = props;
 
-  //设置scrollElm的ref
-  const scrollElm = useRef();
   const {
     setPosition,
     getPosition
@@ -84,14 +55,18 @@ export default function BrView(props) {
 
   const [scroll, setScroll] = useState(getPosition());
 
+  const {
+    routeKey
+  } = useRouteState();
+
   useEffect(() => {
     //设置scroll事件流
-    setViewEvent({
-      scrollElm: scrollElm.current,
-      setScroll
+    setScrollEvent({
+      setScroll,
+      routeKey
     });
     //初始化设置定位
-    setCurrentViewScroll(scroll);
+    document.documentElement.scrollTop = scroll.y;
     // eslint-disable-next-line
   }, []);
 
@@ -107,41 +82,11 @@ export default function BrView(props) {
     <div
       className={renderClassName([
         "br-view",
-        !tabBar && 'no-tab-bar'
+        !tabBar.name && 'no-tab-bar'
       ])}
-      onClick={hideTabBarSubmenu}
-      onInput={inputEvent}
-      style={{
-        zIndex: `${(100 * (router.level || 1))}`
-      }}
     >
-
-      {/*scroll容器*/}
-      <div className="br-view-scroll" ref={scrollElm}>
-        {props.children}
-      </div>
-
-      {/*子路由*/}
-      {props.routes}
-
-      {/*浮动相关*/}
-      {renderProps({
-        render: props.suspend,
-        props: {
-          scroll,
-          scrollElm
-        }
-      })}
-
-      {/*其他的组件*/}
-      {renderProps({
-        render: props.other,
-        props: {
-          scroll,
-          scrollElm
-        }
-      })}
-
+      {/*子节点*/}
+      {props.children}
     </div>
   )
 }

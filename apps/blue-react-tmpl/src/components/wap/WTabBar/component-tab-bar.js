@@ -1,123 +1,36 @@
-import history from '@router';
+import router from '@router';
 
 const componentTabBar = {
   list: {
     items: [{
-      content: {
-        value: '首页',
-        fontSize: 10
-      },
+      text: '首页',
       icon: {
-        src: 'https://www.dtb315.com/Static/wap/home/images/bottom_btn/allclass.png',                       //没选中的src图片
-        /*fontClassName:''  font icon class name*/
-        /*activeFontClassName:'' active font icon class name*/
-        activeSrc: 'https://www.dtb315.com/Static/wap/home/images/bottom_btn/allclass-active.png',
-        direction: 'Left',
-        style: {
-          width: `20px`,
-          height: '20px'
-        }
+        font: 'bp-icon bp-icon-home',
+        activeFont: 'bz-t-base'
       },
-      to: '/',
-      className: 'bc-pd-6'
+      to: '/'
     }, {
-      content: {
-        value: 'scroll',
-        fontSize: 10
-      },
+      text: 'scroll',
       icon: {
-        src: 'https://www.dtb315.com/Static/wap/home/images/bottom_btn/allclass.png',                       //没选中的src图片
-        activeSrc: 'https://www.dtb315.com/Static/wap/home/images/bottom_btn/allclass-active.png',
-        direction: 'Right',
-        style: {
-          width: `20px`,
-          height: '20px'
-        }
-      },
-      className: 'bc-pd-6',
-      children: {
-        style: {
-          backgroundColor: `#ca9f75`
-        },
-        unActiveClassName: 'bc-t-white',
-        list: {
-          items: [{
-            content: {
-              value: '子菜单子菜单1'
-            },
-            className: 'bc-bd-b-white',
-            to: '/'
-          }, {
-            content: {
-              value: '子菜单2'
-            }
-          }],
-          style: {
-            border: `1px solid white`
-          }
-        },
-        arrow: {
-          background: '#ca9f75'
-        }
+        font: 'bp-icon bp-icon-home',
+        activeFont: 'bz-t-base'
       }
     }, {
-      content: {
-        value: '组件',
-        fontSize: 10
-      },
+      text: '组件',
       icon: {
-        src: 'https://www.dtb315.com/Static/wap/home/images/bottom_btn/allclass.png',                       //没选中的src图片
-        activeSrc: 'https://www.dtb315.com/Static/wap/home/images/bottom_btn/allclass-active.png',
-        direction: 'Left',
-        style: {
-          width: `20px`,
-          height: '20px'
-        }
+        font: 'bp-icon bp-icon-menu',
+        activeFont: 'bz-t-base'
       },
-      className: 'bc-pd-6',
-      children: {
-        style: {
-          backgroundColor: 'white',
-          border: `1px solid #e5e5e5`
-        },
-        unActiveClassName: 'bc-t-danger',
-        list: {
-          items: [{
-            content: {
-              value: '子菜单子菜单4'
-            },
-            className: 'bc-bd-b-white',
-            to: '/'
-          }, {
-            content: {
-              value: '子菜单子菜单5',
-            },
-            to: '/',
-            className: 'bc-bd-b-white'
-          }, {
-            content: {
-              value: '子菜单6'
-            },
-            to: '/'
-          }],
-          style: {
-            border: `1px solid #e5e5e5`
-          }
-        },
-        arrow: {
-          background: '#333'
-        }
-      }
+      to: `/components`
     }]
   },
-  active(opts = {}) {
-    const { setActiveIndex } = opts;
-    if (history.$matchRoutes([
-        /^\/components\/scroll/,    //组件滑动路由
-      ])) {
-      setActiveIndex(1);
+  active() {
+    if (router.$matchRoutes([
+      /^\/components\/scroll/,    //组件滑动路由
+    ])) {
+      return 1;
     } else {
-      setActiveIndex(2)
+      return 2;
     }
   }
 };

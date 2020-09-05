@@ -1,6 +1,5 @@
 .br-tab-bar {
 	position: fixed;
-	width: auto;
 	z-index: 1000;
 	left: 0;
 	bottom: 0;
@@ -16,52 +15,21 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+
 		.br-tab-bar-item {
 			flex: 1;
 			text-align: center;
-			.br-tab-bar-icon {
-				width: 20px;
-				height: 20px;
-				max-width: 20px !important;
-				max-height: 20px !important;
-				vertical-align: top;
-				pointer-events: none;
-			}
-			.br-tab-bar-content {
-				text-align: center;
-			}
+			padding: 4px;
 		}
-	}
 
-	//子菜单
-	.tab-bar-submenu {
-		position: absolute;
-		bottom: 95%;
-		z-index: 9700;
-		.tab-bar-submenu-list-wrap {
-			padding: rem(3);
-			.tab-bar-submenu-list {
-				padding: 0 rem(4);
-				//子菜单选项
-				.tab-bar-submenu-list-item {
-					text-align: center;
-					padding: rem(10) rem(5);
-				}
-			}
+		.br-tab-bar-content {
+			font-size: 12px;
 		}
-		//子菜单箭头
-		.tab-bar-submenu-arrow-wrap {
-			text-align: center;
-			line-height: 7px;
-			font-size: 0;
-			.tab-bar-submenu-arrow {
-				display: inline-block;
-				width: 0;
-				height: 0;
-				border-left: 7px solid transparent;
-				border-right: 7px solid transparent;
-				border-bottom: 0 solid transparent;
-			}
+
+		.br-tab-bar-icon {
+			display: inline-block;
+			margin: 5px 0;
+			font-size: 14px;
 		}
 	}
 }

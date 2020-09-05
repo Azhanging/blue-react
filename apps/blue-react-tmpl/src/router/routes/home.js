@@ -6,7 +6,9 @@ const home = [{
   stack: true,
   component: React.lazy(() => import(`@pages/home/Index`)),
   meta: {
-    tabBar: ''
+    tabBar: {
+      name: `home`
+    }
   }
 }, {
   path: '/register',

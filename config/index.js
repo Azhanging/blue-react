@@ -10,7 +10,9 @@ const config = {
   //视图相关
   view: {
     title: "blue-react-tmpl-title",       //默认的文档标题
-    tabBar: false
+    tabBar: {
+      name: ``
+    }
   },
 
   //路由相关
@@ -105,8 +107,12 @@ const config = {
   },
 
   //request相关
-  axios: {
-    timeout: 200000
+  request: {
+    options: {
+      timeout: 3000,
+      showLoading: true,
+      showToast: false
+    }
   },
 
   /*
