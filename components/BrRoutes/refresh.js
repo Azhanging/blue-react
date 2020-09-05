@@ -8,7 +8,7 @@ function matchParamsRefresh({ route }) {
   const { params: metaParams, query: metaQuery } = route.meta;
 
   //检查params一致性
-  if (metaParams !== null) {
+  if (metaParams) {
     let key;
     for (key in params) {
       if (!params.hasOwnProperty(key)) continue;
@@ -19,7 +19,7 @@ function matchParamsRefresh({ route }) {
   }
 
   //检查query一致性
-  if (metaQuery !== null) {
+  if (metaQuery) {
     let key;
     for (key in query) {
       if (!query.hasOwnProperty(key)) continue;

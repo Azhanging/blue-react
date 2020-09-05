@@ -1,6 +1,6 @@
 import config from '@config';
 import { createBrowserHistory, createHashHistory } from 'history';
-import { useInReactRouter } from "$use-in-react-router";
+import { useInReactRouter } from "$components/BrRoutes/history";
 import RouterID from '$use-in-react-router/router-id';
 
 //绑定路由的实例，方便外部使用

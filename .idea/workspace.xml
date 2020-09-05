@@ -186,7 +186,7 @@
       <workItem from="1599190599081" duration="5909000" />
       <workItem from="1599204567339" duration="6115000" />
       <workItem from="1599227702208" duration="6145000" />
-      <workItem from="1599267784727" duration="6284000" />
+      <workItem from="1599267784727" duration="9121000" />
     </task>
     <servers />
   </component>
@@ -211,34 +211,34 @@
     </state>
     <state x="645" y="275" key="FileChooserDialogImpl/0.0.1728.1040@0.0.1728.1040" timestamp="1599269919515" />
     <state x="717" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599191508785" />
-    <state width="1707" height="113" key="GridCell.Tab.0.bottom" timestamp="1599234371850">
+    <state width="1707" height="310" key="GridCell.Tab.0.bottom" timestamp="1599311814316">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="113" key="GridCell.Tab.0.bottom/0.0.1728.1040@0.0.1728.1040" timestamp="1599234371850" />
+    <state width="1707" height="310" key="GridCell.Tab.0.bottom/0.0.1728.1040@0.0.1728.1040" timestamp="1599311814316" />
     <state width="1247" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966288" />
-    <state width="1707" height="113" key="GridCell.Tab.0.center" timestamp="1599234371850">
+    <state width="1707" height="310" key="GridCell.Tab.0.center" timestamp="1599311814316">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="113" key="GridCell.Tab.0.center/0.0.1728.1040@0.0.1728.1040" timestamp="1599234371850" />
+    <state width="1707" height="310" key="GridCell.Tab.0.center/0.0.1728.1040@0.0.1728.1040" timestamp="1599311814316" />
     <state width="1247" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966288" />
-    <state width="1707" height="113" key="GridCell.Tab.0.left" timestamp="1599234371849">
+    <state width="1707" height="310" key="GridCell.Tab.0.left" timestamp="1599311814316">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="113" key="GridCell.Tab.0.left/0.0.1728.1040@0.0.1728.1040" timestamp="1599234371849" />
+    <state width="1707" height="310" key="GridCell.Tab.0.left/0.0.1728.1040@0.0.1728.1040" timestamp="1599311814316" />
     <state width="1247" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966287" />
-    <state width="1707" height="113" key="GridCell.Tab.0.right" timestamp="1599234371850">
+    <state width="1707" height="310" key="GridCell.Tab.0.right" timestamp="1599311814316">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="113" key="GridCell.Tab.0.right/0.0.1728.1040@0.0.1728.1040" timestamp="1599234371850" />
+    <state width="1707" height="310" key="GridCell.Tab.0.right/0.0.1728.1040@0.0.1728.1040" timestamp="1599311814316" />
     <state width="1247" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966288" />
     <state x="93" y="93" width="1542" height="854" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598457944670">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
     <state x="93" y="93" width="1542" height="854" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1728.1040@0.0.1728.1040" timestamp="1598457944670" />
-    <state x="564" y="252" width="600" height="568" key="find.popup" timestamp="1599273248477">
+    <state x="564" y="252" width="600" height="568" key="find.popup" timestamp="1599312370113">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state x="564" y="252" width="600" height="568" key="find.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599273248477" />
+    <state x="564" y="252" width="600" height="568" key="find.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599312370113" />
     <state x="627" y="252" width="667" height="568" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599210364579" />
     <state x="521" y="241" key="run.anything.popup" timestamp="1599272929292">
       <screen x="0" y="0" width="1728" height="1040" />

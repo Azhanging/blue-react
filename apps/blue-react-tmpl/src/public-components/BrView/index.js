@@ -5,11 +5,13 @@ import utils from 'blue-utils';
 import { useSelector } from 'react-redux';
 import { renderClassName } from '$assets/js/render';
 import { useCachePosition, useCacheRefresh } from '$components/BrRoutes';
-import { useRouteState } from '$components/BrRoutes/cache';
+import { useRouteState } from '$components/BrRoutes';
 import history from "@router";
 
-let scrollStatus = false;
+//只做一次事件添加
+let hasScrollEvent = false;
 
+//处理view对于的scroll事件
 let scrollDebounce = null;
 
 //set view scroll event
@@ -31,8 +33,8 @@ export function setScrollEvent(opts = {}) {
   }, 150);
 
   //只存在一个scroll事件
-  if (scrollStatus) return;
-  scrollStatus = true;
+  if (hasScrollEvent) return;
+  hasScrollEvent = true;
   //view scroll event
   window.addEventListener('scroll', (event) => {
     //节流处理scrollTop
