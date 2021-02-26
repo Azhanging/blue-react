@@ -1,0 +1,73 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@": [
+        "./src"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@css/*": [
+        "./src/css/*"
+      ],
+      "@static/*": [
+        "./static/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "$components/*": [
+        "./src/public-components/*"
+      ],
+      "$config": [
+        "../../config"
+      ],
+      "$use-in-react": [
+        "../../use-in-react"
+      ],
+      "$use-in-react-router": [
+        "../../use-in-react-router"
+      ],
+      "$store": [
+        "../../config/store"
+      ],
+      "$assets": [
+        "../../assets"
+      ],
+      "$code": [
+        "../../code"
+      ],
+      "$wechat": [
+        "../../use-in-react/wechat"
+      ],
+      "$axios": [
+        "../../use-in-react/axios"
+      ],
+      "$api": [
+        "../../api"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ]
+}

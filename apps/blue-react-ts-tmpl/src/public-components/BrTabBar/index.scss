@@ -1,0 +1,35 @@
+.br-tab-bar {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	max-height: 47px !important;
+	line-height: 12px;
+	border-top: 1px solid #e5e5e5;
+	padding-bottom: constant(safe-area-inset-bottom);
+	padding-bottom: env(safe-area-inset-bottom);
+
+	//导航列表
+	.br-tab-bar-list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		.br-tab-bar-item {
+			flex: 1;
+			text-align: center;
+			padding: 4px;
+		}
+
+		.br-tab-bar-content {
+			font-size: 12px;
+		}
+
+		.br-tab-bar-icon {
+			display: inline-block;
+			margin: 5px 0;
+			font-size: 14px;
+		}
+	}
+}

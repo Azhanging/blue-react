@@ -47,44 +47,51 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="index&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blue-vue" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-    <property name="ts.external.directory.path" value="E:\Program Files\JetBrains\WebStorm 2019.3.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="E:\achang\web\blue-react-program\apps\blue-react-ts-tmpl\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\achang\github\blue-react-program\use-in-react-router" />
-      <recent name="D:\Achang\Web\blue-react\apps\blue-react-tmpl\src\components\wap\WTabBar" />
-      <recent name="D:\Achang\Web\blue-react\assets\js" />
-      <recent name="E:\achang\github\blue-react-program\apps\blue-react-tmpl\mock" />
-      <recent name="E:\achang\github\blue-react-program\assets\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\achang\web\blue-react-program\apps\blue-react-ts-tmpl\src" />
       <recent name="E:\achang\github\blue-react-program\apps\blue-react-tmpl\src\router\routes" />
       <recent name="$PROJECT_DIR$/components/BrRoutes" />
       <recent name="E:\achang\github\blue-react-program\use-in-react" />
       <recent name="E:\achang\web\blue-react-program\apps\blue-react-tmpl\src\store\state" />
-      <recent name="E:\achang\github\blue-react-program\components\BrView" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\achang\web\blue-react-program\apps\blue-react-ts-tmpl\src" />
+      <recent name="E:\achang\web\blue-react-program\apps\blue-react-ts-tmpl" />
+      <recent name="E:\achang\github\blue-react-program\use-in-react-router" />
+      <recent name="D:\Achang\Web\blue-react\apps\blue-react-tmpl\src\components\wap\WTabBar" />
+      <recent name="D:\Achang\Web\blue-react\assets\js" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.BrRoutes.js">
+  <component name="RunManager" selected="npm.eject">
     <configuration name="BrRoutes.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="$PROJECT_DIR$/components/BrRoutes/index.js" working-dir="$PROJECT_DIR$/components">
-      <method v="2" />
-    </configuration>
-    <configuration name="copy-dir.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="copy-dir.js" working-dir="$PROJECT_DIR$/apps/blue-react-tmpl/react-config">
       <method v="2" />
     </configuration>
     <configuration name="start.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="start.js" working-dir="$PROJECT_DIR$/apps/blue-react-tmpl/scripts">
       <method v="2" />
     </configuration>
-    <configuration name="copy-dir" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/apps/blue-react-tmpl/package.json" />
+    <configuration name="eject" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/apps/blue-react-ts-tmpl/package.json" />
       <command value="run" />
       <scripts>
-        <script value="copy-dir" />
+        <script value="eject" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/apps/blue-react-ts-tmpl/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -101,19 +108,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Node.js.copy-dir.js" />
       <item itemvalue="Node.js.start.js" />
       <item itemvalue="Node.js.BrRoutes.js" />
       <item itemvalue="npm.start" />
-      <item itemvalue="npm.copy-dir" />
+      <item itemvalue="npm.start (1)" />
+      <item itemvalue="npm.eject" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start (1)" />
+        <item itemvalue="npm.eject" />
         <item itemvalue="npm.start" />
         <item itemvalue="Node.js.BrRoutes.js" />
         <item itemvalue="Node.js.start.js" />
-        <item itemvalue="npm.copy-dir" />
-        <item itemvalue="Node.js.copy-dir.js" />
       </list>
     </recent_temporary>
   </component>
@@ -187,6 +194,8 @@
       <workItem from="1599204567339" duration="6115000" />
       <workItem from="1599227702208" duration="6145000" />
       <workItem from="1599267784727" duration="9121000" />
+      <workItem from="1614177466026" duration="204000" />
+      <workItem from="1614258958863" duration="7283000" />
     </task>
     <servers />
   </component>
@@ -206,48 +215,33 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="645" y="275" key="FileChooserDialogImpl" timestamp="1599269919515">
-      <screen x="0" y="0" width="1728" height="1040" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1614264516020">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="645" y="275" key="FileChooserDialogImpl/0.0.1728.1040@0.0.1728.1040" timestamp="1599269919515" />
-    <state x="717" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599191508785" />
-    <state width="1707" height="310" key="GridCell.Tab.0.bottom" timestamp="1599311814316">
-      <screen x="0" y="0" width="1728" height="1040" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614264516020" />
+    <state width="1899" height="465" key="GridCell.Tab.0.bottom" timestamp="1614266161800">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1707" height="310" key="GridCell.Tab.0.bottom/0.0.1728.1040@0.0.1728.1040" timestamp="1599311814316" />
-    <state width="1247" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966288" />
-    <state width="1707" height="310" key="GridCell.Tab.0.center" timestamp="1599311814316">
-      <screen x="0" y="0" width="1728" height="1040" />
+    <state width="1899" height="465" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614266161800" />
+    <state width="1899" height="465" key="GridCell.Tab.0.center" timestamp="1614266161799">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1707" height="310" key="GridCell.Tab.0.center/0.0.1728.1040@0.0.1728.1040" timestamp="1599311814316" />
-    <state width="1247" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966288" />
-    <state width="1707" height="310" key="GridCell.Tab.0.left" timestamp="1599311814316">
-      <screen x="0" y="0" width="1728" height="1040" />
+    <state width="1899" height="465" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614266161799" />
+    <state width="1899" height="465" key="GridCell.Tab.0.left" timestamp="1614266161799">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1707" height="310" key="GridCell.Tab.0.left/0.0.1728.1040@0.0.1728.1040" timestamp="1599311814316" />
-    <state width="1247" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966287" />
-    <state width="1707" height="310" key="GridCell.Tab.0.right" timestamp="1599311814316">
-      <screen x="0" y="0" width="1728" height="1040" />
+    <state width="1899" height="465" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614266161799" />
+    <state width="1899" height="465" key="GridCell.Tab.0.right" timestamp="1614266161799">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1707" height="310" key="GridCell.Tab.0.right/0.0.1728.1040@0.0.1728.1040" timestamp="1599311814316" />
-    <state width="1247" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966288" />
-    <state x="93" y="93" width="1542" height="854" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598457944670">
-      <screen x="0" y="0" width="1728" height="1040" />
+    <state width="1899" height="465" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614266161799" />
+    <state x="591" y="209" width="596" height="560" key="find.popup" timestamp="1614265887605">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="93" y="93" width="1542" height="854" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1728.1040@0.0.1728.1040" timestamp="1598457944670" />
-    <state x="564" y="252" width="600" height="568" key="find.popup" timestamp="1599312370113">
-      <screen x="0" y="0" width="1728" height="1040" />
+    <state x="591" y="209" width="596" height="560" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614265887605" />
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1614265101131">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="564" y="252" width="600" height="568" key="find.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599312370113" />
-    <state x="627" y="252" width="667" height="568" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599210364579" />
-    <state x="521" y="241" key="run.anything.popup" timestamp="1599272929292">
-      <screen x="0" y="0" width="1728" height="1040" />
-    </state>
-    <state x="521" y="241" key="run.anything.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599272929292" />
-    <state x="521" y="174" width="672" height="676" key="search.everywhere.popup" timestamp="1599234287672">
-      <screen x="0" y="0" width="1728" height="1040" />
-    </state>
-    <state x="521" y="174" width="672" height="676" key="search.everywhere.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599234287672" />
-    <state x="579" y="174" width="747" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599203135445" />
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614265101131" />
   </component>
 </project>
