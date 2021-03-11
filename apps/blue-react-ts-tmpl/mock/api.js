@@ -1,4 +1,4 @@
-const mockApi = [{
+module.exports = [{
   url: `/mock/data`,
   method: 'post',
   response(req, res) {
@@ -30,5 +30,3 @@ const mockApi = [{
     });
   }
 }];
-
-module.exports = mockApi;

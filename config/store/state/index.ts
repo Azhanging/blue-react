@@ -1,5 +1,5 @@
 const state = {
-  view: {
+  views: {
     //浮层相关
     suspend: {
       status: false,

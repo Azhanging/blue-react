@@ -11,7 +11,7 @@ export function view() {
 const scrollHandler = utils.debounce(function () {
   const top = document.documentElement.scrollTop;
   //设置scroll top
-  dispatch.VIEW({
+  dispatch.VIEWS({
     suspend: {
       distance: top || 0
     }
@@ -28,14 +28,14 @@ function setEvent() {
 export function suspend(_suspend) {
   if (_suspend.status !== false) _suspend.status = true;
   //设置scroll top
-  dispatch.VIEW({
+  dispatch.VIEWS({
     suspend: _suspend
   });
 }
 
 //导航的状态
 export function tabBar(tarBarConfig = config.view.tabBar) {
-  dispatch.VIEW({
+  dispatch.VIEWS({
     tabBar: tarBarConfig
   });
 }

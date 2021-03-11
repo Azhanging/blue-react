@@ -14,7 +14,8 @@ const componentTabBar = {
       icon: {
         font: 'bp-icon bp-icon-home',
         activeFont: 'bz-t-base'
-      }
+      },
+      to: '/'
     }, {
       text: '组件',
       icon: {
