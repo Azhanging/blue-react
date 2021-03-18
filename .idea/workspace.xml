@@ -19,6 +19,7 @@
         <option value="JavaScript File" />
         <option value="tsconfig.json" />
         <option value="TypeScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -49,22 +50,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="index&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/blue-react-ts-tmpl/node_modules/typescript" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/apps/blue-react-ts-tmpl" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-    <property name="ts.external.directory.path" value="D:\Achang\Web\blue-react\apps\blue-react-ts-tmpl\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\Achang\Web\blue-react\apps\blue-react-ts-tmpl-temp\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\achang\web\blue-react-program\apps\blue-react-ts-tmpl\src" />
-      <recent name="E:\achang\web\blue-react-program\apps\blue-react-ts-tmpl" />
-      <recent name="E:\achang\github\blue-react-program\use-in-react-router" />
-      <recent name="D:\Achang\Web\blue-react\apps\blue-react-tmpl\src\components\wap\WTabBar" />
-      <recent name="D:\Achang\Web\blue-react\assets\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\achang\web\blue-react-program\apps\blue-react-ts-tmpl\src" />
       <recent name="E:\achang\github\blue-react-program\apps\blue-react-tmpl\src\router\routes" />
@@ -72,12 +69,26 @@
       <recent name="E:\achang\github\blue-react-program\use-in-react" />
       <recent name="E:\achang\web\blue-react-program\apps\blue-react-tmpl\src\store\state" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Achang\Web\blue-react\apps\blue-react-ts-tmpl" />
+      <recent name="E:\achang\web\blue-react-program\apps\blue-react-ts-tmpl\src" />
+      <recent name="E:\achang\web\blue-react-program\apps\blue-react-ts-tmpl" />
+      <recent name="E:\achang\github\blue-react-program\use-in-react-router" />
+      <recent name="D:\Achang\Web\blue-react\apps\blue-react-tmpl\src\components\wap\WTabBar" />
+    </key>
   </component>
   <component name="RunManager" selected="npm.eject">
     <configuration name="BrRoutes.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="$PROJECT_DIR$/components/BrRoutes/index.tsx" working-dir="$PROJECT_DIR$/components">
       <method v="2" />
     </configuration>
-    <configuration name="start.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="start.js" working-dir="$PROJECT_DIR$/apps/blue-react-tmpl/scripts">
+    <configuration name="eject (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/apps/blue-react-ts-temp/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="eject" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="eject" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -111,19 +122,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Node.js.start.js" />
       <item itemvalue="Node.js.BrRoutes.js" />
       <item itemvalue="npm.start" />
       <item itemvalue="npm.start (1)" />
       <item itemvalue="npm.eject" />
+      <item itemvalue="npm.eject (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="npm.start (1)" />
         <item itemvalue="npm.eject" />
+        <item itemvalue="npm.eject (1)" />
         <item itemvalue="npm.start" />
         <item itemvalue="Node.js.BrRoutes.js" />
-        <item itemvalue="Node.js.start.js" />
       </list>
     </recent_temporary>
   </component>
@@ -202,6 +213,14 @@
       <workItem from="1614258958863" duration="7283000" />
       <workItem from="1614415642105" duration="14849000" />
       <workItem from="1615467134586" duration="5480000" />
+      <workItem from="1615728442363" duration="4584000" />
+      <workItem from="1615899215628" duration="1355000" />
+      <workItem from="1615900758832" duration="4643000" />
+      <workItem from="1615984165200" duration="777000" />
+      <workItem from="1615985442102" duration="1764000" />
+      <workItem from="1615988803649" duration="2580000" />
+      <workItem from="1615992465716" duration="661000" />
+      <workItem from="1616069563087" duration="3924000" />
     </task>
     <servers />
   </component>
@@ -221,44 +240,55 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="666" y="275" key="FileChooserDialogImpl" timestamp="1614436063178">
+    <state x="666" y="275" key="FileChooserDialogImpl" timestamp="1616070908582">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state x="666" y="275" key="FileChooserDialogImpl/0.0.1728.1040@0.0.1728.1040" timestamp="1614436063178" />
+    <state x="666" y="275" key="FileChooserDialogImpl/0.0.1728.1040@0.0.1728.1040" timestamp="1616070908582" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614264516020" />
-    <state width="1707" height="326" key="GridCell.Tab.0.bottom" timestamp="1615479335723">
+    <state width="1707" height="239" key="GridCell.Tab.0.bottom" timestamp="1616083462541">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="326" key="GridCell.Tab.0.bottom/0.0.1728.1040@0.0.1728.1040" timestamp="1615479335723" />
+    <state width="1707" height="239" key="GridCell.Tab.0.bottom/0.0.1728.1040@0.0.1728.1040" timestamp="1616083462541" />
     <state width="1899" height="465" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614266161800" />
-    <state width="1707" height="326" key="GridCell.Tab.0.center" timestamp="1615479335722">
+    <state width="1707" height="239" key="GridCell.Tab.0.center" timestamp="1616083462541">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="326" key="GridCell.Tab.0.center/0.0.1728.1040@0.0.1728.1040" timestamp="1615479335722" />
+    <state width="1707" height="239" key="GridCell.Tab.0.center/0.0.1728.1040@0.0.1728.1040" timestamp="1616083462541" />
     <state width="1899" height="465" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614266161799" />
-    <state width="1707" height="326" key="GridCell.Tab.0.left" timestamp="1615479335722">
+    <state width="1707" height="239" key="GridCell.Tab.0.left" timestamp="1616083462541">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="326" key="GridCell.Tab.0.left/0.0.1728.1040@0.0.1728.1040" timestamp="1615479335722" />
+    <state width="1707" height="239" key="GridCell.Tab.0.left/0.0.1728.1040@0.0.1728.1040" timestamp="1616083462541" />
     <state width="1899" height="465" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614266161799" />
-    <state width="1707" height="326" key="GridCell.Tab.0.right" timestamp="1615479335723">
+    <state width="1707" height="239" key="GridCell.Tab.0.right" timestamp="1616083462541">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="326" key="GridCell.Tab.0.right/0.0.1728.1040@0.0.1728.1040" timestamp="1615479335723" />
+    <state width="1707" height="239" key="GridCell.Tab.0.right/0.0.1728.1040@0.0.1728.1040" timestamp="1616083462541" />
     <state width="1899" height="465" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614266161799" />
-    <state x="532" y="209" width="570" height="560" key="find.popup" timestamp="1615470926228">
+    <state x="532" y="209" width="570" height="560" key="find.popup" timestamp="1615899625885">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state x="532" y="209" width="570" height="560" key="find.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1615470926228" />
+    <state x="532" y="209" width="570" height="560" key="find.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1615899625885" />
     <state x="591" y="209" width="596" height="560" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614265887605" />
     <state x="521" y="241" key="run.anything.popup" timestamp="1614418251828">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
     <state x="521" y="241" key="run.anything.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1614418251828" />
-    <state x="554" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1615468946005">
+    <state x="554" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1615728642047">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state x="554" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1615468946005" />
+    <state x="554" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1615728642047" />
     <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614265101131" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test.html</url>
+          <line>180</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

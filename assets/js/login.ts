@@ -5,7 +5,7 @@ import {Toast} from 'antd-mobile';
 
 //跳转到登录页面
 export function routerToLogin () {
-	const {backUrl} = history.config.params;
+	const {backUrl}: { backUrl: string } = history.config.params;
 	history.replace(`${config.path.login}?${backUrl}=${encodeURIComponent(history.location.pathname)}`);
 }
 
@@ -23,7 +23,7 @@ export function loginExpire () {
 }
 
 //设置登录状态到本地存储
-export function setLoginStorage ( data: any ) {
+export function setLoginStorage ( data: { [ propName: string ]: string; } ) {
 	utils.each(config.login.storage, ( key: string ) => {
 		(key in data) && localStorage.setItem(key, data[ key ]);
 	});
