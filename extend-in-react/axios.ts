@@ -81,7 +81,7 @@ $axios.interceptors.response.use((res) => {
 });
 
 //在react中扩展
-export function useAxiosInReact(React) {
+export function axiosInReact(React) {
   React.$axios = React.Component.prototype.$axios = $axios;
 }
 

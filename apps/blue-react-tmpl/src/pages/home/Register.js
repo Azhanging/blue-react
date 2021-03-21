@@ -4,7 +4,7 @@ import BrHeader from '$components/BrHeader';
 import { Formik, Field, Form } from 'formik';
 import $axios from '$axios';
 
-function RegisterField(props) {
+function RegisterField(props:any) {
   const { formItem } = props;
   return (
     <Field name={formItem.name} render={({ field }) => {

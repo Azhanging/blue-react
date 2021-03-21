@@ -8,7 +8,7 @@ function backToTop() {
 }
 
 //浮层
-function BrSuspend(props) {
+function BrSuspend(props:any) {
   const {
     distance = 200,
     scrollDistance,

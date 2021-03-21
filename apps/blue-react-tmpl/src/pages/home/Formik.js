@@ -19,7 +19,7 @@ const validateFormData = Yup.object().shape({
   radio: Yup.number().required(`radio has error`)
 });
 
-function FormikPage(props) {
+function FormikPage(props:any) {
 
   const [formData, setFormData] = useState(initFormData());
 
@@ -69,7 +69,7 @@ function FormikPage(props) {
           return validateFormData;
         }}
 
-        render={(props) => {
+        render={(props:any) => {
           const {
             errors,
             touched
@@ -91,7 +91,7 @@ function FormikPage(props) {
 
                 </div>
               )}/>
-              <Field name="age" render={(props) => {
+              <Field name="age" render={(props:any) => {
                 const { field } = props;
                 return (
                   <div className="bz-pd-15rp">

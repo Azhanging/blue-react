@@ -58,7 +58,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-    <property name="ts.external.directory.path" value="D:\Achang\Web\blue-react\apps\blue-react-ts-tmpl-temp\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="D:\Achang\Web\blue-react\apps\blue-react-ts-tmpl\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -221,6 +221,8 @@
       <workItem from="1615988803649" duration="2580000" />
       <workItem from="1615992465716" duration="661000" />
       <workItem from="1616069563087" duration="3924000" />
+      <workItem from="1616313653276" duration="5574000" />
+      <workItem from="1616330857149" duration="5142000" />
     </task>
     <servers />
   </component>
@@ -245,39 +247,39 @@
     </state>
     <state x="666" y="275" key="FileChooserDialogImpl/0.0.1728.1040@0.0.1728.1040" timestamp="1616070908582" />
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614264516020" />
-    <state width="1707" height="239" key="GridCell.Tab.0.bottom" timestamp="1616083462541">
+    <state width="1707" height="310" key="GridCell.Tab.0.bottom" timestamp="1616340453785">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="239" key="GridCell.Tab.0.bottom/0.0.1728.1040@0.0.1728.1040" timestamp="1616083462541" />
+    <state width="1707" height="310" key="GridCell.Tab.0.bottom/0.0.1728.1040@0.0.1728.1040" timestamp="1616340453785" />
     <state width="1899" height="465" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614266161800" />
-    <state width="1707" height="239" key="GridCell.Tab.0.center" timestamp="1616083462541">
+    <state width="1707" height="310" key="GridCell.Tab.0.center" timestamp="1616340453785">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="239" key="GridCell.Tab.0.center/0.0.1728.1040@0.0.1728.1040" timestamp="1616083462541" />
+    <state width="1707" height="310" key="GridCell.Tab.0.center/0.0.1728.1040@0.0.1728.1040" timestamp="1616340453785" />
     <state width="1899" height="465" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614266161799" />
-    <state width="1707" height="239" key="GridCell.Tab.0.left" timestamp="1616083462541">
+    <state width="1707" height="310" key="GridCell.Tab.0.left" timestamp="1616340453785">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="239" key="GridCell.Tab.0.left/0.0.1728.1040@0.0.1728.1040" timestamp="1616083462541" />
+    <state width="1707" height="310" key="GridCell.Tab.0.left/0.0.1728.1040@0.0.1728.1040" timestamp="1616340453785" />
     <state width="1899" height="465" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614266161799" />
-    <state width="1707" height="239" key="GridCell.Tab.0.right" timestamp="1616083462541">
+    <state width="1707" height="310" key="GridCell.Tab.0.right" timestamp="1616340453785">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="239" key="GridCell.Tab.0.right/0.0.1728.1040@0.0.1728.1040" timestamp="1616083462541" />
+    <state width="1707" height="310" key="GridCell.Tab.0.right/0.0.1728.1040@0.0.1728.1040" timestamp="1616340453785" />
     <state width="1899" height="465" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614266161799" />
-    <state x="532" y="209" width="570" height="560" key="find.popup" timestamp="1615899625885">
+    <state x="532" y="209" width="570" height="594" key="find.popup" timestamp="1616334726716">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state x="532" y="209" width="570" height="560" key="find.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1615899625885" />
+    <state x="532" y="209" width="570" height="594" key="find.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1616334726716" />
     <state x="591" y="209" width="596" height="560" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614265887605" />
     <state x="521" y="241" key="run.anything.popup" timestamp="1614418251828">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
     <state x="521" y="241" key="run.anything.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1614418251828" />
-    <state x="554" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1615728642047">
+    <state x="554" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1616340370499">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state x="554" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1615728642047" />
+    <state x="554" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1616340370499" />
     <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614265101131" />
   </component>
   <component name="XDebuggerManager">
@@ -287,6 +289,12 @@
           <url>file://$PROJECT_DIR$/test.html</url>
           <line>180</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/BrRoutes/cache.tsx</url>
+          <line>63</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

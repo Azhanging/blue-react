@@ -2,7 +2,7 @@ import React from 'react';
 /*
 * 校验错误使用的组件
 * */
-function BrFormikError(props) {
+function BrFormikError(props:any) {
   const { errors, touched, name, children } = props;
   return (
     <>

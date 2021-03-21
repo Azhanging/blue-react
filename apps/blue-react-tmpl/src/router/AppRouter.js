@@ -7,8 +7,8 @@ import store from '@store';
 import routes from './routes/index';
 import { BrRoutes, Provider as BrRoutesProvider } from '$components/BrRoutes';
 //路由后处理
-import routerAfter from '$use-in-react-router/router-after';
-import routerBefore from '$use-in-react-router/router-before';
+import routerAfter from '$extend-in-react-router/router-after';
+import routerBefore from '$extend-in-react-router/router-before';
 
 export function AppRouter() {
   return (

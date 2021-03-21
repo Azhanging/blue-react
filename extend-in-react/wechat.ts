@@ -34,7 +34,7 @@ const weChatQueue = new BlueQueuePipe({
 });
 
 //if in wechat ,get wechat config in program
-export function useWeChatInReact(React) {
+export function weChatInReact(React) {
   weChatShareInReact(React);
   try {
     if (config.device.isWeChat && wx) {

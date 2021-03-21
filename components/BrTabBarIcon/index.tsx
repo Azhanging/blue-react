@@ -1,7 +1,7 @@
 import React from 'react';
 import { renderClassName } from "$assets/js/render";
 
-function BrTabBarIcon(props) {
+function BrTabBarIcon(props:any) {
   const {
     icon,
     activeIndex,

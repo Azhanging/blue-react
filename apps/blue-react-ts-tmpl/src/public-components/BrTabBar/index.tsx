@@ -16,7 +16,7 @@ function routerTo(tabBarItem) {
 }
 
 //导航组件
-function BrTabBar(props) {
+function BrTabBar(props:any) {
 
   const {
     list = [],

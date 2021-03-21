@@ -4,7 +4,7 @@ import BrHeader from '$components/BrHeader';
 import { Link } from 'react-router-dom';
 import { useCacheState } from '$components/BrRoutes';
 
-function Children(props) {
+function Children(props:any) {
 
   const {
     setState,

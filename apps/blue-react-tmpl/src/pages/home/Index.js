@@ -22,7 +22,7 @@ function List() {
   );
 }
 
-function Index(props) {
+function Index(props:any) {
 
   const {
     setState,

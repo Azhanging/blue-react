@@ -45,7 +45,7 @@ export function setScrollEvent(opts = {}) {
 }
 
 //view中间层
-export default function BrView(props) {
+export default function BrView(props:any) {
   const tabBar = useSelector((state) => state.view.tabBar);
 
   const {

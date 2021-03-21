@@ -2,7 +2,7 @@ import utils from 'blue-utils';
 import { suspend, tabBar } from "$assets/js/view";
 import config from '@config';
 import NProgress from 'nprogress';
-import { hideLoading } from '$use-in-react/antd';
+import { hideLoading } from '$extend-in-react/antd';
 import { setFocusStatus } from '$assets/js/device';
 import { getWeChatConfig } from '$wechat';
 

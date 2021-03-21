@@ -1,7 +1,7 @@
 import config from '@config';
 import { createBrowserHistory, createHashHistory } from 'history';
-import { useInReactRouter } from "$components/BrRoutes/history";
-import RouterID from '$use-in-react-router/router-id';
+import { extendInReactRouter } from "$components/BrRoutes/history";
+import RouterID from '$extend-in-react-router/router-id';
 
 //绑定路由的实例，方便外部使用
 const history = (() => {
@@ -14,7 +14,7 @@ const history = (() => {
 })();
 
 //扩展router
-useInReactRouter(history);
+extendInReactRouter(history);
 
 //路由标记
 export const routerID = new RouterID();

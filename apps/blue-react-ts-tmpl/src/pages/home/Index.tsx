@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import BrView from '$components/BrView';
 import BrHeader from '$components/BrHeader';
 import BrLayer from '$components/BrLayer';
+import * as antd from '$extend-in-react/antd';
 
 function List() {
   const list = [];
@@ -22,7 +23,7 @@ function List() {
   );
 }
 
-function Index(props) {
+function Index(props:any) {
 
   const {
     setState,
@@ -90,7 +91,7 @@ function Index(props) {
 
         <div className="bz-t-c bz-pd-10">
           <button type="button" className="bz-btn bz-btn-primary" onClick={(e) => {
-            React.$antd.showLoading();
+            antd.showLoading();
           }}>
             loading...
           </button>

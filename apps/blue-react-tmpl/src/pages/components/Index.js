@@ -2,7 +2,7 @@ import React from 'react';
 import BrView from '$components/BrView';
 import BrHeader from '$components/BrHeader';
 
-function Index(props) {
+function Index(props:any) {
 
   return (
     <BrView routes={props.routes}>

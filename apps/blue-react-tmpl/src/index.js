@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import AppRouter from '@router/AppRouter';
 import * as serviceWorker from './serviceWorker';
-import { useInReact } from '$use-in-react';
+import { extendInReact } from '$extend-in-react';
 import { device } from '$assets/js/device';
 import { view } from '$assets/js/view';
 
@@ -12,7 +12,7 @@ import 'antd-mobile/dist/antd-mobile.css';
 import '@assets/css/blue-zone.scss';
 
 //扩展react
-useInReact(React);
+extendInReact(React);
 //设备兼容性处理
 device();
 //设置试图相关

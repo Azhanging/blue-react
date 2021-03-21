@@ -5,7 +5,7 @@ import WTabBar from '@components/wap/WTabBar';
 import BrSuspend from "$components/BrSuspend";
 
 //主App节点
-function App(props) {
+function App(props:any) {
   const view = useSelector((state) => state.view);
   return (
     <div className="bz-f-28rpx bz-t-333">

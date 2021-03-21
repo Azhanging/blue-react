@@ -60,11 +60,14 @@
       "$config": [
         "../../config"
       ],
-      "$use-in-react": [
-        "../../use-in-react"
+      "$extend-in-react": [
+        "../../extend-in-react"
       ],
-      "$use-in-react-router/*": [
-        "../../use-in-react-router/*"
+      "$extend-in-react/*": [
+        "../../extend-in-react/*"
+      ],
+      "$extend-in-react-router/*": [
+        "../../extend-in-react-router/*"
       ],
       "$store": [
         "../../config/store"
@@ -79,10 +82,10 @@
         "../../code"
       ],
       "$wechat": [
-        "../../use-in-react/wechat"
+        "../../extend-in-react/wechat"
       ],
       "$axios": [
-        "../../use-in-react/axios"
+        "../../extend-in-react/axios"
       ],
       "$api": [
         "../../api"

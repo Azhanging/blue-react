@@ -4,7 +4,7 @@ import history from '@router';
 import './index.scss';
 
 //左边的控制操作
-function back(path) {
+function back ( path: string ) {
 	if (path) {
 		history.push(path);
 	} else {
@@ -13,17 +13,17 @@ function back(path) {
 }
 
 //公共header组件
-function BrHeader(props) {
+function BrHeader ( props: any ) {
 	const {
 		style,
 		advertisement,    //广告位插槽
-    //左边控制区域
+		//左边控制区域
 		leftControl = {
 			render: ``,
 			style: {},
 			backPath: ``
 		},
-    //右边控制区域
+		//右边控制区域
 		rightControl = {
 			render: ``,
 			style: {}
@@ -46,13 +46,13 @@ function BrHeader(props) {
 				<div className="br-header-control">
 					{(leftControl && leftControl.render) || (
 						<div className="bz-flex bz-flex-ai-c">
-							<a className="br-header-btn br-header-btn-icon" onClick={(e) => {
+							<a className="br-header-btn br-header-btn-icon" onClick={( e ) => {
 								back(leftControl.backPath);
 								e.preventDefault();
 							}}>
 								<i className="bp-icon bp-icon-left bz-f-16"></i>
 							</a>
-							<a className="br-header-btn br-header-btn-icon" onClick={(e) => {
+							<a className="br-header-btn br-header-btn-icon" onClick={( e ) => {
 								history.push(config.path.home);
 								e.preventDefault();
 							}}>
