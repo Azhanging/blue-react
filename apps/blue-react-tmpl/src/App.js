@@ -6,16 +6,16 @@ import BrSuspend from "$components/BrSuspend";
 
 //主App节点
 function App(props:any) {
-  const view = useSelector((state) => state.view);
+  const views = useSelector((state) => state.views);
   return (
-    <div className="bz-f-28rpx bz-t-333">
+    <div className="ba-f-28rpx ba-t-333">
       {/*入口层*/}
       <Suspense fallback={<SuspenseLoading/>}>
         {props.children}
       </Suspense>
       {/*浮动层*/}
-      <BrSuspend scrollDistance={view.suspend.distance} show={view.suspend.status} backToTop={(
-        <i className="bp-icon bp-icon-go-top bz-f-20 bz-t-666"></i>
+      <BrSuspend scrollDistance={views.suspend.distance} show={views.suspend.status} backToTop={(
+        <i className="bp-icon bp-icon-go-top ba-f-20 ba-t-666"></i>
       )}/>
       {/*导航*/}
       <WTabBar/>

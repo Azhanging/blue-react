@@ -74,7 +74,7 @@ function iosFocus () {
 
 	document.body.addEventListener('focusin', ( event ) => {
 		const state = store.getState();
-		lastNav = state.view.tabBar;
+		lastNav = state.views.tabBar;
 		focusHook({
 			type: 'focusin',
 			event
@@ -102,7 +102,7 @@ function androidResize () {
 	window.onresize = function ( event: Event ) {
 		const resizeHeight = getClientHeight();
 		if (resizeHeight - 0 < originalHeight - 0) {
-			lastNav = store.getState().view.tabBar;
+			lastNav = store.getState().views.tabBar;
 			focusHook({
 				type: 'focusin',
 				event

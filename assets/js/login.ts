@@ -5,8 +5,7 @@ import {Toast} from 'antd-mobile';
 
 //跳转到登录页面
 export function routerToLogin () {
-	const {backUrl}: { backUrl: string } = history.config.params;
-	history.replace(`${config.path.login}?${backUrl}=${encodeURIComponent(history.location.pathname)}`);
+	history.replace(`${config.path.login}?backUrl=${encodeURIComponent(history.location.pathname)}`);
 }
 
 //未登录

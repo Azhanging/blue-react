@@ -32,7 +32,7 @@ function FormikPage(props:any) {
   return (
     <BrView routes={props.routes}>
 
-      <div className={"bz-t-c"}>
+      <div className={"ba-t-c"}>
         <div>
           name:{formData.name}
         </div>
@@ -75,16 +75,16 @@ function FormikPage(props:any) {
             touched
           } = props;
           return (
-            <Form className="bz-t-c">
+            <Form className="ba-t-c">
               <Field name="name" render={({ field }) => (
-                <div className="bz-pd-15rp">
+                <div className="ba-pd-15rp">
                   <div>
-                    <input className="bz-input" {...field} placeholder="name input"/>
+                    <input className="ba-input" {...field} placeholder="name input"/>
                   </div>
 
                   {/*错误组件处理*/}
                   <BrFormikError errors={errors} touched={touched} name="name">
-                    <div className="bz-t-red">
+                    <div className="ba-t-red">
                       {errors.name}
                     </div>
                   </BrFormikError>
@@ -94,14 +94,14 @@ function FormikPage(props:any) {
               <Field name="age" render={(props:any) => {
                 const { field } = props;
                 return (
-                  <div className="bz-pd-15rp">
+                  <div className="ba-pd-15rp">
                     <div>
-                      <input className="bz-input" {...field} placeholder="age input"/>
+                      <input className="ba-input" {...field} placeholder="age input"/>
                     </div>
 
                     {/*错误组件处理*/}
                     <BrFormikError errors={errors} touched={touched} name="age">
-                      <div className="bz-t-red">
+                      <div className="ba-t-red">
                         {errors.age}
                       </div>
                     </BrFormikError>
@@ -110,7 +110,7 @@ function FormikPage(props:any) {
                 );
               }}/>
               <Field name="radio" render={({ field }) => (
-                <div className="bz-pd-15rp">
+                <div className="ba-pd-15rp">
                   <div>
                     <label>
                       <input type={"radio"} {...field} checked={(field.value === 1 || field.value === "1")} value={1}/>
@@ -120,16 +120,16 @@ function FormikPage(props:any) {
 
                   {/*错误组件处理*/}
                   <BrFormikError errors={errors} touched={touched} name="radio">
-                    <div className="bz-t-red">
+                    <div className="ba-t-red">
                       {errors.radio}
                     </div>
                   </BrFormikError>
 
                 </div>
               )}/>
-              <div className="bz-pd-14rp bz-t-c">
-                <button type="submit" className="bz-btn bz-btn-primary">submit</button>
-                <button type="reset" className="bz-btn bz-btn-primary">reset</button>
+              <div className="ba-pd-14rp ba-t-c">
+                <button type="submit" className="ba-btn ba-btn-primary">submit</button>
+                <button type="reset" className="ba-btn ba-btn-primary">reset</button>
               </div>
             </Form>
           );

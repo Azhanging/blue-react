@@ -9,9 +9,9 @@ function RegisterField ( props: any ) {
 	return (
 		<Field name={formItem.name} render={( {field}: { field: any } ) => {
 			return (
-				<div className={"bz-pd-10"}>
+				<div className={"ba-pd-10"}>
 					<label>
-						{formItem.name}：<input type={formItem.type} {...field} className={"bz-input"}/>
+						{formItem.name}：<input type={formItem.type} {...field} className={"ba-input"}/>
 					</label>
 				</div>
 			);
@@ -51,7 +51,7 @@ function Register () {
 				title: 'register'
 			}}/>
 
-			<div className={"bz-t-c"}>
+			<div className={"ba-t-c"}>
 				<Formik
 					initialValues={formData}
 					validate={( values ) => {
@@ -63,11 +63,11 @@ function Register () {
 						{formField.map(( formItem, index ) => (
 							<RegisterField formItem={formItem} key={`field-${index}`}/>
 						))}
-						<div className={"bz-t-c"}>
-							<button className={"bz-btn bz-btn-primary"}>
+						<div className={"ba-t-c"}>
+							<button className={"ba-btn ba-btn-primary"}>
 								login
 							</button>
-							<button className={"bz-btn bz-btn-primary bz-mg-l-10"} onClick={() => {
+							<button className={"ba-btn ba-btn-primary ba-mg-l-10"} onClick={() => {
 								register(formData);
 							}}>
 								register

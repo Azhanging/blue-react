@@ -1,6 +1,26 @@
 import utils from 'blue-utils';
 import BlueQueuePipe from 'blue-queue-pipe';
 import {setRouteNavigator} from "./navigator";
+import {createBrowserHistory, createHashHistory} from 'history';
+import {THistory} from './types';
+
+//创建路由
+export function createHistory ( opts: {
+	mode: 'hash' | 'history';
+} ): THistory {
+	const {mode} = opts;
+	let history: THistory;
+	if (mode === 'history') {
+		history = createBrowserHistory();
+	} else if (mode === 'hash') {
+		history = createHashHistory();
+	}
+	//设置路由模式
+	history.mode = mode;
+	//扩展history
+	extendHistory(history);
+	return history;
+}
 
 //历史队列
 export const historyQueue = new BlueQueuePipe({
@@ -19,7 +39,7 @@ function setQuery ( location: any ) {
 
 //设置route参数
 function setRoute ( opts: {
-	history: any;
+	history: THistory;
 	location: any;
 	currentRoute: any;
 	match: any;
@@ -65,7 +85,7 @@ export function setHistory ( opts: {
 }
 
 //扩展history
-function extendHistory ( history: any ) {
+function extendHistory ( history: THistory ) {
 
 	//扩展history原生方法
 	extendHistoryModuleMethods(history);
@@ -98,7 +118,7 @@ function extendHistory ( history: any ) {
 	};
 
 	//匹配路由的路径组，返回布尔值
-	history.$matchRoutes = function ( routesRegExp: RegExp[] = [] ) {
+	history.$matchRoutes = function ( routesRegExp: RegExp[] = [] ): boolean {
 		const path = this.location.pathname;
 		for (let i = 0; i < routesRegExp.length; i++) {
 			const routerRegExp = routesRegExp[ i ];
@@ -111,17 +131,17 @@ function extendHistory ( history: any ) {
 	};
 
 	//获取参数
-	history.$getParam = function ( key: string ) {
+	history.$getParam = function ( key: string ): string {
 		return this.route.params[ key ] || '';
 	};
 
 	//获取meta
-	history.$getMeta = function () {
+	history.$getMeta = function (): any {
 		return this.route.meta;
 	};
 
 	//获取mode相关的path
-	history.$getModePath = function () {
+	history.$getModePath = function (): string {
 		const mode = this.mode;
 		const path = this.$getFullPath();
 		if (mode === 'hash') {
@@ -156,16 +176,4 @@ function extendHistoryModuleMethods ( history: any ) {
 			method.call(this, path, state);
 		};
 	});
-}
-
-//使用到history
-export function extendInReactRouter ( history: any ) {
-	//设置history的配置的信息
-	history.config = {
-		params: {
-			backUrl: 'backUrl'
-		}
-	};
-	//扩展history
-	extendHistory(history);
 }

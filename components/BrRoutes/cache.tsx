@@ -180,7 +180,6 @@ export function useCachePosition () {
 //刷新相关钩子
 export function useCacheRefresh () {
 	const {
-		routeKey,
 		history,
 		route
 	} = useRouteState();

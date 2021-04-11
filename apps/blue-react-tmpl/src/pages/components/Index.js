@@ -14,14 +14,14 @@ function Index(props:any) {
           const list = [];
           for (let i = 0; i < 30; i++) {
             list.push(
-              <div className="bz-pd-20" key={i}>
+              <div className="ba-pd-20" key={i}>
                 {i}
               </div>
             );
           }
           return list
         })()}
-        <div className="bz-pd-14 bz-t-c">
+        <div className="ba-pd-14 ba-t-c">
           Components
         </div>
       </div>

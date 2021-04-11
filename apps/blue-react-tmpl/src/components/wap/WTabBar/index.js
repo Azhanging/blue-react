@@ -33,7 +33,7 @@ function WTabBar() {
   //選中索引位置
   const [activeIndex, setActiveIndex] = useState(-1);
 
-  const tabBarName = useSelector((state) => state.view.tabBar.name);
+  const tabBarName = useSelector((state) => state.views.tabBar.name);
 
   //当前的tabBar列表
   const tabBarList = (() => {
@@ -49,7 +49,7 @@ function WTabBar() {
   return (
     <>
       {tabBarList && (
-        <BrTabBar list={tabBarList} activeIndex={activeIndex} activeClassName="bz-t-base"/>
+        <BrTabBar list={tabBarList} activeIndex={activeIndex} activeClassName="ba-t-base"/>
       )}
     </>
   );

@@ -9,14 +9,14 @@ function List() {
   const list = [];
   for (let i = 0; i < 30; i++) {
     list.push((
-      <div className="bz-t-c bz-pd-50" key={i}>
+      <div className="ba-t-c ba-pd-50" key={i}>
         {i}
       </div>
     ));
   }
 
   return (
-    <ul className="bz-reset-ul">
+    <ul className="ba-reset-ul">
       {list}
     </ul>
   );
@@ -46,13 +46,13 @@ function Index(props:any) {
       <BrLayer showStatus={showLayer} click={() => {
         setShowLayer(!showLayer);
       }}>
-        <div className={"bz-pd-15 bz-bg-white"}>
+        <div className={"ba-pd-15 ba-bg-white"}>
           123
         </div>
       </BrLayer>
 
-      <div className={"bz-pd-14 bz-t-c"}>
-        <button className={"bz-btn bz-btn-primary"} onClick={() => {
+      <div className={"ba-pd-14 ba-t-c"}>
+        <button className={"ba-btn ba-btn-primary"} onClick={() => {
           setShowLayer(!showLayer);
         }}>
           toggleLayer
@@ -60,36 +60,36 @@ function Index(props:any) {
       </div>
 
       <div>
-        <div className="bz-pd-14 bz-t-c">
+        <div className="ba-pd-14 ba-t-c">
           Home Index
         </div>
 
-        <div className="bz-t-c bz-pd-tb-50">
-          <Link to="/index-children" className="bz-pd-10">
+        <div className="ba-t-c ba-pd-tb-50">
+          <Link to="/index-children" className="ba-pd-10">
             link to Index Children
           </Link>
         </div>
 
-        <div className="bz-t-c bz-pd-tb-50">
-          <Link to="/formik" className="bz-pd-10">
+        <div className="ba-t-c ba-pd-tb-50">
+          <Link to="/formik" className="ba-pd-10">
             Formik
           </Link>
         </div>
 
-        <div className="bz-t-c bz-pd-tb-50">
-          <Link to="/components" className="bz-pd-10">
+        <div className="ba-t-c ba-pd-tb-50">
+          <Link to="/components" className="ba-pd-10">
             link to Components
           </Link>
         </div>
 
-        <div className="bz-t-c bz-pd-tb-50">
-          <Link to="/components/2/3" className="bz-pd-10">
+        <div className="ba-t-c ba-pd-tb-50">
+          <Link to="/components/2/3" className="ba-pd-10">
             link to Components
           </Link>
         </div>
 
-        <div className="bz-t-c bz-pd-10">
-          <button type="button" className="bz-btn bz-btn-primary" onClick={(e) => {
+        <div className="ba-t-c ba-pd-10">
+          <button type="button" className="ba-btn ba-btn-primary" onClick={(e) => {
             React.$antd.showLoading();
           }}>
             loading...

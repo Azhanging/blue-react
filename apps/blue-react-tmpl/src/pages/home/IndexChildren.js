@@ -25,11 +25,11 @@ function Children(props:any) {
         title: 'INDEX-CHILDREN'
       }}/>
 
-      <div className="bz-t-c bz-pd-14rp">
+      <div className="ba-t-c ba-pd-14rp">
         index children
       </div>
 
-      <div className="bz-t-c bz-pd-14rp">
+      <div className="ba-t-c ba-pd-14rp">
         <button onClick={() => {
           setCount(count + 1);
         }}>
@@ -37,20 +37,20 @@ function Children(props:any) {
         </button>
       </div>
 
-      <div className="bz-t-c bz-pd-14rp">
+      <div className="ba-t-c ba-pd-14rp">
         <Link to="/index-children/index-children-children">
           index-children
         </Link>
       </div>
 
-      <div className="bz-t-c bz-pd-tb-50">
-        <Link to="/" className="bz-pd-10">
+      <div className="ba-t-c ba-pd-tb-50">
+        <Link to="/" className="ba-pd-10">
           home
         </Link>
       </div>
 
       {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
-        <div className={"bz-pd-50 bz-t-c"} key={item}>{item}</div>
+        <div className={"ba-pd-50 ba-t-c"} key={item}>{item}</div>
       ))}
 
     </BrView>

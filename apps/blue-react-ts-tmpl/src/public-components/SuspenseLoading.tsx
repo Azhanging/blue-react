@@ -5,7 +5,7 @@ import React from 'react';
 
 function SuspenseLoading(){
   return (
-    <div className="bz-t-c bz-pd-10">
+    <div className="ba-t-c ba-pd-10">
       loading...
     </div>
   );

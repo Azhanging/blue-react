@@ -34,7 +34,7 @@ export function suspend(_suspend) {
 }
 
 //导航的状态
-export function tabBar(tarBarConfig = config.view.tabBar) {
+export function tabBar(tarBarConfig = config.views.tabBar) {
   dispatch.VIEWS({
     tabBar: tarBarConfig
   });

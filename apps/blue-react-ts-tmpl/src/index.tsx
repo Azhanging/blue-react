@@ -8,7 +8,7 @@ import { view } from '$assets/js/view';
 //antd mobile全局樣式
 import 'antd-mobile/dist/antd-mobile.css';
 //使用全局scss
-import '@assets/css/blue-zone.scss';
+import '@assets/css/blue-atom.scss';
 
 //扩展react
 extendInReact(React);

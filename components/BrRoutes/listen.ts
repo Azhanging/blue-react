@@ -1,6 +1,7 @@
 import utils from 'blue-utils';
 
 //设置监听
+/*
 export function setHistoryListen(opts = {}) {
   const { history, routerBefore } = opts;
   const unListen = history.listen(() => {
@@ -14,4 +15,4 @@ export function setHistoryListen(opts = {}) {
   //手动触发一次
   history.replace(`${pathname}${search}`, undefined, true);
   return unListen;
-}
+}*/

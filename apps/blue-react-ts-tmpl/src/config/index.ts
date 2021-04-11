@@ -1,7 +1,8 @@
 import publicConfig from '$config';
 import utils from 'blue-utils';
+import {TConfig} from '$config/types';
 
-const config = utils.extend(publicConfig, {
+const config: TConfig = utils.extend(publicConfig, {
 	view: {
 		title: "我是项目默认标题"
 	},
@@ -14,7 +15,6 @@ const config = utils.extend(publicConfig, {
 		deps: "blue-react-tmpl is vue public template",
 		imgUrl: ""
 	},
-
 	debug: true
 });
 

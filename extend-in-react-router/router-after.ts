@@ -17,16 +17,12 @@ function routerAfter(opts = {}) {
   setFocusStatus(false);
   //项目内使用的after each
   const { navigator } = history;
-  utils.hook(null, history.afterHook, [
-    navigator.to,
-    navigator.from
-  ]);
   //获取微信配置信息
   getWeChatConfig();
   //关闭进度
   NProgress.done();
   //设置标题
-  document.title = title || config.view.title;
+  document.title = title || config.views.title;
   //导航状态
   tabBar(tabBarState);
   //浮层状态

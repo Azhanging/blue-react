@@ -45,18 +45,18 @@ function BrHeader ( props: any ) {
 				{/*左边控制*/}
 				<div className="br-header-control">
 					{(leftControl && leftControl.render) || (
-						<div className="bz-flex bz-flex-ai-c">
-							<a className="br-header-btn br-header-btn-icon" onClick={( e ) => {
+						<div className="ba-flex ba-flex-ai-c">
+							<a href="" className="br-header-btn br-header-btn-icon" onClick={( e ) => {
 								back(leftControl.backPath);
 								e.preventDefault();
 							}}>
-								<i className="bp-icon bp-icon-left bz-f-16"></i>
+								<i className="bp-icon bp-icon-left ba-f-16"></i>
 							</a>
-							<a className="br-header-btn br-header-btn-icon" onClick={( e ) => {
+							<a href="" className="br-header-btn br-header-btn-icon" onClick={( e ) => {
 								history.push(config.path.home);
 								e.preventDefault();
 							}}>
-								<i className="bp-icon bp-icon-home bz-f-16"></i>
+								<i className="bp-icon bp-icon-home ba-f-16"></i>
 							</a>
 						</div>
 					)}
@@ -64,11 +64,11 @@ function BrHeader ( props: any ) {
 
 				{/*标题*/}
 				<div className="br-header-title" style={centerControl.style}>
-					{centerControl.render || centerControl.title || config.view.title}
+					{centerControl.render || centerControl.title || config.views.title}
 				</div>
 
 				{/*右边操作*/}
-				<div className="br-header-control bz-t-r" style={rightControl.style}>
+				<div className="br-header-control ba-t-r" style={rightControl.style}>
 					{rightControl.render}
 				</div>
 			</div>

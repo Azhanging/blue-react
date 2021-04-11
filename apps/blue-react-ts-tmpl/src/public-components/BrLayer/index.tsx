@@ -7,7 +7,7 @@ import {renderClassName} from '$assets/js/render';
 //弹层
 function BrLayer ( props: any ) {
 
-	const view = useSelector(( state: any ) => state.view.tabBar);
+	const view = useSelector(( state: any ) => state.views.tabBar);
 
 	const {
 		showStatus,

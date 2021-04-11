@@ -1,9 +1,9 @@
-import React, {FC, useState} from 'react';
+import React, {ReactFragment, ReactNode, useState} from 'react';
 import {Route, Switch} from 'react-router-dom';
-import utils from 'blue-utils';
 import {setHistory} from './history';
 import {extendNativeHistory} from './navigator';
 import {setMeta} from './meta';
+import {THistory, TRoutesRoute} from './types';
 
 //扩张usCache
 export * from './cache';
@@ -11,16 +11,8 @@ export * from './cache';
 //扩展原生History
 extendNativeHistory();
 
-interface TRoute {
-	path: string;
-	exact?: boolean;
-	strict?: boolean;
-	children?: TRoute[];
-	component: FC;
-}
-
 //排序路由
-function sortRoutes ( routes: TRoute[] ) {
+function sortRoutes ( routes: TRoutesRoute[] ): void {
 	routes.sort(( currentRoute, nextRoute ) => {
 		const currentPath = currentRoute.path;
 		const nextPath = nextRoute.path;
@@ -34,23 +26,19 @@ function sortRoutes ( routes: TRoute[] ) {
 
 //生成路由
 function genRoutes ( opts: {
-	routes: TRoute[];
-	path: string;
-	routerBefore?: Function;
-	routerAfter?: Function;
-} ): FC {
+	routes: TRoutesRoute[];
+	path?: string;
+} ): ReactFragment {
 	const {
 		routes,
-		path,
-		routerBefore,
-		routerAfter
+		path
 	} = opts;
-	const _routes: FC[] = [];
+	const _routes: ReactNode[] = [];
 	//排序路由
 	sortRoutes(routes);
 	//设置路由jsx规则
-	routes.forEach(( currentRoute, index ) => {
-		let routes: FC[] = [];
+	routes.forEach(( currentRoute: TRoutesRoute, index: number ) => {
+		let routes: ReactFragment;
 		const childrenRoute = currentRoute.children;
 		//处理多层路由链接合并问题
 		if (!/^\//.test(currentRoute.path)) {
@@ -60,8 +48,7 @@ function genRoutes ( opts: {
 		if (childrenRoute && childrenRoute.length > 0) {
 			routes = genRoutes({
 				routes: childrenRoute,
-				path: currentRoute.path,
-				routerAfter
+				path: currentRoute.path
 			});
 		}
 
@@ -85,26 +72,11 @@ function genRoutes ( opts: {
 						routeProps
 					});
 
-					//处理router before
-					utils.hook(null, routerBefore, [{
-						history
-					}]);
-
 					return (
 						<currentRoute.component
-							route={history.route}
+							route={(history as THistory).route}
 							routes={routes}
-						>
-							{/*挂载页面后调用*/}
-							{(() => {
-								//after后执行的钩子
-								setTimeout(() => {
-									utils.hook(null, routerAfter, [{
-										history
-									}]);
-								}, 10);
-							})()}
-						</currentRoute.component>
+						/>
 					);
 				}}
 			/>
@@ -123,7 +95,7 @@ function genRoutes ( opts: {
 }
 
 //必须通过render props来渲染 把genRoutes带入到指定的slot中渲染
-function renderProps ( opts = {} ) {
+function renderProps ( opts: any ): ReactNode {
 	const {render, props} = opts;
 	if (typeof render !== 'function') {
 		return (
@@ -145,9 +117,7 @@ function renderProps ( opts = {} ) {
 export function BrRoutes ( props: any ) {
 
 	const [routes] = useState(genRoutes({
-		routes: props.routes,
-		routerBefore: props.routerBefore,
-		routerAfter: props.routerAfter
+		routes: props.routes
 	}));
 
 	return (
