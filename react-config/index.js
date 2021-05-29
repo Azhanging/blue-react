@@ -8,13 +8,13 @@ const reactConfig = {
   resolve: {
     alias: {
       '$config': resolve('config'),
-      '$use-in-react': resolve('use-in-react'),
-      '$use-in-react-router': resolve('use-in-react-router'),
+      '$extend-in-react': resolve('extend-in-react'),
+      '$extend-in-react-router': resolve('extend-in-react-router'),
       '$store': resolve('config/store'),
       '$assets': resolve('assets'),
       '$code': resolve('code'),
-      '$wechat': resolve(`use-in-react/wechat`),
-      '$axios': resolve('use-in-react/axios'),
+      '$wechat': resolve(`extend-in-react/wechat`),
+      '$axios': resolve('extend-in-react/axios'),
       '$api': resolve('api'),
     }
   }

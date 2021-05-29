@@ -5,7 +5,135 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49363240-7bdd-46b3-9142-894d8dbb4a98" name="Default" comment="" />
+    <list default="true" id="49363240-7bdd-46b3-9142-894d8dbb4a98" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/config/env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/config/jest/cssTransform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/config/jest/fileTransform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/config/modules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/config/paths.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/config/pnpTs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/config/webpack.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/config/webpackDevServer.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/mock/api.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/react-config/copy-dir.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/react-config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/react-config/port.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/scripts/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/scripts/start.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/scripts/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/assets/css/blue-zone.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/assets/css/config.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/assets/css/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/assets/js/share.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/components/wap/WTabBar/component-tab-bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/components/wap/WTabBar/home-tab-bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/components/wap/WTabBar/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/config/env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/config/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/pages/components/Index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/pages/home/Formik.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/pages/home/Index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/pages/home/IndexChildren.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/pages/home/Register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrFormikError.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrHeader/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrHeader/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrLayer/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrLayer/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/cache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/history.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/hooks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/listen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/meta.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/navigator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrRoutes/refresh.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrSuspend/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrSuspend/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrTabBar/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrTabBar/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrTabBarIcon/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrTabBarIcon/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrView/BrView.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrView/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/BrView/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/ConnectActivityIndicator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/public-components/SuspenseLoading.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/router/AppRouter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/router/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/router/routes/demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/router/routes/home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/router/routes/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/serviceWorker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/setupProxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/store/dispatch/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/store/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/store/reducers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/store/state/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-tmpl/src/store/types.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/react-config/copy-dir.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/react-config/copy-dir.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/react-config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/react-config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/pages/home/Index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/pages/home/Index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/pages/home/IndexChildren.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/pages/home/IndexChildren.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrFormikError.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrHeader/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrHeader/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrLayer/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrLayer/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrRoutes/cache.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrRoutes/history.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrRoutes/hooks.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrRoutes/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrRoutes/listen.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrRoutes/meta.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrRoutes/navigator.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrRoutes/refresh.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrRoutes/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrSuspend/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrSuspend/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrTabBar/BrTabBarIcon.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrTabBar/BrTabBarIcon/BrTabBarIcon.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrTabBar/BrTabBarIcon/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrTabBar/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrTabBar/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrTabBar/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrTabBarIcon/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrView/index.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/BrView/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/public-components/SuspenseLoading.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/blue-react-ts-tmpl/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/BrRoutes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/BrRoutes/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/BrRoutes/meta.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/BrRoutes/meta.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/BrRoutes/navigator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/BrRoutes/navigator.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/BrRoutes/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/BrRoutes/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/store/state/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/store/state/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend-in-react-router/router-after.ts" beforeDir="false" afterPath="$PROJECT_DIR$/extend-in-react-router/router-after.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend-in-react-router/router-before.ts" beforeDir="false" afterPath="$PROJECT_DIR$/extend-in-react-router/router-before.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend-in-react-router/router-id.ts" beforeDir="false" afterPath="$PROJECT_DIR$/extend-in-react-router/router-id.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend-in-react/antd/toast.ts" beforeDir="false" afterPath="$PROJECT_DIR$/extend-in-react/antd/toast.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend-in-react/axios.ts" beforeDir="false" afterPath="$PROJECT_DIR$/extend-in-react/axios.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extend-in-react/wechat.ts" beforeDir="false" afterPath="$PROJECT_DIR$/extend-in-react/wechat.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.html" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,14 +145,14 @@
         <option value="CSS File" />
         <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="tsconfig.json" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/apps/blue-react-tmpl/src/App.js" root0="SKIP_INSPECTION" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -47,44 +175,62 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SearchEverywhereHistoryKey" value="index&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../blue-vue" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
-    <property name="ts.external.directory.path" value="E:\Program Files\JetBrains\WebStorm 2019.3.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="ts.external.directory.path" value="D:\Achang\Web\blue-react\apps\blue-react-ts-tmpl\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Achang\Web\blue-react\apps\blue-react-ts-tmpl" />
+      <recent name="E:\achang\web\blue-react-program\apps\blue-react-ts-tmpl\src" />
+      <recent name="E:\achang\web\blue-react-program\apps\blue-react-ts-tmpl" />
       <recent name="E:\achang\github\blue-react-program\use-in-react-router" />
       <recent name="D:\Achang\Web\blue-react\apps\blue-react-tmpl\src\components\wap\WTabBar" />
-      <recent name="D:\Achang\Web\blue-react\assets\js" />
-      <recent name="E:\achang\github\blue-react-program\apps\blue-react-tmpl\mock" />
-      <recent name="E:\achang\github\blue-react-program\assets\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Achang\Web\blue-react\apps\blue-react-ts-tmpl" />
+      <recent name="D:\Achang\Web\blue-react\components\BrTabBar" />
+      <recent name="E:\achang\web\blue-react-program\apps\blue-react-ts-tmpl\src" />
       <recent name="E:\achang\github\blue-react-program\apps\blue-react-tmpl\src\router\routes" />
       <recent name="$PROJECT_DIR$/components/BrRoutes" />
-      <recent name="E:\achang\github\blue-react-program\use-in-react" />
-      <recent name="E:\achang\web\blue-react-program\apps\blue-react-tmpl\src\store\state" />
-      <recent name="E:\achang\github\blue-react-program\components\BrView" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.BrRoutes.js">
-    <configuration name="BrRoutes.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="$PROJECT_DIR$/components/BrRoutes/index.js" working-dir="$PROJECT_DIR$/components">
+  <component name="RunManager" selected="npm.eject">
+    <configuration name="BrRoutes.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="$PROJECT_DIR$/components/BrRoutes/index.tsx" working-dir="$PROJECT_DIR$/components">
       <method v="2" />
     </configuration>
-    <configuration name="copy-dir.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="copy-dir.js" working-dir="$PROJECT_DIR$/apps/blue-react-tmpl/react-config">
-      <method v="2" />
-    </configuration>
-    <configuration name="start.js" type="NodeJSConfigurationType" temporary="true" path-to-js-file="start.js" working-dir="$PROJECT_DIR$/apps/blue-react-tmpl/scripts">
-      <method v="2" />
-    </configuration>
-    <configuration name="copy-dir" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/apps/blue-react-tmpl/package.json" />
+    <configuration name="eject (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/apps/blue-react-ts-temp/package.json" />
       <command value="run" />
       <scripts>
-        <script value="copy-dir" />
+        <script value="eject" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="eject" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/apps/blue-react-ts-tmpl/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="eject" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/apps/blue-react-ts-tmpl/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -101,22 +247,23 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Node.js.copy-dir.js" />
-      <item itemvalue="Node.js.start.js" />
       <item itemvalue="Node.js.BrRoutes.js" />
       <item itemvalue="npm.start" />
-      <item itemvalue="npm.copy-dir" />
+      <item itemvalue="npm.start (1)" />
+      <item itemvalue="npm.eject" />
+      <item itemvalue="npm.eject (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start (1)" />
+        <item itemvalue="npm.eject" />
+        <item itemvalue="npm.eject (1)" />
         <item itemvalue="npm.start" />
         <item itemvalue="Node.js.BrRoutes.js" />
-        <item itemvalue="Node.js.start.js" />
-        <item itemvalue="npm.copy-dir" />
-        <item itemvalue="Node.js.copy-dir.js" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -187,11 +334,40 @@
       <workItem from="1599204567339" duration="6115000" />
       <workItem from="1599227702208" duration="6145000" />
       <workItem from="1599267784727" duration="9121000" />
+      <workItem from="1614177466026" duration="204000" />
+      <workItem from="1614258958863" duration="7283000" />
+      <workItem from="1614415642105" duration="14849000" />
+      <workItem from="1615467134586" duration="5480000" />
+      <workItem from="1615728442363" duration="4584000" />
+      <workItem from="1615899215628" duration="1355000" />
+      <workItem from="1615900758832" duration="4643000" />
+      <workItem from="1615984165200" duration="777000" />
+      <workItem from="1615985442102" duration="1764000" />
+      <workItem from="1615988803649" duration="2580000" />
+      <workItem from="1615992465716" duration="661000" />
+      <workItem from="1616069563087" duration="3924000" />
+      <workItem from="1616313653276" duration="5574000" />
+      <workItem from="1616330857149" duration="5142000" />
+      <workItem from="1617611882760" duration="10521000" />
+      <workItem from="1617716976762" duration="7542000" />
+      <workItem from="1617805497684" duration="2181000" />
+      <workItem from="1617890669018" duration="4529000" />
+      <workItem from="1618151473777" duration="4387000" />
+      <workItem from="1618234769447" duration="1556000" />
+      <workItem from="1618404318107" duration="3592000" />
+      <workItem from="1618927788907" duration="2569000" />
+      <workItem from="1619245293969" duration="980000" />
+      <workItem from="1619246684209" duration="12149000" />
+      <workItem from="1619538260964" duration="47000" />
+      <workItem from="1622252276661" duration="3212000" />
+      <workItem from="1622258495574" duration="844000" />
+      <workItem from="1622259363539" duration="11336000" />
+      <workItem from="1622292995047" duration="338000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -206,48 +382,63 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="645" y="275" key="FileChooserDialogImpl" timestamp="1599269919515">
+    <state x="666" y="275" key="FileChooserDialogImpl" timestamp="1619538306244">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state x="645" y="275" key="FileChooserDialogImpl/0.0.1728.1040@0.0.1728.1040" timestamp="1599269919515" />
-    <state x="717" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1599191508785" />
-    <state width="1707" height="310" key="GridCell.Tab.0.bottom" timestamp="1599311814316">
+    <state x="666" y="275" key="FileChooserDialogImpl/0.0.1728.1040@0.0.1728.1040" timestamp="1619538306244" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1614264516020" />
+    <state width="1707" height="264" key="GridCell.Tab.0.bottom" timestamp="1622292969281">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="310" key="GridCell.Tab.0.bottom/0.0.1728.1040@0.0.1728.1040" timestamp="1599311814316" />
-    <state width="1247" height="276" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966288" />
-    <state width="1707" height="310" key="GridCell.Tab.0.center" timestamp="1599311814316">
+    <state width="1707" height="264" key="GridCell.Tab.0.bottom/0.0.1728.1040@0.0.1728.1040" timestamp="1622292969281" />
+    <state width="1899" height="465" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1614266161800" />
+    <state width="1707" height="264" key="GridCell.Tab.0.center" timestamp="1622292969281">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="310" key="GridCell.Tab.0.center/0.0.1728.1040@0.0.1728.1040" timestamp="1599311814316" />
-    <state width="1247" height="276" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966288" />
-    <state width="1707" height="310" key="GridCell.Tab.0.left" timestamp="1599311814316">
+    <state width="1707" height="264" key="GridCell.Tab.0.center/0.0.1728.1040@0.0.1728.1040" timestamp="1622292969281" />
+    <state width="1899" height="465" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1614266161799" />
+    <state width="1707" height="264" key="GridCell.Tab.0.left" timestamp="1622292969280">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="310" key="GridCell.Tab.0.left/0.0.1728.1040@0.0.1728.1040" timestamp="1599311814316" />
-    <state width="1247" height="276" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966287" />
-    <state width="1707" height="310" key="GridCell.Tab.0.right" timestamp="1599311814316">
+    <state width="1707" height="264" key="GridCell.Tab.0.left/0.0.1728.1040@0.0.1728.1040" timestamp="1622292969280" />
+    <state width="1899" height="465" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1614266161799" />
+    <state width="1707" height="264" key="GridCell.Tab.0.right" timestamp="1622292969281">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state width="1707" height="310" key="GridCell.Tab.0.right/0.0.1728.1040@0.0.1728.1040" timestamp="1599311814316" />
-    <state width="1247" height="276" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599202966288" />
-    <state x="93" y="93" width="1542" height="854" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1598457944670">
+    <state width="1707" height="264" key="GridCell.Tab.0.right/0.0.1728.1040@0.0.1728.1040" timestamp="1622292969281" />
+    <state width="1899" height="465" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1614266161799" />
+    <state x="366" y="165" key="SettingsEditor" timestamp="1619246278836">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state x="93" y="93" width="1542" height="854" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1728.1040@0.0.1728.1040" timestamp="1598457944670" />
-    <state x="564" y="252" width="600" height="568" key="find.popup" timestamp="1599312370113">
+    <state x="366" y="165" key="SettingsEditor/0.0.1728.1040@0.0.1728.1040" timestamp="1619246278836" />
+    <state x="93" y="93" width="1542" height="854" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1622259086536">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state x="564" y="252" width="600" height="568" key="find.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599312370113" />
-    <state x="627" y="252" width="667" height="568" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599210364579" />
-    <state x="521" y="241" key="run.anything.popup" timestamp="1599272929292">
+    <state x="93" y="93" width="1542" height="854" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1728.1040@0.0.1728.1040" timestamp="1622259086536" />
+    <state x="612" y="195" width="570" height="594" key="find.popup" timestamp="1622293175528">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state x="521" y="241" key="run.anything.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599272929292" />
-    <state x="521" y="174" width="672" height="676" key="search.everywhere.popup" timestamp="1599234287672">
+    <state x="612" y="195" width="570" height="594" key="find.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1622293175528" />
+    <state x="591" y="209" width="596" height="560" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614265887605" />
+    <state x="521" y="241" width="672" height="677" key="run.anything.popup" timestamp="1618405722110">
       <screen x="0" y="0" width="1728" height="1040" />
     </state>
-    <state x="521" y="174" width="672" height="676" key="search.everywhere.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1599234287672" />
-    <state x="579" y="174" width="747" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1599203135445" />
+    <state x="521" y="241" width="672" height="677" key="run.anything.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1618405722110" />
+    <state x="554" y="173" width="672" height="676" key="search.everywhere.popup" timestamp="1622293142092">
+      <screen x="0" y="0" width="1728" height="1040" />
+    </state>
+    <state x="554" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1728.1040@0.0.1728.1040" timestamp="1622293142092" />
+    <state x="616" y="173" width="672" height="676" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1614265101131" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/BrRoutes/cache.tsx</url>
+          <line>63</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

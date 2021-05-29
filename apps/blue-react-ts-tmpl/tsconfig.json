@@ -1,0 +1,107 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "strictNullChecks": false,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@config": [
+        "./src/config"
+      ],
+      "@config/*": [
+        "./src/config/*"
+      ],
+      "@assets/*": [
+        "./src/assets/*"
+      ],
+      "@css/*": [
+        "./src/css/*"
+      ],
+      "@store": [
+        "./src/store"
+      ],
+      "@store/*": [
+        "./src/store/*"
+      ],
+      "@pages/*": [
+        "./src/pages/*"
+      ],
+      "@router": [
+        "./src/router"
+      ],
+      "@router/*": [
+        "./src/router/*"
+      ],
+      "@static/*": [
+        "./static/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "$components/*": [
+        "./src/components-common/*"
+      ],
+      "$config": [
+        "../../config"
+      ],
+      "$config/*": [
+        "../../config/*"
+      ],
+      "$extend-in-react": [
+        "../../extend-in-react"
+      ],
+      "$extend-in-react/*": [
+        "../../extend-in-react/*"
+      ],
+      "$extend-in-react-router/*": [
+        "../../extend-in-react-router/*"
+      ],
+      "$store": [
+        "../../config/store"
+      ],
+      "$store/*": [
+        "../../config/store/*"
+      ],
+      "$assets/*": [
+        "../../assets/*"
+      ],
+      "$code": [
+        "../../code"
+      ],
+      "$code/*": [
+        "../../code/*"
+      ],
+      "$wechat": [
+        "../../extend-in-react/wechat"
+      ],
+      "$axios": [
+        "../../extend-in-react/axios"
+      ],
+      "$api": [
+        "../../api"
+      ]
+    }
+  },
+  "include": [
+    "src"
+  ]
+}
