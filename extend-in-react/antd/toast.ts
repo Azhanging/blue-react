@@ -4,17 +4,24 @@ import BlueQueuePipe from 'blue-queue-pipe';
 //loading队列
 const loadingQueue = new BlueQueuePipe();
 
+interface FN {
+	(): void;
+}
+
 //打开loading
-export function showLoading ( opts = {} ) {
+export function showLoading ( opts: {
+	content?: string;
+	duration?: number;
+	onClose?: () => void;
+	mask?: boolean;
+} = {} ) {
 	if (loadingQueue.isEmpty()) {
 		const {
-			content = '数据加载中...', duration = 0, onClose = () => {
-			}, mask = true
-		}: {
-			content: string;
-			duration: number;
-			onClose?: Function;
-			mask?: boolean;
+			content = `数据加载中...`,
+			duration = 0,
+			onClose = () => {
+			},
+			mask = true
 		} = opts;
 		Toast.loading(content, duration, onClose, mask);
 	}

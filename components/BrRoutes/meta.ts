@@ -1,9 +1,9 @@
 import utils from 'blue-utils';
-import {TRoutesRoute} from './types';
+import {TRoutesRoute, THistoryRouteMeta} from './types';
 
 //设置
 export function setMeta ( route: TRoutesRoute ) {
-	!route.meta && (route.meta = {});
+	!route.meta && ((route.meta = {} as THistoryRouteMeta));
 	//设置状态
 	route.meta = utils.extend({
 		refresh: {

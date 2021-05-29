@@ -12,14 +12,13 @@ const middlewarePath = resolve('../../..');
 //文件列表
 const copyDirOpts = {
   blackList: [
-    /blue-component/ig,
     /jb_tmp/,
     /jb_old/
   ],
   dirList: [{
     dirPath: path.join(middlewarePath, 'components'),
     destPath: resolve(''),
-    destDirName: 'public-components'
+    destDirName: 'components-common'
   }]
 };
 

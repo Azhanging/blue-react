@@ -1,5 +1,16 @@
+//@ts-ignore
 import {FC, ComponentType} from 'react';
+//@ts-ignore
 import {History} from "history";
+
+export interface THistoryRouteMeta {
+	refresh: {
+		status?: boolean;
+		unforcedList?: (string | RegExp)[];
+	};
+
+	[ propName: string ]: any;
+}
 
 //路由配置
 export interface TRoutesRoute {
@@ -8,9 +19,7 @@ export interface TRoutesRoute {
 	strict?: boolean;
 	children?: TRoutesRoute[];
 	component: FC<any> | ComponentType<any>;
-	meta?: {
-		[ propName: string ]: any;
-	}
+	meta?: THistoryRouteMeta
 }
 
 //history中的route类型
@@ -26,13 +35,7 @@ export interface THistoryRoute {
 		[ propName: string ]: any;
 	};
 	//设置传值参
-	meta: {
-		refresh: {
-			status: boolean;
-			unforcedList: (string | RegExp)[];
-		};
-		[ propName: string ]: any;
-	};
+	meta: THistoryRouteMeta;
 	//原始地址
 	raw: string;
 	fullPath: string;

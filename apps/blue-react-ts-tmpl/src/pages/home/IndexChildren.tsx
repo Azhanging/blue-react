@@ -30,7 +30,7 @@ function Children(props:any) {
       </div>
 
       <div className="ba-t-c ba-pd-14rp">
-        <button onClick={() => {
+        <button className="ba-btn ba-btn-base" onClick={() => {
           setCount(count + 1);
         }}>
           count {count}

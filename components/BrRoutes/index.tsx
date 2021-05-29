@@ -1,4 +1,6 @@
+// @ts-ignore
 import React, {ReactFragment, ReactNode, useState} from 'react';
+// @ts-ignore
 import {Route, Switch} from 'react-router-dom';
 import {setHistory} from './history';
 import {extendNativeHistory} from './navigator';

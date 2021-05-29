@@ -1,23 +1,25 @@
 //路由id
 class RouterID {
-  constructor() {
-    this.id = 0;
-  }
+	id: number;
 
-  //设置添加当前id
-  setCurrentID() {
-    ++this.id;
-  }
+	constructor () {
+		this.id = 0;
+	}
 
-  //获取当前id
-  getCurrentID() {
-    return this.id;
-  }
+	//设置添加当前id
+	setCurrentID () {
+		++this.id;
+	}
 
-  //判断是否符合当前id
-  isCurrentID(id) {
-    return this.id === id;
-  }
+	//获取当前id
+	getCurrentID (): number {
+		return this.id;
+	}
+
+	//判断是否符合当前id
+	isCurrentID ( id: number ) {
+		return this.id === id;
+	}
 }
 
 export default RouterID;

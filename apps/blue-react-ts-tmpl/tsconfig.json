@@ -58,7 +58,7 @@
         "./src/components/*"
       ],
       "$components/*": [
-        "./src/public-components/*"
+        "./src/components-common/*"
       ],
       "$config": [
         "../../config"
@@ -86,6 +86,9 @@
       ],
       "$code": [
         "../../code"
+      ],
+      "$code/*": [
+        "../../code/*"
       ],
       "$wechat": [
         "../../extend-in-react/wechat"

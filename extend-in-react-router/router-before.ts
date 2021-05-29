@@ -1,3 +1,4 @@
+//@ts-ignore
 import NProgress from 'nprogress';
 import { routerID } from "@router";
 

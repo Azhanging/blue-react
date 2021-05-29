@@ -8,7 +8,7 @@ const historyNavigatorQueue = new BlueQueuePipe({
 		pop () {
 			this.queue.pop();
 		},
-		unshift ( route: THistoryRoute ) {
+		unshift ( route: THistoryRoute ){
 			this.queue.unshift(route);
 		}
 	}

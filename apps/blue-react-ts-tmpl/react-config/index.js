@@ -26,7 +26,7 @@ const webpackConfig = utils.extend(publicReactConfig, {
       //项目组件
       '@components': resolve('components'),
       //公共组件
-      '$components': resolve('public-components'),
+      '$components': resolve('components-common'),
     }
   }
 });
