@@ -15,6 +15,6 @@
     "body-parser": "^1.19.0",
     "chokidar": "^3.0.2",
     "http-proxy-middleware": "^0.20.0",
-    "node-sass": "^4.14.1"
+    "node-sass": "^7.0.0"
   }
 }
